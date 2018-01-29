@@ -125,7 +125,8 @@ The second line imports CasinocoinAPI into the current scope using Node.js's req
 
 ```
 const api = new CasinocoinAPI({
-  server: 'wss://s1.ripple.com' // Public casinocoind server
+  server: 'wss://ws01.casinocoin.org', // Public casinocoind server
+  port: 4443
 });
 ```
 

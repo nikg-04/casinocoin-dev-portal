@@ -5,7 +5,7 @@
   <script src="ripple-0.17.7-min.js"></script>
   <script>
     console.log(ripple);
-    var api = new ripple.RippleAPI({server:'wss://s1.ripple.com/'});
+    var api = new ripple.RippleAPI({server:'wss://ws01.casinocoin.org/', port: 4443});
     api.connect().then(function() {
         return api.getServerInfo();
     }).then(function(server_info) {

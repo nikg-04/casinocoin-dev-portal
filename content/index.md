@@ -96,7 +96,8 @@ Use the following [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_c
 const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI;
 
 const api = new CasinocoinAPI({
-  server: 'wss://s1.ripple.com' // Public casinocoind server hosted by CasinoCoin, Inc.
+  server: 'wss://ws01.casinocoin.org', // Public casinocoind server hosted by CasinoCoin, Inc.
+  port: 4443
 });
 api.on('error', (errorCode, errorMessage) => {
   console.log(errorCode + ': ' + errorMessage);
