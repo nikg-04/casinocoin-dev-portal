@@ -2,7 +2,7 @@
 
 An "Account" in the CSC Ledger represents a holder of CSC and a sender of [transactions](reference-transaction-format.html). The core elements of an account are:
 
-- An identifying **address**, such as `cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn`
+- An identifying **address**, such as `cDarPNJEpCnpBZSfmcquydockkePkjPGA2`
 - An **CSC balance**. Some of this CSC is set aside for the [Reserve](concept-reserves.html).
 - A **sequence number**, starting at 1 and increasing with each transaction sent from this account. No transaction can be included in a ledger unless the transaction's sequence number matches its sender's next sequence number.
 - A **history of transactions** that affected this account and its balances.
@@ -33,7 +33,7 @@ Some addresses have special meaning, or historical uses, in the CSC Ledger. In m
 |-----------------------------|------|---------|-------------|
 | rrrrrrrrrrrrrrrrrrrrrhoLvTp | ACCOUNT\_ZERO | An address that is the base58 encoding of the value `0`. In peer-to-peer communications, `casinocoind` uses this address as the issuer for CSC. | Yes |
 | rrrrrrrrrrrrrrrrrrrrBZbvji  | ACCOUNT\_ONE | An address that is the base58 encoding of the value `1`. In the ledger, [CasinocoinState entries](reference-ledger-format.html#casinocoinstate) use this address as a placeholder for the issuer of a trust line balance. | Yes |
-| rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh | The genesis account | When `casinocoind` starts a new genesis ledger from scratch (for example, in stand-alone mode), this account holds all the CSC. This address is generated from the seed value "masterpassphrase" which is [hard-coded](https://github.com/casinocoin/casinocoind/blob/4.0.1/src/casinocoin/app/ledger/Ledger.cpp#L184). | No |
+| cDarPNJEpCnpBZSfmcquydockkePkjPGA2 | The genesis account | When `casinocoind` starts a new genesis ledger from scratch (for example, in stand-alone mode), this account holds all the CSC. This address is generated from the seed value "masterpassphrase" which is [hard-coded](https://github.com/casinocoin/casinocoind/blob/4.0.1/src/casinocoin/app/ledger/Ledger.cpp#L184). | No |
 | rrrrrrrrrrrrrrrrrNAMEtxvNvQ | CasinoCoin Name reservation black-hole | In the past, CasinoCoin asked users to send CSC to this account to reserve CasinoCoin Names.| Yes |
 | rrrrrrrrrrrrrrrrrrrn5RM1rHd | NaN Address | Previous versions of [casinocoin-libjs-api](https://github.com/casinocoin/casinocoin-libjs-api) generated this address when base58 encoding the value [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN). | Yes |
 

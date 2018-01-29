@@ -95,7 +95,7 @@ CasinocoinAPI and the script both use the ECMAScript 6 version of JavaScript. Th
 Output:
 
 ```
-getting account info for cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn
+getting account info for cDarPNJEpCnpBZSfmcquydockkePkjPGA2
 { sequence: 359,
   cscBalance: '75.181663',
   ownerCount: 4,
@@ -157,7 +157,7 @@ Finally, we have more new ECMAScript 6 syntax - an [arrow function](https://deve
 
 ```
   /* begin custom code ------------------------------------ */
-  const myAddress = 'cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn';
+  const myAddress = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 
   console.log('getting account info for', myAddress);
   return api.getAccountInfo(myAddress);
