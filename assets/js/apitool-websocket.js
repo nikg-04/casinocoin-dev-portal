@@ -29,8 +29,8 @@ var urlParams;
   var info            = $('#info');
   var spinner = $(".loader");
   
-  var BASE_HOST_DEFAULT = 's2.ripple.com';
-  var BASE_PORT_DEFAULT = 443;
+  var BASE_HOST_DEFAULT = 'ws01.casinocoin.org';
+  var BASE_PORT_DEFAULT = 4443;
 
   var remote = new ripple.Remote({
     trusted:        true,
@@ -111,7 +111,7 @@ var urlParams;
     return obj;
   };
 
-  var sample_address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+  var sample_address = 'c9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
   var sample_address_2 = 'ra5nK24KXen9AHvsdFTKHSANinZseWnPcX';
   var sample_tx = 'E08D6E9754025BA2534A78707605E0601F03ACE063687A0CA1BDDACFCD1698C7';
 

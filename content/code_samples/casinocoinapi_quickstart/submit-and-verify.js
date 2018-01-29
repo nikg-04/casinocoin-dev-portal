@@ -24,7 +24,7 @@ const myOrder = {
 /* Milliseconds to wait between checks for a new ledger. */
 const INTERVAL = 1000;
 /* Instantiate CasinocoinAPI. Uses s2 (full history server) */
-const api = new CasinocoinAPI({server: 'wss://s2.ripple.com'});
+const api = new CasinocoinAPI({server: 'wss://ws01.casinocoin.org', port: 4443});
 /* Number of ledgers to check for valid transaction before failing */
 const ledgerOffset = 5;
 const myInstructions = {maxLedgerVersionOffset: ledgerOffset};

@@ -204,7 +204,7 @@ This code creates and submits an order transaction, although the same principles
 
 In rare cases (particularly with a large delay or a loss of power), the `casinocoind` server may be missing a ledger version between when you submitted the transaction and when you determined that the network has passed the `maxLedgerVersion`. In this case, you cannot be definitively sure whether the transaction has failed, or has been included in one of the missing ledger versions. CasinocoinAPI returns `MissingLedgerHistoryError` in this case.
 
-If you are the administrator of the `casinocoind` server, you can [manually request the missing ledger(s)](reference-casinocoind.html#ledger-request). Otherwise, you can try checking the ledger history using a different server. (CasinoCoin runs a public full-history server at `s2.ripple.com` for this purpose.)
+If you are the administrator of the `casinocoind` server, you can [manually request the missing ledger(s)](reference-casinocoind.html#ledger-request). Otherwise, you can try checking the ledger history using a different server. (CasinoCoin runs a public full-history server at `ws01.casinocoin.org` for this purpose.)
 
 See [Reliable Transaction Submission](tutorial-reliable-transaction-submission.html) for a more thorough explanation.
 
