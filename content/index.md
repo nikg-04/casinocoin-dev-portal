@@ -195,7 +195,7 @@ Methods that depend on the state of the CSC Ledger are unavailable in offline mo
 ## Address
 
 ```json
-"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59"
+"cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
 ```
 
 Every CSC Ledger account has an *address*, which is a base58-encoding of a hash of the account's public key. CSC Ledger addresses always start with the lowercase letter `r`.
@@ -359,7 +359,7 @@ paths | string | *Optional* The paths of trustlines and orders to use in executi
 ```json
 {
   "source": {
-    "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "maxAmount": {
       "value": "0.01",
       "currency": "USD",
@@ -560,7 +560,7 @@ memos | [memos](#transaction-memos) | *Optional* Array of memos to attach to the
 
 ```json
 {
-  "owner": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "owner": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "escrowSequence": 1234
 }
 ```
@@ -583,7 +583,7 @@ memos | [memos](#transaction-memos) | *Optional* Array of memos to attach to the
 
 ```json
 {
-  "owner": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "owner": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "escrowSequence": 1234,
   "condition": "A0258020E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855810100",
   "fulfillment": "A0028000"
@@ -907,12 +907,12 @@ return api.getTransaction(id).then(transaction => {
 ```json
 {
   "type": "payment",
-  "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "sequence": 4,
   "id": "F4AB442A6D4CBB935D66E1DA7309A5FC71C7143ED4049053EC14E3875B0CF9BF",
   "specification": {
     "source": {
-      "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "maxAmount": {
         "currency": "CSC",
         "value": "1.112209"
@@ -956,7 +956,7 @@ return api.getTransaction(id).then(transaction => {
           "value": "0.001"
         }
       ],
-      "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59": [
+      "cDarPNJEpCnpBZSfmcquydockkePkjPGA2": [
         {
           "currency": "CSC",
           "value": "-1.101208"
@@ -1030,7 +1030,7 @@ This method returns a promise that resolves with an array of transaction object 
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 return api.getTransactions(address).then(transaction => {
   /* ... */
 });
@@ -1041,7 +1041,7 @@ return api.getTransactions(address).then(transaction => {
 [
   {
     "type": "payment",
-    "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "sequence": 4,
     "id": "99404A34E8170319521223A6C604AF48B9F1E3000C377E6141F9A1BF60B0B865",
     "specification": {
@@ -1052,7 +1052,7 @@ return api.getTransactions(address).then(transaction => {
         }
       ],
       "source": {
-        "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "maxAmount": {
           "currency": "CSC",
           "value": "1.112209"
@@ -1095,7 +1095,7 @@ return api.getTransactions(address).then(transaction => {
             "value": "0.001"
           }
         ],
-        "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59": [
+        "cDarPNJEpCnpBZSfmcquydockkePkjPGA2": [
           {
             "currency": "CSC",
             "value": "-1.101208"
@@ -1114,7 +1114,7 @@ return api.getTransactions(address).then(transaction => {
         ]
       },
       "orderbookChanges": {
-        "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59": [
+        "cDarPNJEpCnpBZSfmcquydockkePkjPGA2": [
           {
             "direction": "buy",
             "quantity": {
@@ -1138,7 +1138,7 @@ return api.getTransactions(address).then(transaction => {
   },
   {
     "type": "payment",
-    "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "id": "99404A34E8170319521223A6C604AF48B9F1E3000C377E6141F9A1BF60B0B865",
     "sequence": 4,
     "specification": {
@@ -1149,7 +1149,7 @@ return api.getTransactions(address).then(transaction => {
         }
       ],
       "source": {
-        "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "maxAmount": {
           "currency": "CSC",
           "value": "1.112209"
@@ -1192,7 +1192,7 @@ return api.getTransactions(address).then(transaction => {
             "value": "0.001"
           }
         ],
-        "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59": [
+        "cDarPNJEpCnpBZSfmcquydockkePkjPGA2": [
           {
             "currency": "CSC",
             "value": "-1.101208"
@@ -1211,7 +1211,7 @@ return api.getTransactions(address).then(transaction => {
         ]
       },
       "orderbookChanges": {
-        "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59": [
+        "cDarPNJEpCnpBZSfmcquydockkePkjPGA2": [
           {
             "direction": "buy",
             "quantity": {
@@ -1272,7 +1272,7 @@ state | object | Properties of the trustline regarding it's current state that a
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 return api.getTrustlines(address).then(trustlines =>
   {/* ... */});
 ```
@@ -1411,7 +1411,7 @@ counterparty | [address](#address) | *Optional* The CasinoCoin address of the ac
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 return api.getBalances(address).then(balances =>
   {/* ... */});
 ```
@@ -1578,7 +1578,7 @@ obligations[] | object | An amount that is owed.
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 return api.getBalanceSheet(address).then(balanceSheet =>
   {/* ... */});
 ```
@@ -1688,7 +1688,7 @@ paths | string | The paths of trustlines and orders to use in executing the paym
 ```javascript
 const pathfind = {
   "source": {
-    "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59"
+    "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
   },
   "destination": {
     "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
@@ -1708,7 +1708,7 @@ return api.getPaths(pathfind)
 [
   {
     "source": {
-      "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "maxAmount": {
         "currency": "JPY",
         "value": "0.1117218827811721"
@@ -1726,7 +1726,7 @@ return api.getPaths(pathfind)
   },
   {
     "source": {
-      "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "maxAmount": {
         "currency": "USD",
         "value": "0.001002"
@@ -1744,7 +1744,7 @@ return api.getPaths(pathfind)
   },
   {
     "source": {
-      "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "maxAmount": {
         "currency": "CSC",
         "value": "0.207669"
@@ -1794,7 +1794,7 @@ properties | object | Properties of the order not in the specification.
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 return api.getOrders(address).then(orders =>
   {/* ... */});
 ```
@@ -1817,7 +1817,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 719930,
       "makerExchangeRate": "63.44025128030504"
     }
@@ -1837,7 +1837,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 756999,
       "makerExchangeRate": "39.23215583132338"
     }
@@ -1857,7 +1857,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 757002,
       "makerExchangeRate": "1.056334989703257"
     }
@@ -1877,7 +1877,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 757003,
       "makerExchangeRate": "100.3518240218094"
     }
@@ -1897,7 +1897,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 782148,
       "makerExchangeRate": "81.7121820757743"
     }
@@ -1917,7 +1917,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 787368,
       "makerExchangeRate": "50.26296114247091"
     }
@@ -1937,7 +1937,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 787408,
       "makerExchangeRate": "1000.519693952099"
     }
@@ -1957,7 +1957,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 803438,
       "makerExchangeRate": "1356.054621894598"
     }
@@ -1977,7 +1977,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 807858,
       "makerExchangeRate": "123763.8630020459"
     }
@@ -1997,7 +1997,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 807896,
       "makerExchangeRate": "123646.6837435794"
     }
@@ -2016,7 +2016,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 814018,
       "makerExchangeRate": "16922.62953364839"
     }
@@ -2036,7 +2036,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 827522,
       "makerExchangeRate": "62.63032241192674"
     }
@@ -2056,7 +2056,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 833591,
       "makerExchangeRate": "160.8325363767064"
     }
@@ -2076,7 +2076,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 833592,
       "makerExchangeRate": "1608.325363767062"
     }
@@ -2096,7 +2096,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 838954,
       "makerExchangeRate": "162.9564891233845"
     }
@@ -2115,7 +2115,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 843730,
       "makerExchangeRate": "0.0004485854972648762"
     }
@@ -2135,7 +2135,7 @@ return api.getOrders(address).then(orders =>
       }
     },
     "properties": {
-      "maker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "maker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "sequence": 844068,
       "makerExchangeRate": "42.19320561670911"
     }
@@ -2192,7 +2192,7 @@ asks[] | object | An order in the order book.
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const orderbook = {
   "base": {
     "currency": "USD",
@@ -2742,7 +2742,7 @@ transferRate | number,null | *Optional*  The fee to charge when users transfer t
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 return api.getSettings(address).then(settings =>
   {/* ... */});
 ```
@@ -2789,7 +2789,7 @@ previousInitiatedTransactionID | string | *Optional* Hash value representing the
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 return api.getAccountInfo(address).then(info =>
   {/* ... */});
 ```
@@ -2956,10 +2956,10 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const payment = {
   "source": {
-    "address": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "maxAmount": {
       "value": "0.01",
       "currency": "USD",
@@ -2982,7 +2982,7 @@ return api.preparePayment(address, payment).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"Payment\",\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"SendMax\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"Payment\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"SendMax\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3025,7 +3025,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const trustline = {
   "currency": "USD",
   "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
@@ -3049,7 +3049,7 @@ return api.prepareTrustline(address, trustline).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"TransactionType\":\"TrustSet\",\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"LimitAmount\":{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\",\"value\":\"10000\"},\"Flags\":2149711872,\"QualityIn\":910000000,\"QualityOut\":870000000,\"Memos\":[{\"Memo\":{\"MemoData\":\"7465787465642064617461\",\"MemoType\":\"74657374\",\"MemoFormat\":\"706C61696E2F74657874\"}}],\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"TransactionType\":\"TrustSet\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"LimitAmount\":{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\",\"value\":\"10000\"},\"Flags\":2149711872,\"QualityIn\":910000000,\"QualityOut\":870000000,\"Memos\":[{\"Memo\":{\"MemoData\":\"7465787465642064617461\",\"MemoType\":\"74657374\",\"MemoFormat\":\"706C61696E2F74657874\"}}],\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3092,7 +3092,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const order = {
   "direction": "buy",
   "quantity": {
@@ -3114,7 +3114,7 @@ return api.prepareOrder(address, order)
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147811328,\"TransactionType\":\"OfferCreate\",\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"TakerGets\":\"2000000\",\"TakerPays\":{\"value\":\"10.1\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"LastLedgerSequence\":8819954,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147811328,\"TransactionType\":\"OfferCreate\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TakerGets\":\"2000000\",\"TakerPays\":{\"value\":\"10.1\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"LastLedgerSequence\":8819954,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3157,7 +3157,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const orderCancellation = {orderSequence: 123};
 return api.prepareOrderCancellation(address, orderCancellation)
   .then(prepared => {/* ... */});
@@ -3166,7 +3166,7 @@ return api.prepareOrderCancellation(address, orderCancellation)
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"OfferCancel\",\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"OfferSequence\":23,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"OfferCancel\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"OfferSequence\":23,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3209,7 +3209,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const settings = {
   "domain": "ripple.com",
   "memos": [
@@ -3272,7 +3272,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const escrowCreation = {
   "destination": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
   "amount": "0.01",
@@ -3285,7 +3285,7 @@ return api.prepareEscrowCreation(address, escrowCreation).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowCreate\",\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":\"10000\",\"CancelAfter\":464908910,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowCreate\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":\"10000\",\"CancelAfter\":464908910,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3328,9 +3328,9 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const escrowCancellation = {
-  "owner": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "owner": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "escrowSequence": 1234
 };
 return api.prepareEscrowCancellation(address, escrowCancellation).then(prepared =>
@@ -3340,7 +3340,7 @@ return api.prepareEscrowCancellation(address, escrowCancellation).then(prepared 
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowCancel\",\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"Owner\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"OfferSequence\":1234,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowCancel\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Owner\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"OfferSequence\":1234,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3383,9 +3383,9 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const escrowExecution = {
-  "owner": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "owner": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "escrowSequence": 1234,
   "condition": "A0258020E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855810100",
   "fulfillment": "A0028000"
@@ -3397,7 +3397,7 @@ return api.prepareEscrowExecution(address, escrowExecution).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowFinish\",\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"Owner\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"OfferSequence\":1234,\"Condition\":\"A0258020E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855810100\",\"Fulfillment\":\"A0028000\",\"LastLedgerSequence\":8820051,\"Fee\":\"396\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowFinish\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Owner\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"OfferSequence\":1234,\"Condition\":\"A0258020E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855810100\",\"Fulfillment\":\"A0028000\",\"LastLedgerSequence\":8820051,\"Fee\":\"396\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000396",
     "sequence": 23,
@@ -3440,7 +3440,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const paymentChannelCreate = {
   "amount": "1",
   "destination": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
@@ -3454,7 +3454,7 @@ return api.preparePaymentChannelCreate(address, paymentChannelCreate).then(prepa
 
 ```json
 {
-  "txJSON":"{\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"TransactionType\":\"PaymentChannelCreate\",\"Amount\":\"1000000\",\"Destination\":\"rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW\",\"SettleDelay\":86400,\"PublicKey\":\"32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON":"{\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TransactionType\":\"PaymentChannelCreate\",\"Amount\":\"1000000\",\"Destination\":\"rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW\",\"SettleDelay\":86400,\"PublicKey\":\"32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3497,7 +3497,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const paymentChannelClaim = {
   "channel": "C1AE6DDDEEC05CF2978C0BAD6FE302948E9533691DC749DCDD3B9E5992CA6198"
 };
@@ -3508,7 +3508,7 @@ return api.preparePaymentChannelClaim(address, paymentChannelClaim).then(prepare
 
 ```json
 {
-  "txJSON": "{\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"TransactionType\":\"PaymentChannelClaim\",\"Channel\":\"C1AE6DDDEEC05CF2978C0BAD6FE302948E9533691DC749DCDD3B9E5992CA6198\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TransactionType\":\"PaymentChannelClaim\",\"Channel\":\"C1AE6DDDEEC05CF2978C0BAD6FE302948E9533691DC749DCDD3B9E5992CA6198\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3551,7 +3551,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ### Example
 
 ```javascript
-const address = 'r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
+const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const paymentChannelFund = {
   "channel": "C1AE6DDDEEC05CF2978C0BAD6FE302948E9533691DC749DCDD3B9E5992CA6198",
   "amount": "1"
@@ -3563,7 +3563,7 @@ return api.preparePaymentChannelFund(address, paymentChannelFund).then(prepared 
 
 ```json
 {
-  "txJSON":"{\"Account\":\"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59\",\"TransactionType\":\"PaymentChannelFund\",\"Channel\":\"C1AE6DDDEEC05CF2978C0BAD6FE302948E9533691DC749DCDD3B9E5992CA6198\",\"Amount\":\"1000000\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON":"{\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TransactionType\":\"PaymentChannelFund\",\"Channel\":\"C1AE6DDDEEC05CF2978C0BAD6FE302948E9533691DC749DCDD3B9E5992CA6198\",\"Amount\":\"1000000\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3600,7 +3600,7 @@ id | [id](#transaction-id) | The [Transaction ID](#transaction-id) of the signed
 ### Example
 
 ```javascript
-const txJSON = '{"Flags":2147483648,"TransactionType":"AccountSet","Account":"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59","Domain":"726970706C652E636F6D","LastLedgerSequence":8820051,"Fee":"12","Sequence":23}';
+const txJSON = '{"Flags":2147483648,"TransactionType":"AccountSet","Account":"cDarPNJEpCnpBZSfmcquydockkePkjPGA2","Domain":"726970706C652E636F6D","LastLedgerSequence":8820051,"Fee":"12","Sequence":23}';
 const secret = 'shsWGZcmZz6YsWWmcnpfr6fLTdtFV';
 return api.sign(txJSON, secret);
 ```

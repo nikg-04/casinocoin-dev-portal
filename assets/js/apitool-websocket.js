@@ -111,9 +111,9 @@ var urlParams;
     return obj;
   };
 
-  var sample_address = 'c9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59';
-  var sample_address_2 = 'ra5nK24KXen9AHvsdFTKHSANinZseWnPcX';
-  var sample_tx = 'E08D6E9754025BA2534A78707605E0601F03ACE063687A0CA1BDDACFCD1698C7';
+  var sample_address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
+  var sample_address_2 = 'cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ';
+  var sample_tx = 'D7F330C0AB4B9554879579975C3917DEA3846A7E8F4B315EF9758F6136E1E15E';
 
   /* ---- ---- */
 
@@ -290,7 +290,7 @@ var urlParams;
     _stream: true
   });
 
-  Request('ripple_path_find', {
+  Request('casinocoin_path_find', {
     ledger_hash : void(0),
     ledger_index : void(0),
     source_account : sample_address,

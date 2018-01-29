@@ -118,7 +118,7 @@ The commandline puts the command after any normal (dash-prefaced) commandline op
 {
   "id": 2,
   "command": "account_info",
-  "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "strict": true,
   "ledger_index": "validated"
 }
@@ -132,7 +132,7 @@ POST http://s1.ripple.com:51234/
     "method": "account_info",
     "params": [
         {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "strict": true,
             "ledger_index": "validated"
         }
@@ -143,7 +143,7 @@ POST http://s1.ripple.com:51234/
 *Commandline*
 
 ```
-casinocoind account_info r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59 validated true
+casinocoind account_info cDarPNJEpCnpBZSfmcquydockkePkjPGA2 validated true
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -163,7 +163,7 @@ casinocoind account_info r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59 validated true
   "type": "response",
   "result": {
     "account_data": {
-      "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+      "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "Balance": "27389517749",
       "Flags": 0,
       "LedgerEntryType": "AccountRoot",
@@ -185,7 +185,7 @@ HTTP Status: 200 OK
 {
     "result": {
         "account_data": {
-            "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Balance": "27389517749",
             "Flags": 0,
             "LedgerEntryType": "AccountRoot",
@@ -206,7 +206,7 @@ HTTP Status: 200 OK
 {
     "result": {
         "account_data": {
-            "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Balance": "27389517749",
             "Flags": 0,
             "LedgerEntryType": "AccountRoot",
@@ -253,7 +253,7 @@ Some example errors:
   "type": "response",
   "error": "ledgerIndexMalformed",
   "request": {
-    "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "command": "account_info",
     "id": 3,
     "ledger_index": "-",
@@ -270,7 +270,7 @@ HTTP Status: 200 OK
     "result": {
         "error": "ledgerIndexMalformed",
         "request": {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "command": "account_info",
             "ledger_index": "-",
             "strict": true
@@ -287,7 +287,7 @@ HTTP Status: 200 OK
     "result": {
         "error": "ledgerIndexMalformed",
         "request": {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "command": "account_info",
             "ledger_index": "-",
             "strict": true
@@ -354,7 +354,7 @@ All field names are case-sensitive. In responses, fields that are taken directly
 
 Different types of objects are uniquely identified in different ways:
 
-[Accounts](concept-accounts.html) are identified by their [Address][], for example `"r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59"`. Addresses always start with "r". Many `casinocoind` methods also accept a hexadecimal representation.
+[Accounts](concept-accounts.html) are identified by their [Address][], for example `"cDarPNJEpCnpBZSfmcquydockkePkjPGA2"`. Addresses always start with "r". Many `casinocoind` methods also accept a hexadecimal representation.
 
 [Transactions](reference-transaction-format.html) are identified by a [Hash][] of the transaction's binary format. You can also identify a transaction by its sending account and [Sequence Number][].
 
@@ -447,13 +447,13 @@ If you are specifying non-CSC currency (including fiat dollars, precious metals,
 
 **Caution:** These field names are case-sensitive.
 
-For example, to represent $153.75 US dollars issued by account `r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59`, you would specify:
+For example, to represent $153.75 US dollars issued by account `cDarPNJEpCnpBZSfmcquydockkePkjPGA2`, you would specify:
 
 ```
 {
     "currency": "USD",
     "value": "153.75",
-    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59"
+    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
 }
 ```
 
@@ -617,7 +617,7 @@ An example of the request format:
 ```
 {
     "command": "account_currencies",
-    "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "strict": true,
     "ledger_index": "validated"
 }
@@ -630,7 +630,7 @@ An example of the request format:
     "method": "account_currencies",
     "params": [
         {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "account_index": 0,
             "ledger_index": "validated",
             "strict": true
@@ -945,7 +945,7 @@ An example of an account_info request:
 {
   "id": 2,
   "command": "account_info",
-  "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "strict": true,
   "ledger_index": "current",
   "queue": true
@@ -972,7 +972,7 @@ An example of an account_info request:
 
 ```
 #Syntax: account_info account [ledger_index|ledger_hash] [strict]
-casinocoind account_info r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59 true
+casinocoind account_info cDarPNJEpCnpBZSfmcquydockkePkjPGA2 true
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -1156,7 +1156,7 @@ An example of the request format:
 {
   "id": 1,
   "command": "account_lines",
-  "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger": "current"
 }
 ```
@@ -1168,7 +1168,7 @@ An example of the request format:
     "method": "account_lines",
     "params": [
         {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger": "current"
         }
     ]
@@ -1206,7 +1206,7 @@ An example of a successful response:
     "status": "success",
     "type": "response",
     "result": {
-        "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "lines": [
             {
                 "account": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
@@ -1249,7 +1249,7 @@ An example of a successful response:
 200 OK
 {
     "result": {
-        "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "lines": [
             {
                 "account": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
@@ -1365,7 +1365,7 @@ An example of the request format:
 
 ```
 #Syntax: account_offers account [ledger_index]
-casinocoind account_offers r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59 current
+casinocoind account_offers cDarPNJEpCnpBZSfmcquydockkePkjPGA2 current
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -1541,7 +1541,7 @@ An example of the request format:
 {
   "id": 1,
   "command": "account_objects",
-  "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger_index": "validated",
   "type": "state",
   "limit": 10
@@ -1555,7 +1555,7 @@ An example of the request format:
     "method": "account_objects",
     "params": [
         {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger_index": "validated",
             "limit": 10,
             "type": "state"
@@ -1569,7 +1569,7 @@ An example of the request format:
 
 ```
 #Syntax: account_objects <account> [<ledger>]
-casinocoind account_objects r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59 validated
+casinocoind account_objects cDarPNJEpCnpBZSfmcquydockkePkjPGA2 validated
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -1599,7 +1599,7 @@ An example of a successful response:
     "status": "success",
     "type": "response",
     "result": {
-        "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "account_objects": [
             {
                 "Balance": {
@@ -1610,7 +1610,7 @@ An example of a successful response:
                 "Flags": 65536,
                 "HighLimit": {
                     "currency": "ASP",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1634,7 +1634,7 @@ An example of a successful response:
                 "Flags": 3342336,
                 "HighLimit": {
                     "currency": "XAU",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1665,7 +1665,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "USD",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "5"
                 },
                 "LowNode": "0000000000000000",
@@ -1689,7 +1689,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "MXN",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1000"
                 },
                 "LowNode": "0000000000000000",
@@ -1713,7 +1713,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "EUR",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1"
                 },
                 "LowNode": "0000000000000000",
@@ -1730,7 +1730,7 @@ An example of a successful response:
                 "Flags": 2228224,
                 "HighLimit": {
                     "currency": "CNY",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "3"
                 },
                 "HighNode": "0000000000000000",
@@ -1761,7 +1761,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "DYM",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "3"
                 },
                 "LowNode": "0000000000000000",
@@ -1778,7 +1778,7 @@ An example of a successful response:
                 "Flags": 131072,
                 "HighLimit": {
                     "currency": "CHF",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1802,7 +1802,7 @@ An example of a successful response:
                 "Flags": 131072,
                 "HighLimit": {
                     "currency": "BTC",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "3"
                 },
                 "HighNode": "0000000000000000",
@@ -1826,7 +1826,7 @@ An example of a successful response:
                 "Flags": 131072,
                 "HighLimit": {
                     "currency": "USD",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "5000"
                 },
                 "HighNode": "0000000000000000",
@@ -1857,7 +1857,7 @@ An example of a successful response:
 200 OK
 {
     "result": {
-        "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "account_objects": [
             {
                 "Balance": {
@@ -1868,7 +1868,7 @@ An example of a successful response:
                 "Flags": 65536,
                 "HighLimit": {
                     "currency": "ASP",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1892,7 +1892,7 @@ An example of a successful response:
                 "Flags": 3342336,
                 "HighLimit": {
                     "currency": "XAU",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1923,7 +1923,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "USD",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "5"
                 },
                 "LowNode": "0000000000000000",
@@ -1947,7 +1947,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "MXN",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1000"
                 },
                 "LowNode": "0000000000000000",
@@ -1971,7 +1971,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "EUR",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1"
                 },
                 "LowNode": "0000000000000000",
@@ -1988,7 +1988,7 @@ An example of a successful response:
                 "Flags": 2228224,
                 "HighLimit": {
                     "currency": "CNY",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "3"
                 },
                 "HighNode": "0000000000000000",
@@ -2019,7 +2019,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "DYM",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "3"
                 },
                 "LowNode": "0000000000000000",
@@ -2036,7 +2036,7 @@ An example of a successful response:
                 "Flags": 131072,
                 "HighLimit": {
                     "currency": "CHF",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -2060,7 +2060,7 @@ An example of a successful response:
                 "Flags": 131072,
                 "HighLimit": {
                     "currency": "BTC",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "3"
                 },
                 "HighNode": "0000000000000000",
@@ -2084,7 +2084,7 @@ An example of a successful response:
                 "Flags": 131072,
                 "HighLimit": {
                     "currency": "USD",
-                    "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "5000"
                 },
                 "HighNode": "0000000000000000",
@@ -2151,7 +2151,7 @@ An example of the request format:
 {
   "id": 2,
   "command": "account_tx",
-  "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger_index_min": -1,
   "ledger_index_max": -1,
   "binary": false,
@@ -2167,7 +2167,7 @@ An example of the request format:
     "method": "account_tx",
     "params": [
         {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "binary": false,
             "forward": false,
             "ledger_index_max": -1,
@@ -2182,7 +2182,7 @@ An example of the request format:
 
 ```
 #Syntax account_tx account ledger_index_min ledger_index_max [offset] [limit] [binary] [count] [forward]
-casinocoind -- account_tx r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59 -1 -1 2 5 1 0 1
+casinocoind -- account_tx cDarPNJEpCnpBZSfmcquydockkePkjPGA2 -1 -1 2 5 1 0 1
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -2229,7 +2229,7 @@ An example of a successful response:
     "status": "success",
     "type": "response",
     "result": {
-        "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "ledger_index_max": 6542489,
         "ledger_index_min": 32570,
         "limit": 2,
@@ -2240,7 +2240,7 @@ An example of a successful response:
                         {
                             "ModifiedNode": {
                                 "FinalFields": {
-                                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                     "Balance": "9999999980",
                                     "Flags": 0,
                                     "OwnerCount": 2,
@@ -2270,7 +2270,7 @@ An example of a successful response:
                                     "Flags": 131072,
                                     "HighLimit": {
                                         "currency": "USD",
-                                        "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                        "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                         "value": "100"
                                     },
                                     "LowLimit": {
@@ -2327,7 +2327,7 @@ An example of a successful response:
                     "TransactionResult": "tesSUCCESS"
                 },
                 "tx": {
-                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "Fee": "10",
                     "Flags": 0,
                     "LimitAmount": {
@@ -2352,7 +2352,7 @@ An example of a successful response:
                         {
                             "ModifiedNode": {
                                 "FinalFields": {
-                                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                     "Balance": "9999999970",
                                     "Flags": 0,
                                     "OwnerCount": 3,
@@ -2401,7 +2401,7 @@ An example of a successful response:
                                     "Flags": 131072,
                                     "HighLimit": {
                                         "currency": "USD",
-                                        "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                        "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                         "value": "100"
                                     },
                                     "LowLimit": {
@@ -2432,7 +2432,7 @@ An example of a successful response:
                     "TransactionResult": "tesSUCCESS"
                 },
                 "tx": {
-                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "Fee": "10",
                     "Flags": 0,
                     "LimitAmount": {
@@ -2463,7 +2463,7 @@ An example of a successful response:
 200 OK
 {
     "result": {
-        "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "ledger_index_max": 8696227,
         "ledger_index_min": 32570,
         "limit": 2,
@@ -2475,7 +2475,7 @@ An example of a successful response:
                         {
                             "ModifiedNode": {
                                 "FinalFields": {
-                                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                     "Balance": "9999999980",
                                     "Flags": 0,
                                     "OwnerCount": 2,
@@ -2505,7 +2505,7 @@ An example of a successful response:
                                     "Flags": 131072,
                                     "HighLimit": {
                                         "currency": "USD",
-                                        "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                        "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                         "value": "100"
                                     },
                                     "LowLimit": {
@@ -2562,7 +2562,7 @@ An example of a successful response:
                     "TransactionResult": "tesSUCCESS"
                 },
                 "tx": {
-                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "Fee": "10",
                     "Flags": 0,
                     "LimitAmount": {
@@ -2587,7 +2587,7 @@ An example of a successful response:
                         {
                             "ModifiedNode": {
                                 "FinalFields": {
-                                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                     "Balance": "9999999970",
                                     "Flags": 0,
                                     "OwnerCount": 3,
@@ -2636,7 +2636,7 @@ An example of a successful response:
                                     "Flags": 131072,
                                     "HighLimit": {
                                         "currency": "USD",
-                                        "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                        "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                         "value": "100"
                                     },
                                     "LowLimit": {
@@ -2667,7 +2667,7 @@ An example of a successful response:
                     "TransactionResult": "tesSUCCESS"
                 },
                 "tx": {
-                    "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "Fee": "10",
                     "Flags": 0,
                     "LimitAmount": {
@@ -2743,7 +2743,7 @@ An example of the request format:
 {
     "id": 0,
     "command": "nocasinocoin_check",
-    "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "role": "gateway",
     "ledger_index": "current",
     "limit": 2,
@@ -2758,7 +2758,7 @@ An example of the request format:
     "method": "nocasinocoin_check",
     "params": [
         {
-            "account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger_index": "current",
             "limit": 2,
             "role": "gateway",
@@ -2805,14 +2805,14 @@ An example of a successful response:
     ],
     "transactions": [
       {
-        "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "Fee": 10000,
         "Sequence": 1406,
         "SetFlag": 8,
         "TransactionType": "AccountSet"
       },
       {
-        "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "Fee": 10000,
         "Flags": 262144,
         "LimitAmount": {
@@ -2824,7 +2824,7 @@ An example of a successful response:
         "TransactionType": "TrustSet"
       },
       {
-        "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "Fee": 10000,
         "Flags": 262144,
         "LimitAmount": {
@@ -2856,14 +2856,14 @@ An example of a successful response:
         "status": "success",
         "transactions": [
             {
-                "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Fee": 10000,
                 "Sequence": 1406,
                 "SetFlag": 8,
                 "TransactionType": "AccountSet"
             },
             {
-                "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Fee": 10000,
                 "Flags": 262144,
                 "LimitAmount": {
@@ -2875,7 +2875,7 @@ An example of a successful response:
                 "TransactionType": "TrustSet"
             },
             {
-                "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Fee": 10000,
                 "Flags": 262144,
                 "LimitAmount": {
@@ -3974,7 +3974,7 @@ An example of the request format:
   "id": 3,
   "command": "ledger_entry",
   "type": "account_root",
-  "account_root": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "account_root": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger_index": "validated"
 }
 ```
@@ -3986,7 +3986,7 @@ An example of the request format:
     "method": "ledger_entry",
     "params": [
         {
-            "account_root": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "account_root": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger_index": "validated",
             "type": "account_root"
         }
@@ -4044,7 +4044,7 @@ An example of a successful response:
         "index": "4F83A2CF7E70F77F79A307E6A472BFC2585B806A70833CCD1C26105BAE0D6E05",
         "ledger_index": 6889347,
         "node": {
-            "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Balance": "27389517749",
             "Flags": 0,
             "LedgerEntryType": "AccountRoot",
@@ -4069,7 +4069,7 @@ An example of a successful response:
         "index": "4F83A2CF7E70F77F79A307E6A472BFC2585B806A70833CCD1C26105BAE0D6E05",
         "ledger_index": 8696234,
         "node": {
-            "Account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Balance": "13176802787",
             "Flags": 0,
             "LedgerEntryType": "AccountRoot",
@@ -4418,10 +4418,10 @@ An example of a successful response:
         "Account": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
         "Amount": {
             "currency": "USD",
-            "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "value": "1"
         },
-        "Destination": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "Fee": "10",
         "Flags": 0,
         "Paths": [
@@ -4502,7 +4502,7 @@ An example of a successful response:
                             "Flags": 131072,
                             "HighLimit": {
                                 "currency": "USD",
-                                "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                 "value": "100"
                             },
                             "HighNode": "0000000000000000",
@@ -4660,7 +4660,7 @@ An example of a successful response:
                             "Flags": 131072,
                             "HighLimit": {
                                 "currency": "USD",
-                                "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                                "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                 "value": "100"
                             },
                             "HighNode": "0000000000000000",
@@ -4692,10 +4692,10 @@ An example of a successful response:
             "Account": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
             "Amount": {
                 "currency": "USD",
-                "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+                "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "value": "1"
             },
-            "Destination": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Fee": "10",
             "Flags": 0,
             "Paths": [
@@ -5707,8 +5707,8 @@ An example of the request format:
     "id": 8,
     "command": "path_find",
     "subcommand": "create",
-    "source_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
-    "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
+    "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "destination_amount": {
         "value": "0.001",
         "currency": "USD",
@@ -5865,7 +5865,7 @@ An example of a successful response:
         ],
         "source_amount": {
           "currency": "BTC",
-          "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+          "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
           "value": "0.000001541291269274307"
         }
       },
@@ -5892,7 +5892,7 @@ An example of a successful response:
         ],
         "source_amount": {
           "currency": "CHF",
-          "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+          "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
           "value": "0.0009211546262510451"
         }
       },
@@ -5937,7 +5937,7 @@ An example of a successful response:
         ],
         "source_amount": {
           "currency": "CNY",
-          "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+          "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
           "value": "0.006293562"
         }
       },
@@ -6000,7 +6000,7 @@ An example of a successful response:
         ],
         "source_amount": {
           "currency": "DYM",
-          "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+          "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
           "value": "0.0007157142857142858"
         }
       },
@@ -6063,7 +6063,7 @@ An example of a successful response:
         ],
         "source_amount": {
           "currency": "EUR",
-          "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+          "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
           "value": "0.0007409623616236163"
         }
       },
@@ -6090,19 +6090,19 @@ An example of a successful response:
         ],
         "source_amount": {
           "currency": "JPY",
-          "issuer": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+          "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
           "value": "0.103412412"
         }
       }
     ],
-    "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "destination_amount": {
       "currency": "USD",
       "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
       "value": "0.001"
     },
     "id": 1,
-    "source_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "full_reply": false
   }
 }
@@ -6153,13 +6153,13 @@ Here is an example of an asychronous follow-up from a path_find create request:
     "alternatives": [
         /* paths omitted from this example; same format as the initial response */
     ],
-    "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "destination_amount": {
         "currency": "USD",
         "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
         "value": "0.001"
     },
-    "source_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59"
+    "source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
 }
 ```
 
@@ -6276,7 +6276,7 @@ An example of the request format:
 {
     "id": 8,
     "command": "casinocoin_path_find",
-    "source_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "source_currencies": [
         {
             "currency": "CSC"
@@ -6285,7 +6285,7 @@ An example of the request format:
             "currency": "USD"
         }
     ],
-    "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+    "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "destination_amount": {
         "value": "0.001",
         "currency": "USD",
@@ -6301,13 +6301,13 @@ An example of the request format:
     "method": "casinocoin_path_find",
     "params": [
         {
-            "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "destination_amount": {
                 "currency": "USD",
                 "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                 "value": "0.001"
             },
-            "source_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "source_currencies": [
                 {
                     "currency": "CSC"
@@ -6325,7 +6325,7 @@ An example of the request format:
 
 ```
 #Syntax casinocoin_path_find json ledger_index|ledger_hash
-casinocoind casinocoin_path_find '{"source_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59", "source_currencies": [ { "currency": "CSC" }, { "currency": "USD" } ], "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59", "destination_amount": { "value": "0.001", "currency": "USD", "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B" } }'
+casinocoind casinocoin_path_find '{"source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "source_currencies": [ { "currency": "CSC" }, { "currency": "USD" } ], "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "destination_amount": { "value": "0.001", "currency": "USD", "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B" } }'
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -6443,7 +6443,7 @@ An example of a successful response:
                 "source_amount": "256987"
             }
         ],
-        "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "destination_currencies": [
             "015841551A748AD2C1F76FF6ECB0CCCD00000000",
             "JOE",
@@ -6550,7 +6550,7 @@ An example of a successful response:
                 "source_amount": "207414"
             }
         ],
-        "destination_account": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+        "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "destination_currencies": [
             "USD",
             "JOE",
@@ -7604,7 +7604,7 @@ An example of the request format:
 {
   "id": 4,
   "command": "book_offers",
-  "taker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+  "taker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "taker_gets": {
     "currency": "CSC"
   },
@@ -7623,7 +7623,7 @@ An example of the request format:
     "method": "book_offers",
     "params": [
         {
-            "taker": "r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59",
+            "taker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "taker_gets": {
                 "currency": "CSC"
             },
