@@ -1,7 +1,7 @@
 //---------- List of requests ------------------------//
 // Must be loaded after apitool-rest.js //
 //var DOC_BASE = "reference-rippled.html";
-//var URL_BASE = "https://s2.ripple.com:51234";
+//var URL_BASE = "https://ws01.casinocoin.org:51234";
 
 var DEFAULT_ADDRESS_1 = "cDarPNJEpCnpBZSfmcquydockkePkjPGA2";
 var KRW_TRADER_ADDRESS = "csyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw";

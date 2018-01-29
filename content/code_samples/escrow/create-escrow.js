@@ -29,7 +29,7 @@ const myInstructions = {
 }
 
 // Connect and submit
-const api = new CasinocoinAPI({server: 'wss://s2.ripple.com'})
+const api = new CasinocoinAPI({server: 'wss://ws01.casinocoin.org', port: 4443})
 
 function submitTransaction(lastClosedLedgerVersion, prepared, secret) {
   const signedData = api.sign(prepared.txJSON, secret)

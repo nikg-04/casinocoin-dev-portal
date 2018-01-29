@@ -57,7 +57,7 @@ Currently CasinoCoin (the company) maintains a set of public WebSocket servers a
 | `Domain`        | Port | Notes                                 |
 |:----------------|:-----|:--------------------------------------|
 | `ws01.casinocoin.org` | 443  | `wss://` only; general purpose server |
-| `s2.ripple.com` | 443  | `wss://` only; full-history server    |
+| `ws01.casinocoin.org` | 443  | `wss://` only; full-history server    |
 
 These public servers are not for sustained or business use, and they may become unavailable at any time. For regular use, you should run your own `casinocoind` server or contract someone you trust to do so.
 
@@ -88,7 +88,7 @@ Currently, CasinoCoin (the company) maintains a set of public JSON-RPC servers a
 | `Domain`        | Port  | Notes                  |
 |:----------------|:------|:-----------------------|
 | `ws01.casinocoin.org` | 51234 | General purpose server |
-| `s2.ripple.com` | 51234 | Full-history server    |
+| `ws01.casinocoin.org` | 51234 | Full-history server    |
 
 These public servers are not for sustained or business use, and they may become unavailable at any time. For regular use, you should run your own `casinocoind` server or contract someone you trust to do so.
 
@@ -4146,7 +4146,7 @@ You must provide either `ledger_index` or `ledger_hash` but not both.
 
 The response follows the [standard format](#response-formatting). However, the request returns a failure response if it does not have the specified ledger _even if it successfully instructed the `casinocoind` server to start retrieving the ledger_.
 
-**Note:** To retrieve a ledger, the casinocoind server must have a direct peer with that ledger in its history. If none of the peers have the requested ledger, you can use the [`connect` command](#connect) or the `fixed_ips` section of the config file to add CasinoCoin's full-history server at `s2.ripple.com` and then make the `ledger_request` request again.
+**Note:** To retrieve a ledger, the casinocoind server must have a direct peer with that ledger in its history. If none of the peers have the requested ledger, you can use the [`connect` command](#connect) or the `fixed_ips` section of the config file to add CasinoCoin's full-history server at `ws01.casinocoin.org` and then make the `ledger_request` request again.
 
 A failure response indicates the status of fetching the ledger. A successful response contains the information for the ledger in a similar format to the [`ledger` command](#ledger).
 
