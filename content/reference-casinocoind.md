@@ -56,7 +56,7 @@ Currently CasinoCoin (the company) maintains a set of public WebSocket servers a
 
 | `Domain`        | Port | Notes                                 |
 |:----------------|:-----|:--------------------------------------|
-| `s1.ripple.com` | 443  | `wss://` only; general purpose server |
+| `ws01.casinocoin.org` | 443  | `wss://` only; general purpose server |
 | `s2.ripple.com` | 443  | `wss://` only; full-history server    |
 
 These public servers are not for sustained or business use, and they may become unavailable at any time. For regular use, you should run your own `casinocoind` server or contract someone you trust to do so.
@@ -87,7 +87,7 @@ Currently, CasinoCoin (the company) maintains a set of public JSON-RPC servers a
 
 | `Domain`        | Port  | Notes                  |
 |:----------------|:------|:-----------------------|
-| `s1.ripple.com` | 51234 | General purpose server |
+| `ws01.casinocoin.org` | 51234 | General purpose server |
 | `s2.ripple.com` | 51234 | Full-history server    |
 
 These public servers are not for sustained or business use, and they may become unavailable at any time. For regular use, you should run your own `casinocoind` server or contract someone you trust to do so.
@@ -127,7 +127,7 @@ The commandline puts the command after any normal (dash-prefaced) commandline op
 *JSON-RPC*
 
 ```
-POST http://s1.ripple.com:51234/
+POST http://ws01.casinocoin.org:51234/
 {
     "method": "account_info",
     "params": [
@@ -772,7 +772,7 @@ An example of the request format:
   "id": 1,
   "command": "account_channels",
   "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
-  "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+  "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger_index": "validated"
 }
 ```
@@ -784,7 +784,7 @@ An example of the request format:
     "method": "account_channels",
     "params": [{
         "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
-        "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+        "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "ledger_index": "validated"
     }]
 }
@@ -794,7 +794,7 @@ An example of the request format:
 
 ```bash
 #Syntax: account_channels <account> [<destination_account>] [<ledger>]
-casinocoind account_channels rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn validated
+casinocoind account_channels rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH cDarPNJEpCnpBZSfmcquydockkePkjPGA2 validated
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -831,7 +831,7 @@ An example of a successful response:
         "amount": "100000000",
         "balance": "1000000",
         "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
-        "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+        "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "destination_tag": 20170428,
         "expiration": 547073182,
         "public_key": "aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3",
@@ -856,7 +856,7 @@ An example of a successful response:
             "amount": "100000000",
             "balance": "0",
             "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
-            "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "destination_tag": 20170428,
             "public_key": "aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3",
             "public_key_hex": "023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6",
@@ -880,7 +880,7 @@ An example of a successful response:
             "amount": "100000000",
             "balance": "0",
             "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
-            "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "destination_tag": 20170428,
             "public_key": "aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3",
             "public_key_hex": "023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6",
@@ -6621,12 +6621,12 @@ An example of the request format:
   "command": "sign",
   "tx_json" : {
       "TransactionType" : "Payment",
-      "Account" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "Amount" : {
          "currency" : "USD",
          "value" : "1",
-         "issuer" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"
+         "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
       }
    },
    "secret" : "s████████████████████████████",
@@ -6645,10 +6645,10 @@ An example of the request format:
             "offline": false,
             "secret": "s████████████████████████████",
             "tx_json": {
-                "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Amount": {
                     "currency": "USD",
-                    "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1"
                 },
                 "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -6664,7 +6664,7 @@ An example of the request format:
 
 ```
 #Syntax: sign secret tx_json [offline]
-casinocoind sign s████████████████████████████ '{"TransactionType": "Payment", "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn", "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX", "Amount": { "currency": "USD", "value": "1", "issuer" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn" }, "Sequence": 360, "Fee": "10000"}' offline
+casinocoind sign s████████████████████████████ '{"TransactionType": "Payment", "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX", "Amount": { "currency": "USD", "value": "1", "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2" }, "Sequence": 360, "Fee": "10000"}' offline
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -6719,10 +6719,10 @@ An example of a successful response:
   "result": {
     "tx_blob": "1200002280000000240000016861D4838D7EA4C6800000000000000000000000000055534400000000004B4E9C06F24296074F7BC48F92A97916C6DC5EA9684000000000002710732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB7446304402200E5C2DD81FDF0BE9AB2A8D797885ED49E804DBF28E806604D878756410CA98B102203349581946B0DDA06B36B35DBC20EDA27552C1F167BCF5C6ECFF49C6A46F858081144B4E9C06F24296074F7BC48F92A97916C6DC5EA983143E9D4A2B8AA0780F682D136F7A56D6724EF53754",
     "tx_json": {
-      "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "Amount": {
         "currency": "USD",
-        "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+        "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "value": "1"
       },
       "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -6747,10 +6747,10 @@ An example of a successful response:
         "status": "success",
         "tx_blob": "1200002280000000240000016861D4838D7EA4C6800000000000000000000000000055534400000000004B4E9C06F24296074F7BC48F92A97916C6DC5EA9684000000000002710732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB7446304402200E5C2DD81FDF0BE9AB2A8D797885ED49E804DBF28E806604D878756410CA98B102203349581946B0DDA06B36B35DBC20EDA27552C1F167BCF5C6ECFF49C6A46F858081144B4E9C06F24296074F7BC48F92A97916C6DC5EA983143E9D4A2B8AA0780F682D136F7A56D6724EF53754",
         "tx_json": {
-            "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Amount": {
                 "currency": "USD",
-                "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "value": "1"
             },
             "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -6776,10 +6776,10 @@ Connecting to 127.0.0.1:5005
       "status" : "success",
       "tx_blob" : "1200002280000000240000016861D4838D7EA4C6800000000000000000000000000055534400000000004B4E9C06F24296074F7BC48F92A97916C6DC5EA9684000000000002710732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB7447304502210094D24C795CFFA8E46FE338AF63421DA5CE5E171ED56F8E4CE70FFABA15D3CFA2022063994C52BF0393C8157EBFFCDE6A7E7EDC7B16A462CA53214F64CC8FCBB5E54A81144B4E9C06F24296074F7BC48F92A97916C6DC5EA983143E9D4A2B8AA0780F682D136F7A56D6724EF53754",
       "tx_json" : {
-         "Account" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+         "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
          "Amount" : {
             "currency" : "USD",
-            "issuer" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "value" : "1"
          },
          "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -7151,12 +7151,12 @@ An example of the request format:
   "command": "submit",
   "tx_json" : {
       "TransactionType" : "Payment",
-      "Account" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "Amount" : {
          "currency" : "USD",
          "value" : "1",
-         "issuer" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"
+         "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
       }
    },
    "secret" : "s████████████████████████████",
@@ -7175,10 +7175,10 @@ An example of the request format:
             "offline": false,
             "secret": "s████████████████████████████",
             "tx_json": {
-                "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Amount": {
                     "currency": "USD",
-                    "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1"
                 },
                 "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -7194,7 +7194,7 @@ An example of the request format:
 
 ```
 #Syntax: submit secret json [offline]
-casinocoind submit s████████████████████████████ '{"Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn", "Amount": { "currency": "USD", "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn", "value": "1" }, "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX", "TransactionType": "Payment", "Fee": "10000"}'
+casinocoind submit s████████████████████████████ '{"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "Amount": { "currency": "USD", "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "value": "1" }, "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX", "TransactionType": "Payment", "Fee": "10000"}'
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -7220,10 +7220,10 @@ An example of a successful response:
     "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
     "tx_blob": "1200002280000000240000016861D4838D7EA4C6800000000000000000000000000055534400000000004B4E9C06F24296074F7BC48F92A97916C6DC5EA9684000000000002710732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB7446304402200E5C2DD81FDF0BE9AB2A8D797885ED49E804DBF28E806604D878756410CA98B102203349581946B0DDA06B36B35DBC20EDA27552C1F167BCF5C6ECFF49C6A46F858081144B4E9C06F24296074F7BC48F92A97916C6DC5EA983143E9D4A2B8AA0780F682D136F7A56D6724EF53754",
     "tx_json": {
-      "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "Amount": {
         "currency": "USD",
-        "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+        "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "value": "1"
       },
       "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -7250,10 +7250,10 @@ An example of a successful response:
         "status": "success",
         "tx_blob": "1200002280000000240000016961D4838D7EA4C6800000000000000000000000000055534400000000004B4E9C06F24296074F7BC48F92A97916C6DC5EA9684000000000002710732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB74473045022100A7CCD11455E47547FF617D5BFC15D120D9053DFD0536B044F10CA3631CD609E502203B61DEE4AC027C5743A1B56AF568D1E2B8E79BB9E9E14744AC87F38375C3C2F181144B4E9C06F24296074F7BC48F92A97916C6DC5EA983143E9D4A2B8AA0780F682D136F7A56D6724EF53754",
         "tx_json": {
-            "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Amount": {
                 "currency": "USD",
-                "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "value": "1"
             },
             "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -7282,10 +7282,10 @@ Connecting to 127.0.0.1:5005
       "status" : "success",
       "tx_blob" : "1200002280000000240000016A61D4838D7EA4C6800000000000000000000000000055534400000000004B4E9C06F24296074F7BC48F92A97916C6DC5EA9684000000000002710732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB74473045022100FBBF74057359EC31C3647AD3B33D8954730E9879C35034374858A76B7CFA643102200EAA08C61071396E9CF0987FBEA16CF113CBD8068AA221214D165F151285EECD81144B4E9C06F24296074F7BC48F92A97916C6DC5EA983143E9D4A2B8AA0780F682D136F7A56D6724EF53754",
       "tx_json" : {
-         "Account" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+         "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
          "Amount" : {
             "currency" : "USD",
-            "issuer" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "value" : "1"
          },
          "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -12119,13 +12119,13 @@ Request:
 *HTTP*
 
 ```
-GET https://s1.ripple.com:51235/crawl
+GET https://ws01.casinocoin.org:51235/crawl
 ```
 
 *cURL*
 
 ```
-curl -k https://s1.ripple.com:51235/crawl
+curl -k https://ws01.casinocoin.org:51235/crawl
 ```
 
 <!-- MULTICODE_BLOCK_END -->

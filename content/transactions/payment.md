@@ -10,12 +10,12 @@ Example payment:
 ```
 {
   "TransactionType" : "Payment",
-  "Account" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+  "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
   "Amount" : {
      "currency" : "USD",
      "value" : "1",
-     "issuer" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"
+     "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
   },
   "Fee": "12",
   "Flags": 2147483648,

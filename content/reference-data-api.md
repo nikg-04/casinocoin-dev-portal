@@ -3559,7 +3559,7 @@ If the request uses the `interval` query parameter, the response has an array of
 Request:
 
 ```
-GET /v1/accounts?parent=cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn
+GET /v1/accounts?parent=cDarPNJEpCnpBZSfmcquydockkePkjPGA2
 ```
 
 Response:
@@ -3575,7 +3575,7 @@ Response:
       "account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
       "executed_time": "2015-02-09T23:31:40+00:00",
       "ledger_index": 11620700,
-      "parent": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "parent": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "tx_hash": "1D381C0FCA00E8C34A6D4D3A91DAC9F3697B4E66BC49ED3D9B2D6F57D7F15E2E"
     },
     {
@@ -3583,7 +3583,7 @@ Response:
       "account": "rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
       "executed_time": "2015-06-16T21:15:40+00:00",
       "ledger_index": 14090928,
-      "parent": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "parent": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "tx_hash": "60B614622FC67DFCA8D796D7F6AF0B7AEC5E59BB268EA032F810395407DDF8D5"
     },
     {
@@ -3591,7 +3591,7 @@ Response:
       "account": "rLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
       "executed_time": "2015-09-23T23:05:20+00:00",
       "ledger_index": 16061430,
-      "parent": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "parent": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "tx_hash": "FAE331A6D5CB83BCE832E7EBEDBD807EDEFFAF39AB241683EE81A0326A1A6748"
     }
   ]
@@ -3639,7 +3639,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn
+GET /v2/accounts/cDarPNJEpCnpBZSfmcquydockkePkjPGA2
 ```
 
 Response:
@@ -3649,7 +3649,7 @@ Response:
 {
     "result": "success",
     "account": {
-        "address": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+        "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "parent": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
         "initial_balance": "100.0",
         "inception": "2014-05-29T17:05:20+00:00",
@@ -3713,7 +3713,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn/balances?currency=USD&date=2015-01-01T00:00:00Z&limit=3
+GET /v2/accounts/cDarPNJEpCnpBZSfmcquydockkePkjPGA2/balances?currency=USD&date=2015-01-01T00:00:00Z&limit=3
 ```
 
 Response:
@@ -3932,7 +3932,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn/transactions?type=Payment&result=tesSUCCESS&limit=1
+GET /v2/accounts/cDarPNJEpCnpBZSfmcquydockkePkjPGA2/transactions?type=Payment&result=tesSUCCESS&limit=1
 ```
 
 Response:
@@ -3942,7 +3942,7 @@ Response:
 {
   "result": "success",
   "count": 1,
-  "marker": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn|20140602224750|000006979192|00001",
+  "marker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2|20140602224750|000006979192|00001",
   "transactions": [
     {
       "hash": "074415C5DC6DB0029E815EA6FC2629FBC29A2C9D479F5D040AFF94ED58ECC820",
@@ -3958,7 +3958,7 @@ Response:
         "SigningPubKey": "032ECFCC409F02057D8556988B89E17D48ECFC8373965036C6BA294AA2B7972971",
         "TxnSignature": "30450221008D8E251DA5EA17A29CC9192717860F3B4047E74DF005127A65D9140CAE870C0902201C8E4548D2D3BA11B3E13CE8A167EBC076920E2B1C38547275CAA75FEC436EB9",
         "Account": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
-        "Destination": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"
+        "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
       },
       "meta": {
         "TransactionIndex": 1,
@@ -3970,7 +3970,7 @@ Response:
               "NewFields": {
                 "Sequence": 1,
                 "Balance": "100000000",
-                "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
               }
             }
           },
@@ -4052,7 +4052,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn/transactions/10?binary=true
+GET /v2/accounts/cDarPNJEpCnpBZSfmcquydockkePkjPGA2/transactions/10?binary=true
 ```
 
 Response:
@@ -4132,7 +4132,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn/payments?currency=USD&limit=1
+GET /v2/accounts/cDarPNJEpCnpBZSfmcquydockkePkjPGA2/payments?currency=USD&limit=1
 ```
 
 Response:
@@ -4142,14 +4142,14 @@ Response:
 {
   "result": "success",
   "count": 1,
-  "marker": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn|20140604191650|000007013674|00000",
+  "marker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2|20140604191650|000007013674|00000",
   "payments": [
     {
       "amount": "1.0",
       "delivered_amount": "1.0",
       "destination_balance_changes": [
         {
-          "counterparty": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+          "counterparty": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
           "currency": "USD",
           "value": "1"
         }
@@ -4165,9 +4165,9 @@ Response:
       "currency": "USD",
       "destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "executed_time": "2014-06-02T22:47:50Z",
-      "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "ledger_index": 6979192,
-      "source": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "source": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "source_currency": "USD",
       "tx_hash": "7BF105CFE4EFE78ADB63FE4E03A851440551FE189FD4B51CAAD9279C9F534F0E",
       "transaction_cost": "1.0E-5"
@@ -4354,7 +4354,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn/balance_changes?descending=true&limit=3
+GET /v2/accounts/cDarPNJEpCnpBZSfmcquydockkePkjPGA2/balance_changes?descending=true&limit=3
 ```
 
 Response:
@@ -4364,7 +4364,7 @@ Response:
 {
   "result": "success",
   "count": 3,
-  "marker": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn|20160122235211|000018425487|00010|00001",
+  "marker": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2|20160122235211|000018425487|00010|00001",
   "balance_changes": [
     {
       "amount_change": "-0.012",

@@ -9,7 +9,7 @@ Example SignerListSet:
 {
     "Flags": 0,
     "TransactionType": "SignerListSet",
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Fee": "12",
     "SignerQuorum": 3,
     "SignerEntries": [

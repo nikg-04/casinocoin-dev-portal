@@ -23,7 +23,7 @@ The example addresses used in this tutorial are:
 | **Payer's address** | rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH |
 | **Public key used for channel (in base58)** | aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3
 | **Public key used for channel (in hex)** | 023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6 |
-| **Payee's address** | cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn |
+| **Payee's address** | cDarPNJEpCnpBZSfmcquydockkePkjPGA2 |
 
 **Tip:** In this example, the channel's public key is the public key from the payer's master key pair. This is perfectly safe and valid. It is also perfectly safe and valid to use a different key pair, as long as only the payer knows the public and secret keys for that key pair. <!-- Editor's note: We don't have a good page to link to explain key pairs as of time of this writing. -->
 
@@ -76,7 +76,7 @@ Request:
                 "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                 "TransactionType": "PaymentChannelCreate",
                 "Amount": "100000000",
-                "Destination": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "SettleDelay": 86400,
                 "PublicKey": "023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6",
                 "DestinationTag": 20170428
@@ -126,7 +126,7 @@ Response:
         "result": {
             "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "Amount": "100000000",
-            "Destination": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             ...
             "TransactionType": "PaymentChannelCreate",
             ...
@@ -143,7 +143,7 @@ Response:
                             "NewFields": {
                                 "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                                 "Amount": "100000000",
-                                "Destination": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                                "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                 "DestinationTag": 20170428,
                                 "PublicKey": "023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6",
                                 "SettleDelay": 86400
@@ -181,7 +181,7 @@ Request:
         "method": "account_channels",
         "params": [{
             "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
-            "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger_index": "validated"
         }]
     }
@@ -198,7 +198,7 @@ Response:
                 "amount": "100000000",
                 "balance": "0",
                 "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
-                "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "destination_tag": 20170428,
                 "public_key": "aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3",
                 "public_key_hex": "023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6",
@@ -308,7 +308,7 @@ Request:
         "method": "account_channels",
         "params": [{
             "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
-            "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger_index": "validated"
         }]
     }
@@ -325,7 +325,7 @@ Response:
                 "amount": "100000000",
                 "balance": "0",
                 "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
-                "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "destination_tag": 20170428,
                 "public_key": "aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3",
                 "public_key_hex": "023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6",
@@ -387,7 +387,7 @@ Request:
         "params": [{
                 "secret": "s████████████████████████████",
                 "tx_json": {
-                    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "TransactionType": "PaymentChannelClaim",
                     "Amount": "1000000",
                     "Balance": "1000000",
@@ -411,7 +411,7 @@ Response:
             "status": "success",
             "tx_blob": "12000F2280000000240000017450165DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB36140000000000F42406240000000000F424068400000000000000A7121023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB7447304502210096B933BC24DA77D8C4057B4780B282BA66C668DFE1ACF4EEC063AD6661725797022037C8823669CE91AACA8CC754C9F041359F85B0B32384AEA141EBC3603798A24C7646304402204EF0AFB78AC23ED1C472E74F4299C0C21F1B21D07EFC0A3838A420F76D783A400220154FB11B6F54320666E4C36CA7F686C16A3A0456800BBC43746F34AF5029006481144B4E9C06F24296074F7BC48F92A97916C6DC5EA9",
             "tx_json": {
-                "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Amount": "1000000",
                 "Balance": "1000000",
                 "Channel": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
@@ -469,7 +469,7 @@ Example `account_channels` response:
                     "amount": "100000000",
                     "balance": "1000000",
                     "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
-                    "destination_account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                    "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "destination_tag": 20170428,
                     "expiration": 547073182,
                     "public_key": "aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3",
@@ -543,7 +543,7 @@ Example response from using the [`tx` command](reference-casinocoind.html#tx) to
                                 "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                                 "Amount": "100000000",
                                 "Balance": "1000000",
-                                "Destination": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                                "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                 "DestinationTag": 20170428,
                                 "Expiration": 547073182,
                                 "Flags": 0,

@@ -411,7 +411,7 @@ POST http://localhost:8088/
         {
             "secret": "sn3nxiW7v8KXzPzAqzyHXbSSKNuN9",
             "tx_json": {
-                "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Fee": "15000",
                 "Flags": 0,
                 "SetFlag": 8,
@@ -435,7 +435,7 @@ Response:
         "status": "success",
         "tx_blob": "1200032200000000240000003E202100000008684000000000003A98732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB74473045022100D8F2DEF27DE313E3F0D1E189BF5AC8879F591045950E2A33787C3051169038C80220728A548F188F882EA40A416CCAF2AC52F3ED679563BBE1BAC014BB9E773A333581144B4E9C06F24296074F7BC48F92A97916C6DC5EA9",
         "tx_json": {
-            "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "Fee": "15000",
             "Flags": 0,
             "Sequence": 62,
@@ -483,7 +483,7 @@ POST http://localhost:8088/
         {
             "secret": "sn3nxiW7v8KXzPzAqzyHXbSSKNuN9",
             "tx_json": {
-                "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Fee": "10000",
                 "Flags": 0,
                 "SetFlag": 3,
@@ -507,7 +507,7 @@ Response:
 		"status": "success",
 		"tx_blob": "12000322000000002400000164202100000003684000000000002710732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB74473045022100C2E38177E92C3998EB2C22978595784BC4CABCF7D57DE71FCF6CF162FB683A1D02205942D42C440D860B4CF7BB0DF77E4F2C529695854835B2F76DC2D09644FCBB2D81144B4E9C06F24296074F7BC48F92A97916C6DC5EA9",
 		"tx_json": {
-			"Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+			"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
 			"Fee": "10000",
 			"Flags": 0,
 			"Sequence": 356,
@@ -541,7 +541,7 @@ Content-Type: application/json
         {
             "secret": "sn3nxiW7v8KXzPzAqzyHXbSSKNuN9",
             "tx_json": {
-                "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "Fee": "15000",
                 "Flags": 0,
                 "SetFlag": 1,
@@ -566,7 +566,7 @@ Response:
 		"status": "success",
 		"tx_blob": "12000322000000002400000161202100000003684000000000003A98732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB74473045022100CD9A87890ADFAC49B8F69EDEC4A0DB99C86667883D7579289B06DAA4B81BF87E02207AC3FEEA518060AB2B538D330614D2594F432901F7C011D7EB92F74383E5340F81144B4E9C06F24296074F7BC48F92A97916C6DC5EA9",
 		"tx_json": {
-			"Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+			"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
 			"Fee": "15000",
 			"Flags": 0,
 			"Sequence": 353,
@@ -623,7 +623,7 @@ If you are using the [Authorized Accounts](#authorized-accounts) feature, custom
 
 To authorize an accounting relationship, submit a TrustSet transaction from your issuing address, with the user to trust as the `issuer` of the `LimitAmount`. Leave the `value` (the amount to trust them for) as **0**, and enable the [tfSetfAuth](reference-transaction-format.html#trustset-flags) flag for the transaction.
 
-The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a TrustSet transaction authorizing the customer address cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn to hold issuances of USD from the issuing address rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW:
+The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a TrustSet transaction authorizing the customer address cDarPNJEpCnpBZSfmcquydockkePkjPGA2 to hold issuances of USD from the issuing address rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW:
 
 Request:
 
@@ -640,7 +640,7 @@ POST http://localhost:8088/
                 "TransactionType": "TrustSet",
                 "LimitAmount": {
                     "currency": "USD",
-                    "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                    "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": 0
                 },
                 "Flags": 65536
@@ -742,7 +742,7 @@ When you build an automated system to send payments into the CSC Ledger for your
 
 One common pitfall is performing pathfinding before sending sending a payment to customers in the CSC Ledger. If you specify the issuers correctly, the [default paths](concept-paths.html#default-paths) can deliver the currency as intended.
 
-The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a payment from the operational address cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn to the customer address raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n, sending and delivering funds issued by the issuing address rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW.
+The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a payment from the operational address cDarPNJEpCnpBZSfmcquydockkePkjPGA2 to the customer address raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n, sending and delivering funds issued by the issuing address rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW.
 
 Request:
 
@@ -753,7 +753,7 @@ Request:
 		"secret": "sn3nxiW7v8KXzPzAqzyHXbSSKNuN9",
 		"tx_json": {
 			"TransactionType": "Payment",
-			"Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+			"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
 			"Destination": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
 			"Amount": {
 				"currency": "USD",
@@ -784,7 +784,7 @@ Response:
 		"status": "success",
 		"tx_blob": "1200002280000000240000016561D4449E57D63540000000000000000000000000005553440000000000204288D2E47F8EF6C99BCC457966320D1240971168400000000000271069D444A4413C6628000000000000000000000000005553440000000000204288D2E47F8EF6C99BCC457966320D12409711732103AB40A0490F9B7ED8DF29D246BF2D6269820A0EE7742ACDD457BEA7C7D0931EDB7446304402207B75D91DC0EEE613A94E05FD5D031568D8A763E99697FF6328745BD226DA7D4E022005C75D7215FD62CB8E46C55B29FCA8E3FC62FDC55DF300597089DD29863BD3CD81144B4E9C06F24296074F7BC48F92A97916C6DC5EA983143A4C02EA95AD6AC3BED92FA036E0BBFB712C030C",
 		"tx_json": {
-			"Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+			"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
 			"Amount": {
 				"currency": "USD",
 				"issuer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",

@@ -8,7 +8,7 @@ A SetRegularKey transaction changes the regular key associated with an address.
 {
     "Flags": 0,
     "TransactionType": "SetRegularKey",
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Fee": "12",
     "RegularKey": "rAR8rR8sUkBoCZFawhkWzY4Y5YoyuznwD"
 }

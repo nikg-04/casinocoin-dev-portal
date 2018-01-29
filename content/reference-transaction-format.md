@@ -43,12 +43,12 @@ Here is an example of an unsigned [Payment transaction][] in JSON:
 ```
 {
   "TransactionType" : "Payment",
-  "Account" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+  "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
   "Amount" : {
      "currency" : "USD",
      "value" : "1",
-     "issuer" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn"
+     "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
   },
   "Fee": "12",
   "Flags": 2147483648,
@@ -85,10 +85,10 @@ Example response from the `tx` command:
   "status": "success",
   "type": "response",
   "result": {
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Amount": {
       "currency": "USD",
-      "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "value": "1"
     },
     "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
@@ -107,7 +107,7 @@ Example response from the `tx` command:
         {
           "ModifiedNode": {
             "FinalFields": {
-              "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+              "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
               "Balance": "99999980",
               "Flags": 0,
               "OwnerCount": 0,
@@ -134,7 +134,7 @@ Example response from the `tx` command:
               "Flags": 65536,
               "HighLimit": {
                 "currency": "USD",
-                "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+                "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "value": "0"
               },
               "HighNode": "0000000000000000",

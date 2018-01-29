@@ -9,7 +9,7 @@ Example AccountSet:
 ```
 {
     "TransactionType": "AccountSet",
-    "Account" : "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Fee": "12",
     "Sequence": 5,
     "Domain": "6578616D706C652E636F6D",

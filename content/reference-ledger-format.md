@@ -88,7 +88,7 @@ The `AccountRoot` object type describes a single _account_ object. Example `Acco
 
 ```json
 {
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "AccountTxnID": "0D5FB50FA65C9FE1538FD7E398FFFE9D1908DFA4576D8D7A020040686F93C77D",
     "Balance": "148446663",
     "Domain": "6D64756F31332E636F6D",
@@ -110,7 +110,7 @@ The `AccountRoot` object has the following fields:
 | Field           | JSON Type | [Internal Type][] | Description |
 |-----------------|-----------|---------------|-------------|
 | `LedgerEntryType` | String | UInt16 | The value `0x0061`, mapped to the string `AccountRoot`, indicates that this object is an AccountRoot object. |
-| `Account`         | String | AccountID | The identifying address of this account, such as cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn. |
+| `Account`         | String | AccountID | The identifying address of this account, such as cDarPNJEpCnpBZSfmcquydockkePkjPGA2. |
 | [Flags](#accountroot-flags) | Number | UInt32 | A bit-map of boolean flags enabled for this account. |
 | `Sequence`        | Number | UInt32 | The sequence number of the next valid transaction for this account. (Each account starts with Sequence = 1 and increases each time a transaction is made.) |
 | `Balance`         | String | Amount | The account's current [CSC balance in drops][CSC, in drops], represented as a string. |
@@ -322,7 +322,7 @@ Example `Escrow` object:
 
 ```json
 {
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Amount": "10000",
     "CancelAfter": 545440232,
     "Condition": "A0258020A82A88B2DF843A54F58772E4A3861866ECDB4157645DD9AE528C1D3AEEDABAB6810120",
@@ -569,7 +569,7 @@ Example `PayChannel` object:
 ```json
 {
     "Account": "rBqb89MRQJnMPq8wTwEbtz4kvxrEDfcYvt",
-    "Destination": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Amount": "4325800",
     "Balance": "2323423",
     "PublicKey": "32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A",
@@ -668,7 +668,7 @@ Example `CasinocoinState` object:
     "Flags": 393216,
     "HighLimit": {
         "currency": "USD",
-        "issuer": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+        "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "value": "110"
     },
     "HighNode": "0000000000000000",

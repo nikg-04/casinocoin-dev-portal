@@ -92,7 +92,7 @@ Example of submitting a TrustSet transaction to enable an individual freeze usin
   "command": "submit",
   "tx_json": {
     "TransactionType": "TrustSet",
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Fee": "12000",
     "Flags": 1048576,
     "LastLedgerSequence": 18103014,
@@ -146,7 +146,7 @@ Example of submitting an AccountSet transaction to enable Global Freeze using th
   "command": "submit",
   "tx_json": {
     "TransactionType": "AccountSet",
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Fee": "12000",
     "Flags": 0,
     "SetFlag": 7,
@@ -253,7 +253,7 @@ Example WebSocket request to check for individual freeze:
 {
   "id": 15,
   "command": "account_lines",
-  "account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+  "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger": "validated",
   "peer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW"
 }
@@ -267,7 +267,7 @@ Example WebSocket response:
   "status": "success",
   "type": "response",
   "result": {
-    "account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "lines": [
       {
         "account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
@@ -285,7 +285,7 @@ Example WebSocket response:
 }
 ```
 
-The field `"freeze": true` indicates that cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn has enabled Individual Freeze on the USD trust line to rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW. The lack of a field `"freeze_peer": true` indicates that the counterparty has _not_ frozen the trust line.
+The field `"freeze": true` indicates that cDarPNJEpCnpBZSfmcquydockkePkjPGA2 has enabled Individual Freeze on the USD trust line to rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW. The lack of a field `"freeze_peer": true` indicates that the counterparty has _not_ frozen the trust line.
 
 
 ### Using CasinocoinAPI ###
@@ -333,7 +333,7 @@ Example WebSocket request:
 {
   "id": 1,
   "command": "account_info",
-  "account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+  "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger_index": "validated"
 }
 ```
@@ -347,7 +347,7 @@ WebSocket response:
   "type": "response",
   "result": {
     "account_data": {
-      "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+      "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "AccountTxnID": "41320138CA9837B34E82B3B3D6FB1E581D5DE2F0A67B3D62B5B8A8C9C8D970D0",
       "Balance": "100258663",
       "Domain": "6D64756F31332E636F6D",

@@ -9,7 +9,7 @@ Example PaymentChannelCreate:
 
 ```json
 {
-    "Account": "cf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+    "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "TransactionType": "PaymentChannelCreate",
     "Amount": "10000",
     "Destination": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
