@@ -7,7 +7,7 @@ Every transaction must [specify how much CSC to destroy](#specifying-the-transac
 
 ## Current Transaction Cost
 
-The current minimum transaction cost required by the network for a standard transaction is **0.00001 CSC** (10 drops). It sometimes increases due to higher than usual load.
+The current minimum transaction cost required by the network for a standard transaction is **0.0000001 CSC** (10 drops). It sometimes increases due to higher than usual load.
 
 You can also [query `casinocoind` for the current transaction cost](#querying-the-transaction-cost).
 

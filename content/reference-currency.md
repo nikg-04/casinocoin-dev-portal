@@ -8,12 +8,12 @@ The CSC Ledger has [two kinds of money](concept-money.html): CSC, and issued cur
 
 ## CSC Precision
 
-CSC has the same precision as a 64-bit unsigned integer where each unit is equivalent to 0.000001 CSC. Its properties are:
+CSC has the same precision as a 64-bit unsigned integer where each unit is equivalent to 0.00000001 CSC. Its properties are:
 
 * Minimum value: `0`
 * Maximum value: `100000000000` (10<sup>11</sup>) CSC
-    - `"100000000000000000"` (10<sup>17</sup>) drops of CSC
-* Precise to the nearest `0.000001` (10<sup>-6</sup>) CSC
+    - `"10000000000000000000"` (10<sup>19</sup>) drops of CSC
+* Precise to the nearest `0.00000001` (10<sup>-8</sup>) CSC
     - `"1"` drop of CSC
 
 ## Issued Currency Precision

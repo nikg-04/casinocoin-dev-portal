@@ -159,9 +159,9 @@ CSC Balances</i></b></td>
 
 #### CSC Amounts
 
-Amounts of CSC are represented on the CSC Ledger as an unsigned integer count of *drops*, where one CSC == 1,000,000 drops. CasinoCoin recommends that software store CSC balances as integer amounts of drops, and perform integer arithmetic on these values. However, user interfaces should present balances in units of CSC.
+Amounts of CSC are represented on the CSC Ledger as an unsigned integer count of *drops*, where one CSC == 100,000,000 drops. CasinoCoin recommends that software store CSC balances as integer amounts of drops, and perform integer arithmetic on these values. However, user interfaces should present balances in units of CSC.
 
-One drop (.000001 CSC) cannot be further subdivided. Bear this in mind when calculating and displaying FX rates between CSC and other assets.
+One drop (.00000001 CSC) cannot be further subdivided. Bear this in mind when calculating and displaying FX rates between CSC and other assets.
 
 For more informtion, see [Specifying Currency Amounts](https://casinocoin.org/build/casinocoind-apis/#specifying-currency-amounts).
 

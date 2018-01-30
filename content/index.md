@@ -2892,7 +2892,7 @@ ledgerHash | string | Unique identifying hash of the entire ledger.
 ledgerVersion | integer | The ledger version of this ledger.
 parentLedgerHash | string | Unique identifying hash of the ledger that came immediately before this one.
 parentCloseTime | date-time string | The time at which the previous ledger was closed.
-totalDrops | [value](#value) | Total number of drops (1/1,000,000th of an CSC) in the network, as a quoted integer. (This decreases as transaction fees cause CSC to be destroyed.)
+totalDrops | [value](#value) | Total number of drops (1/100,000,000th of an CSC) in the network, as a quoted integer. (This decreases as transaction fees cause CSC to be destroyed.)
 transactionHash | string | Hash of the transaction information included in this ledger.
 rawState | string | *Optional* A JSON string containing all state data for this ledger in casinocoind JSON format.
 rawTransactions | string | *Optional* A JSON string containing casinocoind format transaction JSON for all transactions that were validated in this ledger.
@@ -3830,7 +3830,7 @@ ledger | object | The ledger header to hash.
 *ledger.* ledgerVersion | integer | The ledger version of this ledger.
 *ledger.* parentLedgerHash | string | Unique identifying hash of the ledger that came immediately before this one.
 *ledger.* parentCloseTime | date-time string | The time at which the previous ledger was closed.
-*ledger.* totalDrops | [value](#value) | Total number of drops (1/1,000,000th of an CSC) in the network, as a quoted integer. (This decreases as transaction fees cause CSC to be destroyed.)
+*ledger.* totalDrops | [value](#value) | Total number of drops (1/100,000,000th of an CSC) in the network, as a quoted integer. (This decreases as transaction fees cause CSC to be destroyed.)
 *ledger.* transactionHash | string | Hash of the transaction information included in this ledger.
 *ledger.* rawState | string | *Optional* A JSON string containing all state data for this ledger in casinocoind JSON format.
 *ledger.* rawTransactions | string | *Optional* A JSON string containing casinocoind format transaction JSON for all transactions that were validated in this ledger.

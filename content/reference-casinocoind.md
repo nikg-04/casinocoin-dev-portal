@@ -413,7 +413,7 @@ There are two kinds of currencies in the CSC Ledger: CSC, and everything else. T
 | Tracked in [accounts](reference-ledger-format.html#accountroot) | Tracked in [trust lines](reference-ledger-format.html#casinocoinstate) |
 | Can never be created; can only be destroyed                     | Can be issued or redeemed freely |
 | Maximum value `100000000000` (`1e11`)                           | Maximum value `9999999999999999e80` |
-| Precise to the nearest ["drop"](#csc) (0.000001 CSC)            | 15 decimal digits of precision, with a minimum nonzero absolute value of `1000000000000000e-96` |
+| Precise to the nearest ["drop"](#csc) (0.00000001 CSC)          | 15 decimal digits of precision, with a minimum nonzero absolute value of `1000000000000000e-96` |
 
 **Caution:** The CSC Ledger uses decimal math with different precision than typical floating-point numbers, so currency amounts are always presented as strings.
 
@@ -425,7 +425,7 @@ Some API methods require you to specify an amount of currency. Depending on whet
 [drops of CSC]: #csc
 [CSC, in drops]: #csc
 
-Amounts of CSC are represented as strings. (CSC has precision equivalent to a 64-bit integer, but JSON integers are limited to 32 bits, so CSC can overflow if represented in a JSON integer.) CSC is formally specified in "drops", which are equivalent to 0.000001 (one 1-millionth) of an CSC each. Thus, to represent 1.0 CSC in a JSON document, you would write:
+Amounts of CSC are represented as strings. (CSC has precision equivalent to a 64-bit integer, but JSON integers are limited to 32 bits, so CSC can overflow if represented in a JSON integer.) CSC is formally specified in "drops", which are equivalent to 0.00000001 of an CSC each. Thus, to represent 1.0 CSC in a JSON document, you would write:
 
 ```
 "1000000"
@@ -433,7 +433,7 @@ Amounts of CSC are represented as strings. (CSC has precision equivalent to a 64
 
 **Do not specify CSC as an object.**
 
-Unit tests are permitted to submit values of CSC (not drops) with a decimal point - for example, "1.23" meaning 1.23 CSC. All other cases should always specify CSC in drops, with no decimal point: e.g. "1230000" meaning 1.23 CSC.
+Unit tests are permitted to submit values of CSC (not drops) with a decimal point - for example, "1.23" meaning 1.23 CSC. All other cases should always specify CSC in drops, with no decimal point: e.g. "123000000" meaning 1.23 CSC.
 
 #### Non-CSC
 
@@ -442,7 +442,7 @@ If you are specifying non-CSC currency (including fiat dollars, precious metals,
 | `Field`    | Type                       | Description                        |
 |:-----------|:---------------------------|:-----------------------------------|
 | `currency` | String - [Currency Code][] | Arbitrary code for currency to issue. Cannot be `CSC`. |
-| `value`    | String                     | Quoted decimal representation of the amount of currency. This can include scientific notation, such as `1.23e11` meaning 123,000,000,000. Both `e` and `E` may be used. |
+| `value`    | String                     | Quoted decimal representation of the amount of currency. This can include scientific notation, such as `1.23e11` meaning 12,300,000,000,000. Both `e` and `E` may be used. |
 | `issuer`   | String                     | Unique account address of the entity issuing the currency. In other words, the person or business where the currency can be redeemed. |
 
 **Caution:** These field names are case-sensitive.
@@ -8945,7 +8945,7 @@ The `info` object may have some arrangement of the following fields:
 | `load`                              | Object                    | _(Admin only)_ Detailed information about the current load state of the server |
 | `load.job_types`                    | Array                     | _(Admin only)_ Information about the rate of different types of jobs the server is doing and how much time it spends on each. |
 | `load.threads`                      | Number                    | _(Admin only)_ The number of threads in the server's main job pool. |
-| `load_factor`                       | Number                    | The load-scaled open ledger transaction cost the server is currently enforcing, as a multiplier on the base transaction cost. For example, at `1000` load factor and a reference transaction cost of 10 drops of CSC, the load-scaled transaction cost is 10,000 drops (0.01 CSC). The load factor is determined by the highest of the [individual server's load factor](concept-transaction-cost.html#local-load-cost), the cluster's load factor, the [open ledger cost](concept-transaction-cost.html#open-ledger-cost) and the overall network's load factor. |
+| `load_factor`                       | Number                    | The load-scaled open ledger transaction cost the server is currently enforcing, as a multiplier on the base transaction cost. For example, at `1000` load factor and a reference transaction cost of 10 drops of CSC, the load-scaled transaction cost is 10,000 drops (0.000001 CSC). The load factor is determined by the highest of the [individual server's load factor](concept-transaction-cost.html#local-load-cost), the cluster's load factor, the [open ledger cost](concept-transaction-cost.html#open-ledger-cost) and the overall network's load factor. |
 | `load_factor_local`                 | Number                    | (May be omitted) Current multiplier to the [transaction cost][] based on load to this server. |
 | `load_factor_net`                   | Number                    | (May be omitted) Current multiplier to the [transaction cost][] being used by the rest of the network (estimated from other servers' reported load values). |
 | `load_factor_cluster`               | Number                    | (May be omitted) Current multiplier to the [transaction cost][] based on load to servers in [this cluster](tutorial-casinocoind-setup.html#clustering). |

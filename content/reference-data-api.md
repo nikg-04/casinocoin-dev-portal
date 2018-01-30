@@ -4994,7 +4994,7 @@ The precision for amounts of **non-CSC currency** in the CSC Ledger is as follow
 * Maximum value: `100000000000` (`1e11`)
 * Precise to the nearest `0.000001` (`1e-6`)
 
-In other words, CSC has the same precision as a 64-bit unsigned integer where each unit is equivalent to 0.000001 CSC.
+In other words, CSC has the same precision as a 64-bit unsigned integer where each unit is equivalent to 0.00000001 CSC.
 
 ### Addresses
 [Address]: #addresses
@@ -5089,7 +5089,7 @@ A "ledger" is one version of the shared global ledger. Each ledger object has th
 | `ledger_hash`  | String - [Hash][] | An identifying hash unique to this ledger, as a hex string. |
 | `ledger_index` | Number - [Ledger Index][] | The sequence number of the ledger. Each new ledger has a ledger index 1 higher than the ledger that came before it. |
 | `parent_hash`  | String - [Hash][] | The identifying hash of the previous ledger. |
-| `total_coins`  | [String - Number][] | The total number of "drops" of CSC still in existence at the time of the ledger. (Each CSC is 1,000,000 drops.) |
+| `total_coins`  | [String - Number][] | The total number of "drops" of CSC still in existence at the time of the ledger. (Each CSC is 100,000,000 drops.) |
 | `close_time_res` | Number | The ledger close time is rounded to this many seconds. |
 | `accounts_hash` | String - [Hash][] | Hash of the account information contained in this ledger, as hex. |
 | `transactions_hash` | String - [Hash][] | Hash of the transaction information contained in this ledger, as hex. |
