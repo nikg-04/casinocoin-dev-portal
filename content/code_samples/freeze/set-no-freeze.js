@@ -8,7 +8,7 @@ api.on('error', (errorCode, errorMessage) => {
   console.log(errorCode + ': ' + errorMessage);
 });
 
-const issuing_address = 'rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v';
+const issuing_address = 'caddErVDoBGw1oWMxMHyGhSs9gfTn5pWet';
 const issuing_secret = 'snnDVkSW3aV6jvMJTPdCiE2Qxv1RW';
     // Best practice: get your secret from an encrypted
     //  config file instead
