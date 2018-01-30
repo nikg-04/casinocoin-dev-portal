@@ -1,7 +1,7 @@
 'use strict';
 const assert = require('assert');
 const crypto = require('crypto');
-const R_B58_DICT = 'rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz';
+const R_B58_DICT = 'caddErVDoBGw1oWMxMHyGhSs9gfTn5pWet';
 const base58 = require('base-x')(R_B58_DICT);
 
 assert(crypto.getHashes().includes('sha256'));
