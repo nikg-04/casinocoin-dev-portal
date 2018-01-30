@@ -7,7 +7,7 @@ const api = new CasinocoinAPI({
 });
 api.connect().then(() => {
   /* begin custom code ------------------------------------ */
-  const myAddress = 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn';
+  const myAddress = 'caddErVDoBGw1oWMxMHyGhSs9gfTn5pWet';
 
   console.log('getting account info for', myAddress);
   return api.getAccountInfo(myAddress);
