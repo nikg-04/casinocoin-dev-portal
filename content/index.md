@@ -224,7 +224,7 @@ Example amount:
 ```json
 {
   "currency": "USD",
-  "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+  "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
   "value": "100"
 }
 ```
@@ -364,7 +364,7 @@ paths | string | *Optional* The paths of trustlines and orders to use in executi
     "maxAmount": {
       "value": "0.01",
       "currency": "USD",
-      "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM"
+      "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
     }
   },
   "destination": {
@@ -372,7 +372,7 @@ paths | string | *Optional* The paths of trustlines and orders to use in executi
     "amount": {
       "value": "0.01",
       "currency": "USD",
-      "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM"
+      "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
     }
   }
 }
@@ -401,7 +401,7 @@ ripplingDisabled | boolean | *Optional* If true, payments cannot casinocoin thro
 ```json
 {
   "currency": "USD",
-  "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+  "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
   "limit": "10000",
   "qualityIn": 0.91,
   "qualityOut": 0.87,
@@ -442,7 +442,7 @@ passive | boolean | *Optional* If enabled, the offer will not consume offers tha
   "direction": "buy",
   "quantity": {
     "currency": "USD",
-    "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+    "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
     "value": "10.1"
   },
   "totalPrice": {
@@ -920,7 +920,7 @@ return api.getTransaction(id).then(transaction => {
       }
     },
     "destination": {
-      "address": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+      "address": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
       "amount": {
         "currency": "USD",
         "value": "0.001"
@@ -935,12 +935,12 @@ return api.getTransaction(id).then(transaction => {
     "deliveredAmount": {
       "currency": "USD",
       "value": "0.001",
-      "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM"
+      "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
     },
     "balanceChanges": {
       "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
         {
-          "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+          "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
           "currency": "USD",
           "value": "-0.001"
         },
@@ -950,7 +950,7 @@ return api.getTransaction(id).then(transaction => {
           "value": "0.001002"
         }
       ],
-      "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM": [
+      "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ": [
         {
           "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
           "currency": "USD",
@@ -1060,7 +1060,7 @@ return api.getTransactions(address).then(transaction => {
         }
       },
       "destination": {
-        "address": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+        "address": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "amount": {
           "currency": "USD",
           "value": "0.001"
@@ -1074,12 +1074,12 @@ return api.getTransactions(address).then(transaction => {
       "deliveredAmount": {
         "currency": "USD",
         "value": "0.001",
-        "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM"
+        "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
       },
       "balanceChanges": {
         "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
           {
-            "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+            "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
             "currency": "USD",
             "value": "-0.001"
           },
@@ -1089,7 +1089,7 @@ return api.getTransactions(address).then(transaction => {
             "value": "0.001002"
           }
         ],
-        "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM": [
+        "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ": [
           {
             "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
             "currency": "USD",
@@ -1157,7 +1157,7 @@ return api.getTransactions(address).then(transaction => {
         }
       },
       "destination": {
-        "address": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+        "address": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "amount": {
           "currency": "USD",
           "value": "0.001"
@@ -1171,12 +1171,12 @@ return api.getTransactions(address).then(transaction => {
       "deliveredAmount": {
         "currency": "USD",
         "value": "0.001",
-        "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM"
+        "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
       },
       "balanceChanges": {
         "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
           {
-            "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+            "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
             "currency": "USD",
             "value": "-0.001"
           },
@@ -1186,7 +1186,7 @@ return api.getTransactions(address).then(transaction => {
             "value": "0.001002"
           }
         ],
-        "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM": [
+        "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ": [
           {
             "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
             "currency": "USD",
@@ -1695,7 +1695,7 @@ const pathfind = {
     "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
     "amount": {
       "currency": "USD",
-      "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+      "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
       "value": "100"
     }
   }
@@ -1719,11 +1719,11 @@ return api.getPaths(pathfind)
       "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
       "amount": {
         "currency": "USD",
-        "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+        "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "value": "100"
       }
     },
-    "paths": "[[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"rHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}]]"
+    "paths": "[[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"rHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
   },
   {
     "source": {
@@ -1737,11 +1737,11 @@ return api.getPaths(pathfind)
       "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
       "amount": {
         "currency": "USD",
-        "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+        "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "value": "100"
       }
     },
-    "paths": "[[{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}]]"
+    "paths": "[[{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
   },
   {
     "source": {
@@ -1755,11 +1755,11 @@ return api.getPaths(pathfind)
       "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
       "amount": {
         "currency": "USD",
-        "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+        "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "value": "100"
       }
     },
-    "paths": "[[{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"currency\":\"USD\",\"issuer\":\"rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"rf9X8QoYnWLHMHuDfjkmRcD2UE5qX5aYV\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"currency\":\"USD\",\"issuer\":\"rDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"rDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"rfQPFZ3eLcaSUKjUy7A3LAmDNM4F9Hz9j1\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}],[{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"}]]"
+    "paths": "[[{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"rf9X8QoYnWLHMHuDfjkmRcD2UE5qX5aYV\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"rDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"rDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"rfQPFZ3eLcaSUKjUy7A3LAmDNM4F9Hz9j1\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
   }
 ]
 ```
@@ -2964,7 +2964,7 @@ const payment = {
     "maxAmount": {
       "value": "0.01",
       "currency": "USD",
-      "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM"
+      "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
     }
   },
   "destination": {
@@ -2972,7 +2972,7 @@ const payment = {
     "amount": {
       "value": "0.01",
       "currency": "USD",
-      "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM"
+      "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
     }
   }
 };
@@ -2983,7 +2983,7 @@ return api.preparePayment(address, payment).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"Payment\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"SendMax\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"Payment\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},\"SendMax\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3029,7 +3029,7 @@ instructions | object | The instructions for how to execute the transaction afte
 const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const trustline = {
   "currency": "USD",
-  "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+  "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
   "limit": "10000",
   "qualityIn": 0.91,
   "qualityOut": 0.87,
@@ -3050,7 +3050,7 @@ return api.prepareTrustline(address, trustline).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"TransactionType\":\"TrustSet\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"LimitAmount\":{\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\",\"value\":\"10000\"},\"Flags\":2149711872,\"QualityIn\":910000000,\"QualityOut\":870000000,\"Memos\":[{\"Memo\":{\"MemoData\":\"7465787465642064617461\",\"MemoType\":\"74657374\",\"MemoFormat\":\"706C61696E2F74657874\"}}],\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"TransactionType\":\"TrustSet\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"LimitAmount\":{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\",\"value\":\"10000\"},\"Flags\":2149711872,\"QualityIn\":910000000,\"QualityOut\":870000000,\"Memos\":[{\"Memo\":{\"MemoData\":\"7465787465642064617461\",\"MemoType\":\"74657374\",\"MemoFormat\":\"706C61696E2F74657874\"}}],\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3098,7 +3098,7 @@ const order = {
   "direction": "buy",
   "quantity": {
     "currency": "USD",
-    "counterparty": "rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM",
+    "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
     "value": "10.1"
   },
   "totalPrice": {
@@ -3115,7 +3115,7 @@ return api.prepareOrder(address, order)
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147811328,\"TransactionType\":\"OfferCreate\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TakerGets\":\"2000000\",\"TakerPays\":{\"value\":\"10.1\",\"currency\":\"USD\",\"issuer\":\"rMH4UxPrbuMa1spCBR98hLLyNJp4d8p4tM\"},\"LastLedgerSequence\":8819954,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147811328,\"TransactionType\":\"OfferCreate\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TakerGets\":\"2000000\",\"TakerPays\":{\"value\":\"10.1\",\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},\"LastLedgerSequence\":8819954,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,

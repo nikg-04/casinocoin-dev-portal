@@ -31,7 +31,7 @@ Additionally, you'll need a `casinocoind` server to send transactions to. The ex
 
 To test without transferring real CSC, you can use [CasinoCoin Test Net](https://casinocoin.org/build/casinocoin-test-net/) addresses with Test Net CSC. If you do use the CasinoCoin Test Net, you can use the Test Net servers' JSON-RPC API by connecting to `https://api.altnet.rippletest.net:51234` instead of `http://localhost:5005/`.
 
-You can use any amount of CSC for the payment channels. The example values in this tutorial set aside 100 CSC (`100000000` drops) in a payment channel for at least 1 day.
+You can use any amount of CSC for the payment channels. The example values in this tutorial set aside 100 CSC (`10000000000` drops) in a payment channel for at least 1 day.
 
 ## Flow Diagram
 [flow diagram]: #flow-diagram
@@ -260,7 +260,7 @@ The exact format of the claim is not important as long as it communicates the fo
 | Field                   | Example                                            |
 |:------------------------|:---------------------------------------------------|
 | Channel ID              | `5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3` |
-| Amount of CSC, in drops | `1000000`                                          |
+| Amount of CSC, in drops | `100000000`                                        |
 | Signature               | `304402204EF0AFB78AC23ED1C472E74F4299C0C21F1B21D07EFC0A3838A420F76D783A` <br/> `400220154FB11B6F54320666E4C36CA7F686C16A3A0456800BBC43746F34AF50290064` _(Note: this long string has been broken to fit on one line.)_ |
 
 The payee also needs to know the Public Key associated with the channel, which is the same throughout the channel's life.

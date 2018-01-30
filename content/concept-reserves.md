@@ -11,8 +11,8 @@ The current minimum reserve requirement is **20 CSC**. (This is the cost of an a
 
 The reserve requirement is divided into two parts:
 
-* The **Base Reserve** is a minimum amount of CSC that is required for every address in the ledger. Currently, this is 20 CSC (`20000000` drops).
-* The **Owner Reserve** is an increase to the reserve requirement for each object that the address owns in the ledger. Currently, this is 5 CSC (`5000000` drops) per item.
+* The **Base Reserve** is a minimum amount of CSC that is required for every address in the ledger. Currently, this is 20 CSC (`2000000000` drops).
+* The **Owner Reserve** is an increase to the reserve requirement for each object that the address owns in the ledger. Currently, this is 5 CSC (`500000000` drops) per item.
 
 
 ### Owner Reserves

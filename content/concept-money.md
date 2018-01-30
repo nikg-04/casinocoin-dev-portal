@@ -16,7 +16,7 @@ For more information on CSC's use cases, benefits, and news, see the [CSC Portal
 
 The very first ledger contained 100 billion CSC, and no new CSC can be created. CSC can be destroyed by [transaction costs](concept-transaction-cost.html) or lost by sending it to addresses for which no one holds a key, so CSC is slightly [deflationary](https://en.wikipedia.org/wiki/Deflation) by nature. No need to worry about running out, though: at the current rate of destruction, it would take at least 70,000 years to destroy all CSC, and CSC [prices and fees can be adjusted](concept-fee-voting.html) as the total supply of CSC changes.
 
-In technical contexts, CSC is measured precisely to the nearest 0.000001 CSC, called a "drop" of CSC. The [`casinocoind` APIs](reference-casinocoind.html) require all CSC amounts to be specified in drops of CSC. For example, 1 CSC is represented as `1000000` drops. For more detailed information, see the [currency format reference](reference-currency.html).
+In technical contexts, CSC is measured precisely to the nearest 0.00000001 CSC, called a "drop" of CSC. The [`casinocoind` APIs](reference-casinocoind.html) require all CSC amounts to be specified in drops of CSC. For example, 1 CSC is represented as `100000000` drops. For more detailed information, see the [currency format reference](reference-currency.html).
 
 ## Issued Currencies
 
