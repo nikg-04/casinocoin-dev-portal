@@ -4,7 +4,7 @@ const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI;
 const assert = require('assert');
 
 /* Credentials of the account placing the order */
-const myAddr = 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn';
+const myAddr = 'caddErVDoBGw1oWMxMHyGhSs9gfTn5pWet';
 const mySecret = 's████████████████████████████';
 
 /* Define the order to place here */
@@ -12,7 +12,7 @@ const myOrder = {
   'direction': 'buy',
   'quantity': {
     'currency': 'FOO',
-    'counterparty': 'rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v',
+    'counterparty': 'cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v',
     'value': '100'
   },
   'totalPrice': {
