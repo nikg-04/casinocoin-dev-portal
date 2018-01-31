@@ -57,4 +57,4 @@ The standard currency mapping allocates the bits as follows:
 
 You can also issue currency of other types by using a 160-bit (40-character) hexadecimal string such as `015841551A748AD2C1F76FF6ECB0CCCD00000000` as the currency code. To prevent this from being treated as a different currency code type, the first 8 bits MUST NOT be `0x00`.
 
-**Deprecated:** Some previous versions of [casinocoin-libjs-api](https://github.com/casinocoin/casinocoin-libjs-api) supported an "interest-bearing" or "demurraging" currency code type. These currencies have the first 8 bits `0x01`. Demurraging / interest-bearing currencies are no longer supported, but you may encounter them in ledger data. For more information, see [Demurrage](concept-demurrage.html).
+**Deprecated:** Some previous versions of [casinocoin-libjs](https://github.com/casinocoin/casinocoin-libjs) supported an "interest-bearing" or "demurraging" currency code type. These currencies have the first 8 bits `0x01`. Demurraging / interest-bearing currencies are no longer supported, but you may encounter them in ledger data. For more information, see [Demurrage](concept-demurrage.html).

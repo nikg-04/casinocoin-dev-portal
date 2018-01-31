@@ -1,4 +1,4 @@
-const {CasinocoinAPI} = require('casinocoin-libjs-api');
+const {CasinocoinAPI} = require('casinocoin-libjs');
 
 const api = new CasinocoinAPI({
   server: 'wss://ws01.casinocoin.org', // Public rippled server

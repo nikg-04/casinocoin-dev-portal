@@ -243,7 +243,7 @@ Every transaction type has the same set of fundamental fields. Field names are c
 
 ### Auto-fillable Fields
 
-Some fields can be automatically filled in before the transaction is signed, either by a `casinocoind` server or by the library used for offline signing. Both [casinocoin-libjs-api](https://github.com/casinocoin/casinocoin-libjs-api) and `casinocoind` can automatically provide the following values:
+Some fields can be automatically filled in before the transaction is signed, either by a `casinocoind` server or by the library used for offline signing. Both [casinocoin-libjs](https://github.com/casinocoin/casinocoin-libjs) and `casinocoind` can automatically provide the following values:
 
 * `Fee` - Automatically fill in the [transaction cost](concept-transaction-cost.html) based on the network. (*Note:* `casinocoind`'s [sign command](reference-casinocoind.html#sign) supports limits on how high the filled-in-value is, using the `fee_mult_max` parameter.)
 * `Sequence` - Automatically use the next sequence number for the account sending the transaction.

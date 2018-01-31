@@ -1,5 +1,5 @@
 'use strict'
-const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI
+const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI
 
 const myAddr = 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn'
 const mySecret = 's████████████████████████████'

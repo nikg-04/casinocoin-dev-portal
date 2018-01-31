@@ -93,7 +93,7 @@ CasinocoinAPI only provides access to *validated*, *immutable* transaction data.
 Use the following [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code) to wrap your custom code using CasinocoinAPI.
 
 ```javascript
-const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI;
+const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI;
 
 const api = new CasinocoinAPI({
   server: 'wss://ws01.casinocoin.org', // Public casinocoind server hosted by CasinoCoin, Inc.
@@ -158,9 +158,9 @@ If you omit the `server` parameter, CasinocoinAPI operates [offline](#offline-fu
 
 1. Install [Node.js](https://nodejs.org) and the Node Package Manager (npm). Most Linux distros have a package for Node.js, but make sure you have version **6.9.0** or higher.
 2. Use npm to install CasinocoinAPI:
-      `npm install casinocoin-libjs-api`
+      `npm install casinocoin-libjs`
 
-After you have installed casinocoin-libjs-api, you can create scripts using the [boilerplate](#boilerplate) and run them using the Node.js executable, typically named `node`:
+After you have installed casinocoin-libjs, you can create scripts using the [boilerplate](#boilerplate) and run them using the Node.js executable, typically named `node`:
 
       `node script.js`
 
@@ -171,7 +171,7 @@ CasinocoinAPI can also function without internet connectivity. This can be usefu
 To instantiate CasinocoinAPI in offline mode, use the following boilerplate code:
 
 ```javascript
-const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI;
+const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI;
 
 const api = new CasinocoinAPI();
 /* insert code here */

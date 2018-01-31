@@ -1,6 +1,6 @@
 'use strict';
 /* import CasinocoinAPI and support libraries */
-const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI;
+const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI;
 const assert = require('assert');
 
 /* Credentials of the account placing the order */

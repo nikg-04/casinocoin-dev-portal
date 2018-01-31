@@ -50,7 +50,7 @@ Alternatively, you can [create a repo on GitHub](https://help.github.com/article
 
 Use the following template, which includes:
 
-* CasinocoinAPI itself (`casinocoin-libjs-api`)
+* CasinocoinAPI itself (`casinocoin-libjs`)
 * Babel (`babel-cli`)
 * The ECMAScript 6 presets for Babel (`babel-preset-es2015`)
 * (Optional) [ESLint](http://eslint.org/) (`eslint`) for checking code quality.
@@ -114,12 +114,12 @@ In addition to CasinocoinAPI-specific code, this script uses syntax and conventi
 
 ```
 'use strict';
-const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI;
+const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI;
 ```
 
 The opening line enables [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode). This is purely optional, but it helps you avoid some common pitfalls of JavaScript. See also: [Restrictions on Code in Strict Mode](https://msdn.microsoft.com/library/br230269%28v=vs.94%29.aspx#Anchor_1).
 
-The second line imports CasinocoinAPI into the current scope using Node.js's require function. CasinocoinAPI is one of [the modules `casinocoin-libjs-api` exports](https://github.com/casinocoin/casinocoin-libjs-api/blob/develop/src/index.ts).
+The second line imports CasinocoinAPI into the current scope using Node.js's require function. CasinocoinAPI is one of [the modules `casinocoin-libjs` exports](https://github.com/casinocoin/casinocoin-libjs/blob/develop/src/index.ts).
 
 ### Instantiating the API
 
@@ -222,18 +222,18 @@ To use CasinocoinAPI in a browser, you need to build a browser-compatible versio
 If you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed, you can clone the repository and check out the **master** branch, which always has the latest official release:
 
 ```
-git clone https://github.com/casinocoin/casinocoin-libjs-api.git
-cd casinocoin-libjs-api
+git clone https://github.com/casinocoin/casinocoin-libjs.git
+cd casinocoin-libjs
 git checkout master
 ```
 
-Alternatively, you can download an archive (.zip or .tar.gz) of a specific release from the [CasinocoinAPI releases page](https://github.com/casinocoin/casinocoin-libjs-api/releases) and extract it.
+Alternatively, you can download an archive (.zip or .tar.gz) of a specific release from the [CasinocoinAPI releases page](https://github.com/casinocoin/casinocoin-libjs/releases) and extract it.
 
 #### 2. Install dependencies using NPM
 
 You need to have [NPM (Node.js Package Manager) installed](#install-nodejs-and-npm) first.
 
-Then, from within the `casinocoin-libjs-api` directory, you can use NPM to install all the necessary dependencies:
+Then, from within the `casinocoin-libjs` directory, you can use NPM to install all the necessary dependencies:
 
 ```
 npm install
@@ -259,10 +259,10 @@ npm run build
 Output:
 
 ```
-> casinocoin-libjs-api@0.16.5 build /home/username/casinocoin-libjs-api
+> casinocoin-libjs@0.16.5 build /home/username/casinocoin-libjs
 > gulp
 
-[15:22:30] Using gulpfile /home/username/casinocoin-libjs-api/Gulpfile.js
+[15:22:30] Using gulpfile /home/username/casinocoin-libjs/Gulpfile.js
 [15:22:30] Starting 'build'...
 [15:22:30] Starting 'build-debug'...
 [15:22:42] Finished 'build' after 12 s
