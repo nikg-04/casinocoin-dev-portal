@@ -41,7 +41,7 @@ Escrow provides strong guarantees that are best suited for high-value, low-quant
 
 ## Availability of Escrow
 
-Conditional payments have been enabled by the ["Escrow" Amendment](reference-amendments.html#escrow) to the CSC Ledger Consensus Protocol since 2017-03-31. A previous version of the same functionality was available on the [CasinoCoin Test Net](https://casinocoin.org/build/ripple-test-net/) by the name "Suspended Payments" (SusPay) in 2016.
+Conditional payments have been enabled by the ["Escrow" Amendment](reference-amendments.html#escrow) to the CSC Ledger Consensus Protocol since 2017-03-31. A previous version of the same functionality was available on the [CasinoCoin Test Net](https://casinocoin.org/build/casinocoin-test-net/) by the name "Suspended Payments" (SusPay) in 2016.
 
 When testing in [stand-alone mode](concept-stand-alone-mode.html), you can force the Escrow feature to be enabled locally regardless of the amendment status. Add the following stanza to your `casinocoind.cfg`:
 
@@ -113,8 +113,6 @@ For more information about Escrow in the CSC Ledger, see the following:
     - [Escrow object](reference-ledger-format.html#escrow)
 
 For more information on Interledger and how conditional transfers enable secure payments across multiple ledgers, see [Interledger Architecture](https://interledger.org/rfcs/0001-interledger-architecture/).
-
-For more information on CasinoCoin's 55-Billion CSC Lockup, see [CasinoCoin's Insights Blog](https://ripple.com/insights/ripple-to-place-55-billion-xrp-in-escrow-to-ensure-certainty-into-total-xrp-supply/).
 
 <!--{# reference link definitions #}-->
 [Interledger Protocol]: https://interledger.org/

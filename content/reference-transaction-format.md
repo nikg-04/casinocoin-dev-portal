@@ -1,6 +1,6 @@
 # Transactions Overview
 
-A _Transaction_ is the only way to modify the CSC Ledger. Transactions are only valid if signed, submitted, and accepted into a validated ledger version following the [consensus process](https://casinocoin.org/build/ripple-ledger-consensus-process/). Some ledger rules also generate _[pseudo-transactions](#pseudo-transactions)_, which aren't signed or submitted, but still must be accepted by consensus. Transactions that fail are also included in ledgers because they modify balances of CSC to pay for the anti-spam [transaction cost](concept-transaction-cost.html).
+A _Transaction_ is the only way to modify the CSC Ledger. Transactions are only valid if signed, submitted, and accepted into a validated ledger version following the [consensus process](https://casinocoin.org/build/casinocoin-ledger-consensus-process/). Some ledger rules also generate _[pseudo-transactions](#pseudo-transactions)_, which aren't signed or submitted, but still must be accepted by consensus. Transactions that fail are also included in ledgers because they modify balances of CSC to pay for the anti-spam [transaction cost](concept-transaction-cost.html).
 
 * [Authorizing Transactions](#authorizing-transactions)
 * [Common Fields of All Transactions](#common-fields)
@@ -32,7 +32,7 @@ Sending a transaction to the CSC Ledger involves several steps:
 1. Create an [unsigned transaction in JSON format](#unsigned-transaction-format).
 2. Use one or more signatures to [authorize the transaction](#authorizing-transactions).
 3. Submit a transaction to a `casinocoind` server. If the transaction is properly formed, the server provisionally applies the transaction to its current version of the ledger and relays the transaction to other members of the peer-to-peer network.
-4. The [consensus process](https://casinocoin.org/build/ripple-ledger-consensus-process/) determines which provisional transactions get included in the next validated ledger.
+4. The [consensus process](https://casinocoin.org/build/casinocoin-ledger-consensus-process/) determines which provisional transactions get included in the next validated ledger.
 5. The `casinocoind` servers apply those transactions to the previous ledger in a canonical order and share their results.
 6. If enough [trusted validators](tutorial-casinocoind-setup.html#reasons-to-run-a-validator) created the exact same ledger, that ledger is declared _validated_ and the [results of the transactions](#transaction-results) in that ledger are immutable.
 
@@ -243,7 +243,7 @@ Every transaction type has the same set of fundamental fields. Field names are c
 
 ### Auto-fillable Fields
 
-Some fields can be automatically filled in before the transaction is signed, either by a `casinocoind` server or by the library used for offline signing. Both [casinocoin-libjs-api](https://github.com/ripple/casinocoin-libjs-api) and `casinocoind` can automatically provide the following values:
+Some fields can be automatically filled in before the transaction is signed, either by a `casinocoind` server or by the library used for offline signing. Both [casinocoin-libjs-api](https://github.com/casinocoin/casinocoin-libjs-api) and `casinocoind` can automatically provide the following values:
 
 * `Fee` - Automatically fill in the [transaction cost](concept-transaction-cost.html) based on the network. (*Note:* `casinocoind`'s [sign command](reference-casinocoind.html#sign) supports limits on how high the filled-in-value is, using the `fee_mult_max` parameter.)
 * `Sequence` - Automatically use the next sequence number for the account sending the transaction.
@@ -651,7 +651,7 @@ These codes indicate that the transaction failed, but it could apply successfull
 | `terNO_ACCOUNT`   | The address sending the transaction is not funded in the ledger (yet). |
 | `terNO_AUTH`      | The transaction would involve adding currency issued by an account with `lsfRequireAuth` enabled to a trust line that is not authorized. For example, you placed an offer to buy a currency you aren't authorized to hold. |
 | `terNO_LINE`      | Used internally only. This code should never be returned. |
-| `terNO_RIPPLE`    | Used internally only. This code should never be returned. |
+| `terno_casinocoin`    | Used internally only. This code should never be returned. |
 | `terOWNERS`        | The transaction requires that account sending it has a nonzero "owners count", so the transaction cannot succeed. For example, an account cannot enable the [`lsfRequireAuth`](#accountset-flags) flag if it has any trust lines or available offers. |
 | `terPRE_SEQ`      | The `Sequence` number of the current transaction is higher than the current sequence number of the account sending the transaction. |
 | `terRETRY`         | Unspecified retriable error.                              |

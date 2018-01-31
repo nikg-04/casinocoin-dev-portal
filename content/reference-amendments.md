@@ -69,7 +69,7 @@ Although this amendment is enabled, it has no effect unless the [SusPay](#suspay
 
 Implements several types of crypto-conditions from the official [crypto-conditions specification](https://tools.ietf.org/html/draft-thomas-crypto-conditions-03) for use in [EscrowCreate][] and [EscrowFinish][] transactions. Without this amendment, only the PREIMAGE-SHA-256 type is supported.
 
-**Caution:** This amendment is still [in development](https://github.com/ripple/casinocoind/pull/2170). The version from `casinocoind` v0.60.0 to present does not implement the full functionality.
+**Caution:** This amendment is still [in development](https://github.com/casinocoin/casinocoind/pull/2170). The version from `casinocoind` v0.60.0 to present does not implement the full functionality.
 
 
 
@@ -85,9 +85,6 @@ Adds a new account flag, `DepositAuth`, which lets an account strictly reject an
 When an account enables this flag, Payment transactions fail if the account is the destination, regardless of whether the Payment would have delivered CSC or an issued currency. EscrowFinish and PaymentChannelClaim transactions fail if the account is the destination unless the destination account itself sends those transactions. If the [Checks][] amendment is enabled, the account can receive CSC or issued currencies by sending CheckCash transactions.
 
 As an exception, accounts with `DepositAuth` enabled can receive Payment transactions for small amounts of CSC (equal or less than the minimum [account reserve](concept-reserves.html)) if their current CSC balance is below the account reserve.
-
-**Caution:** This amendment is [in development](https://github.com/ripple/casinocoind/pull/2239) and is expected for `casinocoind` v0.90.0.
-
 
 
 ## EnforceInvariants
@@ -245,18 +242,6 @@ Streamlines the offer crossing logic in the CSC Ledger's decentralized exchange.
 - The new logic may delete more or fewer offers than the old logic. (This includes cases caused by differences in rounding and offers that were incorrectly removed as unfunded by the old logic.)
 
 
-
-## FlowV2
-[FlowV2]: #flowv2
-
-| Amendment ID                                                     | Status    |
-|:-----------------------------------------------------------------|:----------|
-| 5CC22CFF2864B020BD79E0E1F048F63EF3594F95E650E43B3F837EF1DF5F4B26 | Withdrawn |
-
-This is a previous version of the [Flow](#flow) amendment. It was [rejected due to a bug](https://ripple.com/dev-blog/flowv2-amendment-vetoed/) and removed in version 0.33.0.
-
-
-
 ## MultiSign
 [MultiSign]: #multisign
 
@@ -346,7 +331,7 @@ Sorts the entries in [DirectoryNode ledger objects](reference-ledger-format.html
 |:-----------------------------------------------------------------|:----------|
 | DA1BD556B42D85EA9C84066D028D355B52416734D3283F85E216EA5DA6DB7E13 | Enabled on TestNet; not intended for production. |
 
-This amendment is currently enabled on the [CasinoCoin Test Net](https://casinocoin.org/build/ripple-test-net/). In production, CasinoCoin expects to enable similar functionality with the [Escrow](#escrow) amendment instead.
+This amendment is currently enabled on the [CasinoCoin Test Net](https://casinocoin.org/build/casinocoin-test-net/). In production, CasinoCoin expects to enable similar functionality with the [Escrow](#escrow) amendment instead.
 
 
 

@@ -280,7 +280,7 @@ To track [off-ledger CSC balances](#on-ledger-and-off-ledger) exchanges need to 
 
 A user named Charlie wants to deposit 50,000 CSC to Alpha Exchange. Doing this involves the following steps:
 
-1. Charlie submits a payment of 50,000  CSC (by using [CasinocoinAPI](https://casinocoin.org/build/rippleapi/) or similar software) to Alpha Exchange's [issuing account](#accounts).
+1. Charlie submits a payment of 50,000  CSC (by using [CasinocoinAPI](https://casinocoin.org/build/casinocoinapi/) or similar software) to Alpha Exchange's [issuing account](#accounts).
 
     a. Charlie adds an identifier (in this case, `789`) to the payment to associate it with his account at Alpha Exchange. This is called a [_destination tag_](https://casinocoin.org/build/gateway-guide/#source-and-destination-tags). (To use this, Alpha Exchange must have set the asfRequireDest flag on all of its accounts. This flag requires all incoming payments to have a destination tag like Charlie's. For more information, see [AccountSet Flags](https://casinocoin.org/build/transactions/#accountset-flags).
 

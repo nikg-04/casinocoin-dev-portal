@@ -507,7 +507,7 @@ transferRate | number,null | *Optional*  The fee to charge when users transfer t
 
 ```json
 {
-  "domain": "ripple.com",
+  "domain": "casinocoin.org",
   "memos": [
     {
       "type": "test",
@@ -880,8 +880,8 @@ specification | object | A specification that would produce the same outcome as 
 outcome | object | The outcome of the transaction (what effects it had).
 *outcome.* result | string | Result code returned by casinocoind. See [Transaction Results](https://casinocoin.org/build/transactions/#full-transaction-response-list) for a complete list.
 *outcome.* fee | [value](#value) | The CSC fee that was charged for the transaction.
-*outcome.balanceChanges.* \* | array\<[balance](#amount)\> | Key is the ripple address; value is an array of signed amounts representing changes of balances for that address.
-*outcome.orderbookChanges.* \* | array | Key is the maker's ripple address; value is an array of changes
+*outcome.balanceChanges.* \* | array\<[balance](#amount)\> | Key is the casinocoin address; value is an array of signed amounts representing changes of balances for that address.
+*outcome.orderbookChanges.* \* | array | Key is the maker's casinocoin address; value is an array of changes
 *outcome.orderbookChanges.* \*[] | object | A change to an order.
 *outcome.orderbookChanges.\*[].* direction | string | Equal to "buy" for buy orders and "sell" for sell orders.
 *outcome.orderbookChanges.\*[].* quantity | [amount](#amount) | The amount to be bought or sold by the maker.
@@ -3212,7 +3212,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ```javascript
 const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const settings = {
-  "domain": "ripple.com",
+  "domain": "casinocoin.org",
   "memos": [
     {
       "type": "test",
@@ -3228,7 +3228,7 @@ return api.prepareSettings(address, settings)
 
 ```json
 {
-  "domain": "ripple.com",
+  "domain": "casinocoin.org",
   "memos": [
     {
       "type": "test",

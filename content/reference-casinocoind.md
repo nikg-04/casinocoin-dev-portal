@@ -22,9 +22,7 @@ In general, we recommend using WebSocket, because WebSocket's push paradigm has 
 
 ## Changes to the APIs
 
-The WebSocket and JSON-RPC APIs are still in development, and are subject to change. If you want to be notified of upcoming changes and future versions of `casinocoind`, subscribe to the CasinoCoin Server mailing list:
-
-[https://groups.google.com/forum/#!forum/ripple-server](https://groups.google.com/forum/#!forum/ripple-server)
+The WebSocket and JSON-RPC APIs are still in development, and are subject to change. 
 
 ## Connecting to casinocoind
 
@@ -1223,8 +1221,8 @@ An example of a successful response:
                 "currency": "XAU",
                 "limit": "0",
                 "limit_peer": "0",
-                "no_ripple": true,
-                "no_ripple_peer": true,
+                "no_casinocoin": true,
+                "no_casinocoin_peer": true,
                 "quality_in": 0,
                 "quality_out": 0
             },
@@ -1234,7 +1232,7 @@ An example of a successful response:
                 "currency": "USD",
                 "limit": "5",
                 "limit_peer": "0",
-                "no_ripple": true,
+                "no_casinocoin": true,
                 "quality_in": 0,
                 "quality_out": 0
             }
@@ -1266,8 +1264,8 @@ An example of a successful response:
                 "currency": "XAU",
                 "limit": "0",
                 "limit_peer": "0",
-                "no_ripple": true,
-                "no_ripple_peer": true,
+                "no_casinocoin": true,
+                "no_casinocoin_peer": true,
                 "quality_in": 0,
                 "quality_out": 0
             },
@@ -1277,7 +1275,7 @@ An example of a successful response:
                 "currency": "015841551A748AD2C1F76FF6ECB0CCCD00000000",
                 "limit": "10.01037626125837",
                 "limit_peer": "0",
-                "no_ripple": true,
+                "no_casinocoin": true,
                 "quality_in": 0,
                 "quality_out": 0
             }
@@ -1311,8 +1309,8 @@ Each trust line object has some combination of the following fields:
 | `limit_peer`     | String           | The maximum amount of currency that the counterparty account is willing to owe the perspective account |
 | `quality_in`     | Unsigned Integer | Rate at which the account values incoming balances on this trust line, as a ratio of this value per 1 billion units. (For example, a value of 500 million represents a 0.5:1 ratio.) As a special case, 0 is treated as a 1:1 ratio. |
 | `quality_out`    | Unsigned Integer | Rate at which the account values outgoing balances on this trust line, as a ratio of this value per 1 billion units. (For example, a value of 500 million represents a 0.5:1 ratio.) As a special case, 0 is treated as a 1:1 ratio. |
-| `no_ripple`      | Boolean          | (May be omitted) `true` if this account has enabled the [NoCasinocoin flag](concept-nocasinocoin.html) for this line. If omitted, that is the same as `false`. |
-| `no_ripple_peer` | Boolean          | (May be omitted) `true` if the peer account has enabled the [NoCasinocoin flag](concept-nocasinocoin.html). If omitted, that is the same as `false`. |
+| `no_casinocoin`      | Boolean          | (May be omitted) `true` if this account has enabled the [NoCasinocoin flag](concept-nocasinocoin.html) for this line. If omitted, that is the same as `false`. |
+| `no_casinocoin_peer` | Boolean          | (May be omitted) `true` if the peer account has enabled the [NoCasinocoin flag](concept-nocasinocoin.html). If omitted, that is the same as `false`. |
 | `freeze`         | Boolean          | (May be omitted) `true` if this account has [frozen](concept-freeze.html) this trust line. If omitted, that is the same as `false`. |
 | `freeze_peer`    | Boolean          | (May be omitted) `true` if the peer account has [frozen](concept-freeze.html) this trust line. If omitted, that is the same as `false`. |
 
@@ -4004,7 +4002,7 @@ This method can retrieve several different types of data. You can select which t
 2. `account_root` - Retrieve an [AccountRoot object](reference-ledger-format.html#accountroot). This is roughly equivalent to the [account_info](#account-info) command.
 3. `directory` - Retrieve a [DirectoryNode](reference-ledger-format.html#directorynode), which contains a list of other ledger objects
 4. `offer` - Retrieve an [Offer object](reference-ledger-format.html#offer), which defines an offer to exchange currency
-5. `ripple_state` - Retrieve a [CasinocoinState object](reference-ledger-format.html#casinocoinstate), which tracks a (non-CSC) currency balance between two accounts.
+5. `casinocoin_state` - Retrieve a [CasinocoinState object](reference-ledger-format.html#casinocoinstate), which tracks a (non-CSC) currency balance between two accounts.
 
 If you specify more than one of the above items, the server retrieves only of them; it is undefined which it chooses.
 
@@ -4021,9 +4019,9 @@ The full list of parameters recognized by this method is as follows:
 | `offer`                 | Object or String           | _(Optional)_ Specify an [Offer object](reference-ledger-format.html#offer) to retrieve. If a string, interpret as the [unique index](reference-ledger-format.html#tree-format) to the Offer. If an object, requires the sub-fields `account` and `seq` to uniquely identify the offer. |
 | `offer.account`         | String - [Address][]       | (Required if `offer` specified) The account that placed the offer. |
 | `offer.seq`             | Unsigned Integer           | (Required if `offer` specified) The sequence number of the transaction that created the Offer object. |
-| `ripple_state`          | Object                     | _(Optional)_ Object specifying the CasinocoinState (trust line) object to retrieve. The `accounts` and `currency` sub-fields are required to uniquely specify the CasinocoinState entry to retrieve. |
-| `ripple_state.accounts` | Array                      | (Required if `ripple_state` specified) 2-length array of account [Address][]es, defining the two accounts linked by this [CasinocoinState object](reference-ledger-format.html#casinocoinstate) |
-| `ripple_state.currency` | String                     | (Required if `ripple_state` specified) [Currency Code][] of the [CasinocoinState object](reference-ledger-format.html#casinocoinstate) to retrieve. |
+| `casinocoin_state`          | Object                     | _(Optional)_ Object specifying the CasinocoinState (trust line) object to retrieve. The `accounts` and `currency` sub-fields are required to uniquely specify the CasinocoinState entry to retrieve. |
+| `casinocoin_state.accounts` | Array                      | (Required if `casinocoin_state` specified) 2-length array of account [Address][]es, defining the two accounts linked by this [CasinocoinState object](reference-ledger-format.html#casinocoinstate) |
+| `casinocoin_state.currency` | String                     | (Required if `casinocoin_state` specified) [Currency Code][] of the [CasinocoinState object](reference-ledger-format.html#casinocoinstate) to retrieve. |
 | `binary`                | Boolean                    | _(Optional)_ If true, return the requested ledger object's contents as a hex string. Otherwise, return data in JSON format. The default is `true` if searching by `index` and `false` otherwise. |
 | `ledger_hash`           | String                     | _(Optional)_ A 20-byte hex string for the ledger version to use. (See [Specifying a Ledger](#specifying-ledgers)) |
 | `ledger_index`          | String or Unsigned Integer | _(Optional)_ The sequence number of the ledger to use, or a shortcut string to choose a ledger automatically. (See [Specifying a Ledger](#specifying-ledgers)) |

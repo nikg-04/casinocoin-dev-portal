@@ -44,7 +44,7 @@ This divides transactions into roughly three categories:
 
 ## Local Load Cost
 
-Each `casinocoind` server maintains a cost threshold based on its current load. If you submit a transaction with a `Fee` value that is lower than current load-based transaction cost of the `casinocoind` server, that server neither applies nor relays the transaction. (**Note:** If you submit a transaction through an [admin connection](reference-casinocoind.html#connecting-to-casinocoind), the server applies and relays the transaction as long as the transaction meets the un-scaled minimum transaction cost.) A transaction is very unlikely to survive [the consensus process](https://casinocoin.org/build/ripple-ledger-consensus-process/) unless its `Fee` value meets the requirements of a majority of servers.
+Each `casinocoind` server maintains a cost threshold based on its current load. If you submit a transaction with a `Fee` value that is lower than current load-based transaction cost of the `casinocoind` server, that server neither applies nor relays the transaction. (**Note:** If you submit a transaction through an [admin connection](reference-casinocoind.html#connecting-to-casinocoind), the server applies and relays the transaction as long as the transaction meets the un-scaled minimum transaction cost.) A transaction is very unlikely to survive [the consensus process](https://casinocoin.org/build/casinocoin-ledger-consensus-process/) unless its `Fee` value meets the requirements of a majority of servers.
 
 ## Open Ledger Cost
 

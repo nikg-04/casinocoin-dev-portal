@@ -2,7 +2,7 @@
 
 This tutorial guides you through the basics of building an CSC Ledger-connected application using [Node.js](http://nodejs.org/) and [CasinocoinAPI](reference-casinocoinapi.html), a JavaScript API for accessing the CSC Ledger.
 
-The scripts and configuration files used in this guide are [available in the CasinoCoin Dev Portal GitHub Repository](https://github.com/ripple/ripple-dev-portal/tree/master/content/code_samples/casinocoinapi_quickstart).
+The scripts and configuration files used in this guide are [available in the CasinoCoin Dev Portal GitHub Repository](https://github.com/casinocoin/casinocoin-dev-portal/tree/master/content/code_samples/casinocoinapi_quickstart).
 
 # Environment Setup
 
@@ -119,7 +119,7 @@ const CasinocoinAPI = require('casinocoin-libjs-api').CasinocoinAPI;
 
 The opening line enables [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode). This is purely optional, but it helps you avoid some common pitfalls of JavaScript. See also: [Restrictions on Code in Strict Mode](https://msdn.microsoft.com/library/br230269%28v=vs.94%29.aspx#Anchor_1).
 
-The second line imports CasinocoinAPI into the current scope using Node.js's require function. CasinocoinAPI is one of [the modules `casinocoin-libjs-api` exports](https://github.com/ripple/casinocoin-libjs-api/blob/develop/src/index.ts).
+The second line imports CasinocoinAPI into the current scope using Node.js's require function. CasinocoinAPI is one of [the modules `casinocoin-libjs-api` exports](https://github.com/casinocoin/casinocoin-libjs-api/blob/develop/src/index.ts).
 
 ### Instantiating the API
 

@@ -2664,7 +2664,7 @@ Response:
 ## Get Validator
 [[Source]<br>](https://github.com/ripple/rippled-historical-database/blob/develop/api/routes/network/getValidators.js "Source")
 
-Get details of a single validator in the [consensus network](https://casinocoin.org/build/ripple-ledger-consensus-process/). 
+Get details of a single validator in the [consensus network](https://casinocoin.org/build/casinocoin-ledger-consensus-process/). 
 
 
 #### Request Format

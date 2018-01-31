@@ -38,7 +38,7 @@ The `Domain` field is represented as the hex string of the lowercase ASCII of th
 
 To remove the `Domain` field from an account, send an AccountSet with the Domain set to an empty string.
 
-Client applications can use the [casinocoin.txt](https://wiki.ripple.com/Casinocoin.txt) file hosted by the domain to confirm that the account is actually operated by that domain.
+Client applications can use the `casinocoin.txt` file hosted by the domain to confirm that the account is actually operated by that domain.
 
 ### AccountSet Flags
 

@@ -78,7 +78,7 @@ To support interest-bearing and demurraging currencies, client applications must
 
 Demurrage was supported in casinocoin-libjs-api versions **0.7.37** through **0.12.9**. Demurrage is ***not supported*** in [CasinocoinAPI](reference-casinocoinapi.html).
 
-The following code samples demonstrate how to use compatible versions of casinocoin-libjs-api to convert between ledger values and display values. Also see the [CasinoCoin Demurrage Calculator](https://ripple.github.io/ripple-demurrage-tool/).
+The following code samples demonstrate how to use compatible versions of casinocoin-libjs-api to convert between ledger values and display values. 
 
 To convert from a display value to a ledger value, use `Amount.from_human()`:
 

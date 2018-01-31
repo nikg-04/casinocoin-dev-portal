@@ -53,6 +53,6 @@ In [CasinocoinAPI](reference-casinocoinapi.html), you can enable the NoCasinocoi
 
 In the case of two accounts that mutually trust each other, the NoCasinocoin flag is tracked separately for each account.
 
-In the [`casinocoind` APIs](reference-casinocoind.html), you can use the [account_lines method](https://casinocoin.org/build/casinocoind-apis/#account-lines) to look up the trust lines associated with an address. For each trust line, the `no_ripple` field shows whether the current address has enabled the NoCasinocoin flag on that trust line, and the `no_ripple_peer` field shows whether the counterparty has enabled the NoCasinocoin flag.
+In the [`casinocoind` APIs](reference-casinocoind.html), you can use the [account_lines method](https://casinocoin.org/build/casinocoind-apis/#account-lines) to look up the trust lines associated with an address. For each trust line, the `no_casinocoin` field shows whether the current address has enabled the NoCasinocoin flag on that trust line, and the `no_casinocoin_peer` field shows whether the counterparty has enabled the NoCasinocoin flag.
 
 In [CasinocoinAPI](reference-casinocoinapi.html), you can use the [getTrustlines](reference-casinocoinapi.html#gettrustlines) method to look up the trust lines associated with an address. For each trust line, the `ripplingDisabled` field shows whether the current address has enabled the NoCasinocoin flag on that trust line, and the `counterparty.ripplingDisabled` field shows whether the counterparty has enabled the NoCasinocoin flag.
