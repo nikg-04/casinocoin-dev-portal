@@ -5,7 +5,7 @@
   "private": true,
   "//": "Change the license to something appropriate. You may want to use 'UNLICENSED' if you are just starting out.",
   "dependencies": {
-    "casinocoin-libjs-api": "*",
+    "casinocoin-libjs": "*",
     "babel-cli": "^6.0.0",
     "babel-preset-es2015": "*"
   },
