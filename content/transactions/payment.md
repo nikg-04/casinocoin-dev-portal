@@ -11,7 +11,7 @@ Example payment:
 {
   "TransactionType" : "Payment",
   "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-  "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+  "Destination" : "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
   "Amount" : {
      "currency" : "USD",
      "value" : "1",

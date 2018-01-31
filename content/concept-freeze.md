@@ -98,7 +98,7 @@ Example of submitting a TrustSet transaction to enable an individual freeze usin
     "LastLedgerSequence": 18103014,
     "LimitAmount": {
       "currency": "USD",
-      "issuer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+      "issuer": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
       "value": "110"
     },
     "Sequence": 340
@@ -196,7 +196,7 @@ WebSocket request:
   "command": "submit",
   "tx_json": {
     "TransactionType": "AccountSet",
-    "Account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+    "Account": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
     "Fee": "12000",
     "Flags": 0,
     "SetFlag": 6,
@@ -255,7 +255,7 @@ Example WebSocket request to check for individual freeze:
   "command": "account_lines",
   "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger": "validated",
-  "peer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW"
+  "peer": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW"
 }
 ```
 
@@ -270,7 +270,7 @@ Example WebSocket response:
     "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "lines": [
       {
-        "account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+        "account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
         "balance": "10",
         "currency": "USD",
         "freeze": true,
@@ -285,7 +285,7 @@ Example WebSocket response:
 }
 ```
 
-The field `"freeze": true` indicates that cDarPNJEpCnpBZSfmcquydockkePkjPGA2 has enabled Individual Freeze on the USD trust line to rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW. The lack of a field `"freeze_peer": true` indicates that the counterparty has _not_ frozen the trust line.
+The field `"freeze": true` indicates that cDarPNJEpCnpBZSfmcquydockkePkjPGA2 has enabled Individual Freeze on the USD trust line to csA2LpzuawewSBQXkiju3YQTMzW13pAAdW. The lack of a field `"freeze_peer": true` indicates that the counterparty has _not_ frozen the trust line.
 
 
 ### Using CasinocoinAPI ###

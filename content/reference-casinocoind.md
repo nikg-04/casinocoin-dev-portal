@@ -771,7 +771,7 @@ An example of the request format:
 {
   "id": 1,
   "command": "account_channels",
-  "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+  "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
   "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "ledger_index": "validated"
 }
@@ -783,7 +783,7 @@ An example of the request format:
 {
     "method": "account_channels",
     "params": [{
-        "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+        "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
         "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "ledger_index": "validated"
     }]
@@ -794,7 +794,7 @@ An example of the request format:
 
 ```bash
 #Syntax: account_channels <account> [<destination_account>] [<ledger>]
-casinocoind account_channels rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH cDarPNJEpCnpBZSfmcquydockkePkjPGA2 validated
+casinocoind account_channels cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH cDarPNJEpCnpBZSfmcquydockkePkjPGA2 validated
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -824,10 +824,10 @@ An example of a successful response:
   "status": "success",
   "type": "response",
   "result": {
-    "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+    "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
     "channels": [
       {
-        "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+        "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
         "amount": "100000000",
         "balance": "1000000",
         "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
@@ -850,9 +850,9 @@ An example of a successful response:
 
 {
     "result": {
-        "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+        "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
         "channels": [{
-            "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "amount": "100000000",
             "balance": "0",
             "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
@@ -874,9 +874,9 @@ An example of a successful response:
 
 {
     "result": {
-        "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+        "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
         "channels": [{
-            "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "amount": "100000000",
             "balance": "0",
             "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
@@ -959,7 +959,7 @@ An example of an account_info request:
     "method": "account_info",
     "params": [
         {
-            "account": "rG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
+            "account": "cG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
             "strict": true,
             "ledger_index": "current",
             "queue": true
@@ -1007,7 +1007,7 @@ An example of a successful response:
     "type": "response",
     "result": {
         "account_data": {
-            "Account": "rG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
+            "Account": "cG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
             "Balance": "999999999960",
             "Flags": 8388608,
             "LedgerEntryType": "AccountRoot",
@@ -1054,7 +1054,7 @@ An example of a successful response:
 {
     "result": {
         "account_data": {
-            "Account": "rG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
+            "Account": "cG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
             "Balance": "999999999960",
             "Flags": 8388608,
             "LedgerEntryType": "AccountRoot",
@@ -1209,7 +1209,7 @@ An example of a successful response:
         "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "lines": [
             {
-                "account": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                "account": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                 "balance": "0",
                 "currency": "ASP",
                 "limit": "0",
@@ -1218,7 +1218,7 @@ An example of a successful response:
                 "quality_out": 0
             },
             {
-                "account": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                "account": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                 "balance": "0",
                 "currency": "XAU",
                 "limit": "0",
@@ -1229,7 +1229,7 @@ An example of a successful response:
                 "quality_out": 0
             },
             {
-                "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+                "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
                 "balance": "3.497605752725159",
                 "currency": "USD",
                 "limit": "5",
@@ -1252,7 +1252,7 @@ An example of a successful response:
         "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "lines": [
             {
-                "account": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                "account": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                 "balance": "0",
                 "currency": "ASP",
                 "limit": "0",
@@ -1261,7 +1261,7 @@ An example of a successful response:
                 "quality_out": 0
             },
             {
-                "account": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                "account": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                 "balance": "0",
                 "currency": "XAU",
                 "limit": "0",
@@ -1272,7 +1272,7 @@ An example of a successful response:
                 "quality_out": 0
             },
             {
-                "account": "rs9M85karFkCRjvc6KMWn8Coigm9cbcgcx",
+                "account": "cs9M85karFkCRjvc6KMWn8Coigm9cbcgcx",
                 "balance": "0",
                 "currency": "015841551A748AD2C1F76FF6ECB0CCCD00000000",
                 "limit": "10.01037626125837",
@@ -1342,7 +1342,7 @@ An example of the request format:
 {
   "id": 2,
   "command": "account_offers",
-  "account": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+  "account": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
   "ledger": "current"
 }
 ```
@@ -1354,7 +1354,7 @@ An example of the request format:
     "method": "account_offers",
     "params": [
         {
-            "account": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+            "account": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
             "ledger_index": "current"
         }
     ]
@@ -1399,7 +1399,7 @@ An example of a successful response:
   "status": "success",
   "type": "response",
   "result": {
-    "account": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+    "account": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
     "ledger_current_index": 18539550,
     "offers": [
       {
@@ -1409,7 +1409,7 @@ An example of a successful response:
         "taker_gets": "33687728098",
         "taker_pays": {
           "currency": "EUR",
-          "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+          "issuer": "chub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
           "value": "193.5921774819578"
         }
       },
@@ -1420,7 +1420,7 @@ An example of a successful response:
         "taker_gets": "2361918758",
         "taker_pays": {
           "currency": "XAU",
-          "issuer": "rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67",
+          "issuer": "crh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67",
           "value": "0.01886995237307572"
         }
       },
@@ -1437,7 +1437,7 @@ An example of a successful response:
 200 OK
 {
     "result": {
-        "account": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+        "account": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
         "ledger_current_index": 18539596,
         "offers": [{
             "flags": 0,
@@ -1446,7 +1446,7 @@ An example of a successful response:
             "taker_gets": "29740867287",
             "taker_pays": {
                 "currency": "USD",
-                "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+                "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
                 "value": "226.0050145327418"
             }
         }, {
@@ -1456,7 +1456,7 @@ An example of a successful response:
             "taker_gets": "2361918758",
             "taker_pays": {
                 "currency": "XAU",
-                "issuer": "rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67",
+                "issuer": "crh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67",
                 "value": "0.01886995237307572"
             }
         }, {
@@ -1466,7 +1466,7 @@ An example of a successful response:
             "taker_gets": "3892952574",
             "taker_pays": {
                 "currency": "CNY",
-                "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+                "issuer": "cKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
                 "value": "158.0380691682966"
             }
         },
@@ -1617,7 +1617,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "ASP",
-                    "issuer": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                    "issuer": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                     "value": "10"
                 },
                 "LowNode": "0000000000000000",
@@ -1641,7 +1641,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "XAU",
-                    "issuer": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                    "issuer": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                     "value": "0"
                 },
                 "LowNode": "0000000000000000",
@@ -1658,7 +1658,7 @@ An example of a successful response:
                 "Flags": 1114112,
                 "HighLimit": {
                     "currency": "USD",
-                    "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+                    "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1682,7 +1682,7 @@ An example of a successful response:
                 "Flags": 65536,
                 "HighLimit": {
                     "currency": "MXN",
-                    "issuer": "rHpXfibHgSb64n8kK9QWDpdbfqSpYbM9a4",
+                    "issuer": "cHpXfibHgSb64n8kK9QWDpdbfqSpYbM9a4",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1706,7 +1706,7 @@ An example of a successful response:
                 "Flags": 1114112,
                 "HighLimit": {
                     "currency": "EUR",
-                    "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+                    "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1737,7 +1737,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "CNY",
-                    "issuer": "rnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK",
+                    "issuer": "cnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK",
                     "value": "0"
                 },
                 "LowNode": "0000000000000008",
@@ -1754,7 +1754,7 @@ An example of a successful response:
                 "Flags": 65536,
                 "HighLimit": {
                     "currency": "DYM",
-                    "issuer": "rGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
+                    "issuer": "cGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1785,7 +1785,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "CHF",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "0"
                 },
                 "LowNode": "000000000000008C",
@@ -1809,7 +1809,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "BTC",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "0"
                 },
                 "LowNode": "0000000000000043",
@@ -1833,7 +1833,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "USD",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "0"
                 },
                 "LowNode": "000000000000004A",
@@ -1875,7 +1875,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "ASP",
-                    "issuer": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                    "issuer": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                     "value": "10"
                 },
                 "LowNode": "0000000000000000",
@@ -1899,7 +1899,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "XAU",
-                    "issuer": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                    "issuer": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                     "value": "0"
                 },
                 "LowNode": "0000000000000000",
@@ -1916,7 +1916,7 @@ An example of a successful response:
                 "Flags": 1114112,
                 "HighLimit": {
                     "currency": "USD",
-                    "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+                    "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1940,7 +1940,7 @@ An example of a successful response:
                 "Flags": 65536,
                 "HighLimit": {
                     "currency": "MXN",
-                    "issuer": "rHpXfibHgSb64n8kK9QWDpdbfqSpYbM9a4",
+                    "issuer": "cHpXfibHgSb64n8kK9QWDpdbfqSpYbM9a4",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1964,7 +1964,7 @@ An example of a successful response:
                 "Flags": 1114112,
                 "HighLimit": {
                     "currency": "EUR",
-                    "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+                    "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -1995,7 +1995,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "CNY",
-                    "issuer": "rnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK",
+                    "issuer": "cnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK",
                     "value": "0"
                 },
                 "LowNode": "0000000000000008",
@@ -2012,7 +2012,7 @@ An example of a successful response:
                 "Flags": 65536,
                 "HighLimit": {
                     "currency": "DYM",
-                    "issuer": "rGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
+                    "issuer": "cGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
                     "value": "0"
                 },
                 "HighNode": "0000000000000000",
@@ -2043,7 +2043,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "CHF",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "0"
                 },
                 "LowNode": "000000000000008C",
@@ -2067,7 +2067,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "BTC",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "0"
                 },
                 "LowNode": "0000000000000043",
@@ -2091,7 +2091,7 @@ An example of a successful response:
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "USD",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "0"
                 },
                 "LowNode": "000000000000004A",
@@ -2275,7 +2275,7 @@ An example of a successful response:
                                     },
                                     "LowLimit": {
                                         "currency": "USD",
-                                        "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                                        "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                                         "value": "0"
                                     }
                                 }
@@ -2285,7 +2285,7 @@ An example of a successful response:
                             "ModifiedNode": {
                                 "FinalFields": {
                                     "Flags": 0,
-                                    "Owner": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                                    "Owner": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                                     "RootIndex": "77F65EFF930ED7E93C6CC839C421E394D6B1B6A47CEA8A140D63EC9C712F46F5"
                                 },
                                 "LedgerEntryType": "DirectoryNode",
@@ -2295,7 +2295,7 @@ An example of a successful response:
                         {
                             "ModifiedNode": {
                                 "FinalFields": {
-                                    "Account": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                                    "Account": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                                     "Balance": "78991384535796",
                                     "Flags": 0,
                                     "OwnerCount": 3,
@@ -2332,7 +2332,7 @@ An example of a successful response:
                     "Flags": 0,
                     "LimitAmount": {
                         "currency": "USD",
-                        "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                        "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                         "value": "100"
                     },
                     "Sequence": 2,
@@ -2373,7 +2373,7 @@ An example of a successful response:
                             "ModifiedNode": {
                                 "FinalFields": {
                                     "Flags": 0,
-                                    "Owner": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                                    "Owner": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                                     "RootIndex": "A39F044D860C5B5846AA7E0FAAD44DC8897F0A62B2F628AA073B21B3EC146010"
                                 },
                                 "LedgerEntryType": "DirectoryNode",
@@ -2406,7 +2406,7 @@ An example of a successful response:
                                     },
                                     "LowLimit": {
                                         "currency": "USD",
-                                        "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                                        "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                                         "value": "0"
                                     }
                                 }
@@ -2437,7 +2437,7 @@ An example of a successful response:
                     "Flags": 0,
                     "LimitAmount": {
                         "currency": "USD",
-                        "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                        "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                         "value": "100"
                     },
                     "Sequence": 3,
@@ -2510,7 +2510,7 @@ An example of a successful response:
                                     },
                                     "LowLimit": {
                                         "currency": "USD",
-                                        "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                                        "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                                         "value": "0"
                                     }
                                 }
@@ -2520,7 +2520,7 @@ An example of a successful response:
                             "ModifiedNode": {
                                 "FinalFields": {
                                     "Flags": 0,
-                                    "Owner": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                                    "Owner": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                                     "RootIndex": "77F65EFF930ED7E93C6CC839C421E394D6B1B6A47CEA8A140D63EC9C712F46F5"
                                 },
                                 "LedgerEntryType": "DirectoryNode",
@@ -2530,7 +2530,7 @@ An example of a successful response:
                         {
                             "ModifiedNode": {
                                 "FinalFields": {
-                                    "Account": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                                    "Account": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                                     "Balance": "78991384535796",
                                     "Flags": 0,
                                     "OwnerCount": 3,
@@ -2567,7 +2567,7 @@ An example of a successful response:
                     "Flags": 0,
                     "LimitAmount": {
                         "currency": "USD",
-                        "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                        "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                         "value": "100"
                     },
                     "Sequence": 2,
@@ -2608,7 +2608,7 @@ An example of a successful response:
                             "ModifiedNode": {
                                 "FinalFields": {
                                     "Flags": 0,
-                                    "Owner": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                                    "Owner": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                                     "RootIndex": "A39F044D860C5B5846AA7E0FAAD44DC8897F0A62B2F628AA073B21B3EC146010"
                                 },
                                 "LedgerEntryType": "DirectoryNode",
@@ -2641,7 +2641,7 @@ An example of a successful response:
                                     },
                                     "LowLimit": {
                                         "currency": "USD",
-                                        "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                                        "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                                         "value": "0"
                                     }
                                 }
@@ -2672,7 +2672,7 @@ An example of a successful response:
                     "Flags": 0,
                     "LimitAmount": {
                         "currency": "USD",
-                        "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                        "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                         "value": "100"
                     },
                     "Sequence": 3,
@@ -2800,8 +2800,8 @@ An example of a successful response:
     "ledger_current_index": 14342939,
     "problems": [
       "You should immediately set your default casinocoin flag",
-      "You should clear the no casinocoin flag on your XAU line to r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
-      "You should clear the no casinocoin flag on your USD line to rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+      "You should clear the no casinocoin flag on your XAU line to c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+      "You should clear the no casinocoin flag on your USD line to cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
     ],
     "transactions": [
       {
@@ -2817,7 +2817,7 @@ An example of a successful response:
         "Flags": 262144,
         "LimitAmount": {
           "currency": "XAU",
-          "issuer": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+          "issuer": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
           "value": "0"
         },
         "Sequence": 1407,
@@ -2829,7 +2829,7 @@ An example of a successful response:
         "Flags": 262144,
         "LimitAmount": {
           "currency": "USD",
-          "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "value": "5"
         },
         "Sequence": 1408,
@@ -2850,8 +2850,8 @@ An example of a successful response:
         "ledger_current_index": 14380381,
         "problems": [
             "You should immediately set your default casinocoin flag",
-            "You should clear the no casinocoin flag on your XAU line to r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
-            "You should clear the no casinocoin flag on your USD line to rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+            "You should clear the no casinocoin flag on your XAU line to c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+            "You should clear the no casinocoin flag on your USD line to cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
         ],
         "status": "success",
         "transactions": [
@@ -2868,7 +2868,7 @@ An example of a successful response:
                 "Flags": 262144,
                 "LimitAmount": {
                     "currency": "XAU",
-                    "issuer": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
+                    "issuer": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z",
                     "value": "0"
                 },
                 "Sequence": 1407,
@@ -2880,7 +2880,7 @@ An example of a successful response:
                 "Flags": 262144,
                 "LimitAmount": {
                     "currency": "USD",
-                    "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+                    "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
                     "value": "5"
                 },
                 "Sequence": 1408,
@@ -2926,9 +2926,9 @@ An example of the request format:
 {
     "id": "example_gateway_balances_1",
     "command": "gateway_balances",
-    "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+    "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
     "strict": true,
-    "hotwallet": ["rKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ","ra7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt"],
+    "hotwallet": ["cKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ","ca7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt"],
     "ledger_index": "validated"
 }
 ```
@@ -2940,10 +2940,10 @@ An example of the request format:
     "method": "gateway_balances",
     "params": [
         {
-            "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+            "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
             "hotwallet": [
-                "rKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ",
-                "ra7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt"
+                "cKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ",
+                "ca7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt"
             ],
             "ledger_index": "validated",
             "strict": true
@@ -2978,33 +2978,33 @@ An example of a successful response:
   "status": "success",
   "type": "response",
   "result": {
-    "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+    "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
     "assets": {
-      "r9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH": [
+      "c9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH": [
         {
           "currency": "BTC",
           "value": "5444166510000000e-26"
         }
       ],
-      "rPFLkxQk6xUGdGYEykqe7PR25Gr7mLHDc8": [
+      "cPFLkxQk6xUGdGYEykqe7PR25Gr7mLHDc8": [
         {
           "currency": "EUR",
           "value": "4000000000000000e-27"
         }
       ],
-      "rPU6VbckqCLW4kb51CWqZdxvYyQrQVsnSj": [
+      "cPU6VbckqCLW4kb51CWqZdxvYyQrQVsnSj": [
         {
           "currency": "BTC",
           "value": "1029900000000000e-26"
         }
       ],
-      "rpR95n1iFkTqpoy1e878f4Z1pVHVtWKMNQ": [
+      "cpR95n1iFkTqpoy1e878f4Z1pVHVtWKMNQ": [
         {
           "currency": "BTC",
           "value": "4000000000000000e-30"
         }
       ],
-      "rwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6": [
+      "cwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6": [
         {
           "currency": "BTC",
           "value": "8700000000000000e-30"
@@ -3012,13 +3012,13 @@ An example of a successful response:
       ]
     },
     "balances": {
-      "rKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ": [
+      "cKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ": [
         {
           "currency": "EUR",
           "value": "29826.1965999999"
         }
       ],
-      "ra7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt": [
+      "ca7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt": [
         {
           "currency": "USD",
           "value": "13857.70416"
@@ -3044,33 +3044,33 @@ An example of a successful response:
 200 OK
 {
     "result": {
-        "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+        "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
         "assets": {
-            "r9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH": [
+            "c9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH": [
                 {
                     "currency": "BTC",
                     "value": "5444166510000000e-26"
                 }
             ],
-            "rPFLkxQk6xUGdGYEykqe7PR25Gr7mLHDc8": [
+            "cPFLkxQk6xUGdGYEykqe7PR25Gr7mLHDc8": [
                 {
                     "currency": "EUR",
                     "value": "4000000000000000e-27"
                 }
             ],
-            "rPU6VbckqCLW4kb51CWqZdxvYyQrQVsnSj": [
+            "cPU6VbckqCLW4kb51CWqZdxvYyQrQVsnSj": [
                 {
                     "currency": "BTC",
                     "value": "1029900000000000e-26"
                 }
             ],
-            "rpR95n1iFkTqpoy1e878f4Z1pVHVtWKMNQ": [
+            "cpR95n1iFkTqpoy1e878f4Z1pVHVtWKMNQ": [
                 {
                     "currency": "BTC",
                     "value": "4000000000000000e-30"
                 }
             ],
-            "rwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6": [
+            "cwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6": [
                 {
                     "currency": "BTC",
                     "value": "8700000000000000e-30"
@@ -3078,13 +3078,13 @@ An example of a successful response:
             ]
         },
         "balances": {
-            "rKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ": [
+            "cKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ": [
                 {
                     "currency": "EUR",
                     "value": "29826.1965999999"
                 }
             ],
-            "ra7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt": [
+            "ca7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt": [
                 {
                     "currency": "USD",
                     "value": "13857.70416"
@@ -3245,7 +3245,7 @@ An example of a successful response:
   "status": "success",
   "type": "response",
   "result": {
-    "account_id": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+    "account_id": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
     "key_type": "secp256k1",
     "master_key": "I IRE BOND BOW TRIO LAID SEAT GOAL HEN IBIS IBIS DARE",
     "master_seed": "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
@@ -3261,7 +3261,7 @@ An example of a successful response:
 ```
 {
     "result": {
-        "account_id": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "account_id": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
         "key_type": "secp256k1",
         "master_key": "I IRE BOND BOW TRIO LAID SEAT GOAL HEN IBIS IBIS DARE",
         "master_seed": "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
@@ -3280,7 +3280,7 @@ Loading: "/etc/casinocoind.cfg"
 Connecting to 127.0.0.1:5005
 {
    "result" : {
-      "account_id" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+      "account_id" : "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
       "key_type" : "secp256k1",
       "master_key" : "I IRE BOND BOW TRIO LAID SEAT GOAL HEN IBIS IBIS DARE",
       "master_seed" : "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
@@ -3803,7 +3803,7 @@ An example of a successful response:
         "marker": "0002A590029B53BE7857EFF9985F770EC792CE483720EB5E963C4D6A607D43DF",
         "state": [
             {
-                "Account": "rKKzk9ghA2iuy3imqMXUHJqdRPMtNDGf4c",
+                "Account": "cKKzk9ghA2iuy3imqMXUHJqdRPMtNDGf4c",
                 "Balance": "893730848",
                 "Flags": 0,
                 "LedgerEntryType": "AccountRoot",
@@ -3814,7 +3814,7 @@ An example of a successful response:
                 "index": "00001A2969BE1FC85F1D7A55282FA2E6D95C71D2E4B9C0FDD3D9994F3C00FF8F"
             },
             {
-                "Account": "rGryPmNWFognBgMtr9k4quqPbbEcCrhNmD",
+                "Account": "cGryPmNWFognBgMtr9k4quqPbbEcCrhNmD",
                 "BookDirectory": "71633D7DE1B6AEB32F87F1A73258B13FC8CC32942D53A66D4F038D7EA4C68000",
                 "BookNode": "0000000000000000",
                 "Flags": 0,
@@ -3826,13 +3826,13 @@ An example of a successful response:
                 "TakerGets": "1000000",
                 "TakerPays": {
                     "currency": "BTC",
-                    "issuer": "rnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK",
+                    "issuer": "cnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK",
                     "value": "1"
                 },
                 "index": "000037C6659BB98F8D09F2F4CFEB27DE8EFEAFE54DD9E1C13AECDF5794B0C0F5"
             },
             {
-                "Account": "rUy8tW38MW9ma7kSjRgB2GHtTkQAFRyrN8",
+                "Account": "cUy8tW38MW9ma7kSjRgB2GHtTkQAFRyrN8",
                 "BookDirectory": "DFA3B6DDAB58C7E8E5D944E736DA4B7046C30E4F460FD9DE4C1AA535D3D0C000",
                 "BookNode": "0000000000000000",
                 "Flags": 131072,
@@ -3844,13 +3844,13 @@ An example of a successful response:
                 "TakerGets": "780000000000",
                 "TakerPays": {
                     "currency": "USD",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "5850"
                 },
                 "index": "0000A8791F78CC9B39200E12A9BDAACCF40A72A512FA815525CFC9BA772990F7"
             },
             {
-                "Account": "rh3C81VfNDhhWPQWCU8ZGgknvdgNUvRtM9",
+                "Account": "ch3C81VfNDhhWPQWCU8ZGgknvdgNUvRtM9",
                 "Balance": "13000000000",
                 "Flags": 0,
                 "LedgerEntryType": "AccountRoot",
@@ -3869,14 +3869,14 @@ An example of a successful response:
                 "Flags": 131072,
                 "HighLimit": {
                     "currency": "BTC",
-                    "issuer": "rKUK9omZqVEnraCipKNFb5q4tuNTeqEDZS",
+                    "issuer": "cKUK9omZqVEnraCipKNFb5q4tuNTeqEDZS",
                     "value": "10"
                 },
                 "HighNode": "0000000000000000",
                 "LedgerEntryType": "CasinocoinState",
                 "LowLimit": {
                     "currency": "BTC",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "value": "0"
                 },
                 "LowNode": "0000000000000000",
@@ -4415,7 +4415,7 @@ An example of a successful response:
 {
     "id": 1,
     "result": {
-        "Account": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+        "Account": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
         "Amount": {
             "currency": "USD",
             "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -4427,32 +4427,32 @@ An example of a successful response:
         "Paths": [
             [
                 {
-                    "account": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                    "account": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                     "currency": "USD",
-                    "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                    "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                     "type": 49,
                     "type_hex": "0000000000000031"
                 }
             ],
             [
                 {
-                    "account": "rD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
+                    "account": "cD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
                     "currency": "USD",
-                    "issuer": "rD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
+                    "issuer": "cD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
                     "type": 49,
                     "type_hex": "0000000000000031"
                 },
                 {
-                    "account": "rB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
+                    "account": "cB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
                     "currency": "USD",
-                    "issuer": "rB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
+                    "issuer": "cB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
                     "type": 49,
                     "type_hex": "0000000000000031"
                 },
                 {
-                    "account": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                    "account": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                     "currency": "USD",
-                    "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                    "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                     "type": 49,
                     "type_hex": "0000000000000031"
                 }
@@ -4460,7 +4460,7 @@ An example of a successful response:
         ],
         "SendMax": {
             "currency": "USD",
-            "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+            "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
             "value": "1.01"
         },
         "Sequence": 88,
@@ -4475,7 +4475,7 @@ An example of a successful response:
                 {
                     "ModifiedNode": {
                         "FinalFields": {
-                            "Account": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                            "Account": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                             "Balance": "59328999119",
                             "Flags": 0,
                             "OwnerCount": 11,
@@ -4508,7 +4508,7 @@ An example of a successful response:
                             "HighNode": "0000000000000000",
                             "LowLimit": {
                                 "currency": "USD",
-                                "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                                "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                                 "value": "0"
                             },
                             "LowNode": "0000000000000000"
@@ -4633,7 +4633,7 @@ An example of a successful response:
                 {
                     "ModifiedNode": {
                         "FinalFields": {
-                            "Account": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                            "Account": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                             "Balance": "59328999119",
                             "Flags": 0,
                             "OwnerCount": 11,
@@ -4666,7 +4666,7 @@ An example of a successful response:
                             "HighNode": "0000000000000000",
                             "LowLimit": {
                                 "currency": "USD",
-                                "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                                "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                                 "value": "0"
                             },
                             "LowNode": "0000000000000000"
@@ -4689,7 +4689,7 @@ An example of a successful response:
             "TransactionResult": "tesSUCCESS"
         },
         "tx_json": {
-            "Account": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+            "Account": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
             "Amount": {
                 "currency": "USD",
                 "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -4701,32 +4701,32 @@ An example of a successful response:
             "Paths": [
                 [
                     {
-                        "account": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                        "account": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                         "currency": "USD",
-                        "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                        "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                         "type": 49,
                         "type_hex": "0000000000000031"
                     }
                 ],
                 [
                     {
-                        "account": "rD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
+                        "account": "cD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
                         "currency": "USD",
-                        "issuer": "rD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
+                        "issuer": "cD1jovjQeEpvaDwn9wKaYokkXXrqo4D23x",
                         "type": 49,
                         "type_hex": "0000000000000031"
                     },
                     {
-                        "account": "rB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
+                        "account": "cB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
                         "currency": "USD",
-                        "issuer": "rB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
+                        "issuer": "cB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
                         "type": 49,
                         "type_hex": "0000000000000031"
                     },
                     {
-                        "account": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                        "account": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                         "currency": "USD",
-                        "issuer": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+                        "issuer": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
                         "type": 49,
                         "type_hex": "0000000000000031"
                     }
@@ -4734,7 +4734,7 @@ An example of a successful response:
             ],
             "SendMax": {
                 "currency": "USD",
-                "issuer": "r3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
+                "issuer": "c3PDtZSa5LiYp1Ysn1vMuMzB59RzV3W9QH",
                 "value": "1.01"
             },
             "Sequence": 88,
@@ -4848,7 +4848,7 @@ An example of a successful response:
     "index": 0,
     "txs": [
       {
-        "Account": "r9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
+        "Account": "c9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
         "Fee": "12",
         "Flags": 2147483648,
         "LastLedgerSequence": 6907169,
@@ -4861,7 +4861,7 @@ An example of a successful response:
         "ledger_index": 6907162
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "Sequence": 1479735,
@@ -4869,7 +4869,7 @@ An example of a successful response:
         "TakerGets": "9999999999",
         "TakerPays": {
           "currency": "USD",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "48.050907917"
         },
         "TransactionType": "OfferCreate",
@@ -4879,7 +4879,7 @@ An example of a successful response:
         "ledger_index": 6907162
       },
       {
-        "Account": "r9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
+        "Account": "c9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
         "Fee": "12",
         "Flags": 2147483648,
         "LastLedgerSequence": 6907169,
@@ -4892,14 +4892,14 @@ An example of a successful response:
         "ledger_index": 6907162
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 131072,
         "Sequence": 1479734,
         "SigningPubKey": "025718736160FA6632F48EA4354A35AB0340F8D7DC7083799B9C57C3E937D71851",
         "TakerGets": {
           "currency": "BTC",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "0.009194668"
         },
         "TakerPays": "1073380944",
@@ -4910,19 +4910,19 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 131072,
         "Sequence": 1479733,
         "SigningPubKey": "025718736160FA6632F48EA4354A35AB0340F8D7DC7083799B9C57C3E937D71851",
         "TakerGets": {
           "currency": "USD",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "5.298037873"
         },
         "TakerPays": {
           "currency": "BTC",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "0.008937558999999999"
         },
         "TransactionType": "OfferCreate",
@@ -4932,7 +4932,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "OfferSequence": 1479726,
@@ -4945,7 +4945,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "OfferSequence": 1479725,
@@ -4958,7 +4958,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "OfferSequence": 1479724,
@@ -4971,7 +4971,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "OfferSequence": 1479723,
@@ -4984,7 +4984,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "OfferSequence": 1479722,
@@ -4997,7 +4997,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rUBLCjWdsPPMkppdFXVJWhHnr3FNqCzgG3",
+        "Account": "cUBLCjWdsPPMkppdFXVJWhHnr3FNqCzgG3",
         "Fee": "15",
         "Flags": 0,
         "LastLedgerSequence": 6907168,
@@ -5005,12 +5005,12 @@ An example of a successful response:
         "SigningPubKey": "03D606359EEA9C0A49CA9EF55F6AED6C8AEDDE604223C1BE51A2D0460A725CF173",
         "TakerGets": {
           "currency": "BTC",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "0.44942631"
         },
         "TakerPays": {
           "currency": "USD",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "260"
         },
         "TransactionType": "OfferCreate",
@@ -5020,7 +5020,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rDVynssGDojUPpM4abx9rxYeHG4HiLGxC",
+        "Account": "cDVynssGDojUPpM4abx9rxYeHG4HiLGxC",
         "Fee": "15",
         "Flags": 2147483648,
         "LastLedgerSequence": 6907169,
@@ -5030,7 +5030,7 @@ An example of a successful response:
         "TakerGets": "19871628459",
         "TakerPays": {
           "currency": "BTC",
-          "issuer": "rfYv1TXnwgDDK4WQNbFALykYuEBnrR4pDX",
+          "issuer": "cfYv1TXnwgDDK4WQNbFALykYuEBnrR4pDX",
           "value": "0.166766470665369"
         },
         "TransactionType": "OfferCreate",
@@ -5040,7 +5040,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "OfferSequence": 1479721,
@@ -5053,7 +5053,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "r9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
+        "Account": "c9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
         "Fee": "12",
         "Flags": 2147483648,
         "LastLedgerSequence": 6907168,
@@ -5066,7 +5066,7 @@ An example of a successful response:
         "ledger_index": 6907161
       },
       {
-        "Account": "r9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
+        "Account": "c9bf8V4ae5xReYnKPXgnwERDFPoW34FhGy",
         "Fee": "12",
         "Flags": 2147483648,
         "LastLedgerSequence": 6907167,
@@ -5075,7 +5075,7 @@ An example of a successful response:
         "TakerGets": "5397",
         "TakerPays": {
           "currency": "USD",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "0.00002593363079073453"
         },
         "TransactionType": "OfferCreate",
@@ -5085,20 +5085,20 @@ An example of a successful response:
         "ledger_index": 6907160
       },
       {
-        "Account": "rBHMbioz9znTCqgjZ6Nx43uWY43kToEPa9",
+        "Account": "cBHMbioz9znTCqgjZ6Nx43uWY43kToEPa9",
         "Amount": {
           "currency": "USD",
-          "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "value": "4"
         },
-        "Destination": "r4X3WWZ3UZMDw3Z7T32FXK2NAaiitSWZ9c",
+        "Destination": "c4X3WWZ3UZMDw3Z7T32FXK2NAaiitSWZ9c",
         "Fee": "12",
         "Flags": 0,
         "LastLedgerSequence": 6907168,
         "Paths": [
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
@@ -5109,37 +5109,37 @@ An example of a successful response:
             },
             {
               "currency": "USD",
-              "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
@@ -5150,24 +5150,24 @@ An example of a successful response:
             },
             {
               "currency": "USD",
-              "issuer": "rwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6",
+              "issuer": "cwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6",
+              "account": "cwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
@@ -5178,17 +5178,17 @@ An example of a successful response:
             },
             {
               "currency": "USD",
-              "issuer": "rfsEoNBUBbvkf4jPcFe2u9CyaQagLVHGfP",
+              "issuer": "cfsEoNBUBbvkf4jPcFe2u9CyaQagLVHGfP",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rfsEoNBUBbvkf4jPcFe2u9CyaQagLVHGfP",
+              "account": "cfsEoNBUBbvkf4jPcFe2u9CyaQagLVHGfP",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5196,7 +5196,7 @@ An example of a successful response:
         ],
         "SendMax": {
           "currency": "USD",
-          "issuer": "rBHMbioz9znTCqgjZ6Nx43uWY43kToEPa9",
+          "issuer": "cBHMbioz9znTCqgjZ6Nx43uWY43kToEPa9",
           "value": "4.132649022"
         },
         "Sequence": 4660,
@@ -5208,19 +5208,19 @@ An example of a successful response:
         "ledger_index": 6907160
       },
       {
-        "Account": "rfESTMcbvbvCBqU1FTvGWiJP8cmUSu4GKg",
+        "Account": "cfESTMcbvbvCBqU1FTvGWiJP8cmUSu4GKg",
         "Amount": {
           "currency": "BTC",
-          "issuer": "rTJdjjQ5wWAMh8TL1ToXXD2mZzesa6DSX",
+          "issuer": "cTJdjjQ5wWAMh8TL1ToXXD2mZzesa6DSX",
           "value": "0.0998"
         },
-        "Destination": "r3AWbdp2jQLXLywJypdoNwVSvr81xs3uhn",
+        "Destination": "c3AWbdp2jQLXLywJypdoNwVSvr81xs3uhn",
         "Fee": "10",
         "Flags": 2147483648,
         "InvoiceID": "A98FD36C17BE2B8511AD36DC335478E7E89F06262949F36EB88E2D683BBCC50A",
         "SendMax": {
           "currency": "BTC",
-          "issuer": "rTJdjjQ5wWAMh8TL1ToXXD2mZzesa6DSX",
+          "issuer": "cTJdjjQ5wWAMh8TL1ToXXD2mZzesa6DSX",
           "value": "0.100798"
         },
         "Sequence": 18697,
@@ -5232,7 +5232,7 @@ An example of a successful response:
         "ledger_index": 6907159
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "Sequence": 1479726,
@@ -5240,7 +5240,7 @@ An example of a successful response:
         "TakerGets": "37284087",
         "TakerPays": {
           "currency": "NZD",
-          "issuer": "rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc",
+          "issuer": "csP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc",
           "value": "0.291570426"
         },
         "TransactionType": "OfferCreate",
@@ -5250,7 +5250,7 @@ An example of a successful response:
         "ledger_index": 6907159
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "Sequence": 1479725,
@@ -5258,7 +5258,7 @@ An example of a successful response:
         "TakerGets": "10000000000",
         "TakerPays": {
           "currency": "BTC",
-          "issuer": "ra9eZxMbJrUcgV8ui7aPc161FgrqWScQxV",
+          "issuer": "ca9eZxMbJrUcgV8ui7aPc161FgrqWScQxV",
           "value": "0.091183099"
         },
         "TransactionType": "OfferCreate",
@@ -5268,7 +5268,7 @@ An example of a successful response:
         "ledger_index": 6907159
       },
       {
-        "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+        "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
         "Fee": "15",
         "Flags": 0,
         "Sequence": 1479724,
@@ -5276,7 +5276,7 @@ An example of a successful response:
         "TakerGets": "9094329166",
         "TakerPays": {
           "currency": "XAG",
-          "issuer": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH",
+          "issuer": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH",
           "value": "3.022830117"
         },
         "TransactionType": "OfferCreate",
@@ -5300,19 +5300,19 @@ An example of a successful response:
         "status": "success",
         "txs": [
             {
-                "Account": "rPJnufUfjS22swpE7mWRkn2VRNGnHxUSYc",
+                "Account": "cPJnufUfjS22swpE7mWRkn2VRNGnHxUSYc",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 567546,
                 "SigningPubKey": "0317766BFFC0AAF5DB4AFDE23236624304AC4BC903AA8B172AE468F6B512616D6A",
                 "TakerGets": {
                     "currency": "BTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "1.12582"
                 },
                 "TakerPays": {
                     "currency": "ILS",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "1981.893528"
                 },
                 "TransactionType": "OfferCreate",
@@ -5322,19 +5322,19 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rwpxNWdpKu2QVgrh5LQXEygYLshhgnRL1Y",
+                "Account": "cwpxNWdpKu2QVgrh5LQXEygYLshhgnRL1Y",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 1865518,
                 "SigningPubKey": "02BD6F0CFD0182F2F408512286A0D935C58FF41169DAC7E721D159D711695DFF85",
                 "TakerGets": {
                     "currency": "LTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "1.12095"
                 },
                 "TakerPays": {
                     "currency": "ILS",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "20.77526133899999"
                 },
                 "TransactionType": "OfferCreate",
@@ -5344,19 +5344,19 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rMWUykAmNQDaM9poSes8VLDZDDKEbmo7MX",
+                "Account": "cMWUykAmNQDaM9poSes8VLDZDDKEbmo7MX",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 1886203,
                 "SigningPubKey": "0256C64F0378DCCCB4E0224B36F7ED1E5586455FF105F760245ADB35A8B03A25FD",
                 "TakerGets": {
                     "currency": "LTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "24.154"
                 },
                 "TakerPays": {
                     "currency": "BTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.26907556"
                 },
                 "TransactionType": "OfferCreate",
@@ -5366,7 +5366,7 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rJJksugQDMVu12NrZyw3C55fEUmPtRYVRC",
+                "Account": "cJJksugQDMVu12NrZyw3C55fEUmPtRYVRC",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 119205,
@@ -5374,7 +5374,7 @@ An example of a successful response:
                 "TakerGets": "10136500000",
                 "TakerPays": {
                     "currency": "USD",
-                    "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+                    "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
                     "value": "50"
                 },
                 "TransactionType": "OfferCreate",
@@ -5384,19 +5384,19 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rLPrL6KUtVZZbDfJMjDXzTKkwH39Udfw6e",
+                "Account": "cLPrL6KUtVZZbDfJMjDXzTKkwH39Udfw6e",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 428775,
                 "SigningPubKey": "03B2B67209DBDE2FA68555FB10BD791C4732C685349979FDC47D0DEF2B27EFA364",
                 "TakerGets": {
                     "currency": "PPC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "8.0635"
                 },
                 "TakerPays": {
                     "currency": "BTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.01355474349999999"
                 },
                 "TransactionType": "OfferCreate",
@@ -5406,19 +5406,19 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rM7WN56kktEkE5qKwNkQ1af4BZ56bynVUf",
+                "Account": "cM7WN56kktEkE5qKwNkQ1af4BZ56bynVUf",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 435008,
                 "SigningPubKey": "0256AE48790FEF5F61C1AB3765287EABCBE6B47C5098271F596A576DF7CFA15720",
                 "TakerGets": {
                     "currency": "PPC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.365"
                 },
                 "TakerPays": {
                     "currency": "ILS",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.9977421"
                 },
                 "TransactionType": "OfferCreate",
@@ -5428,7 +5428,7 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rLjhDX8zT6vy8T7hjUDvK48wTy5SYFpfwZ",
+                "Account": "cLjhDX8zT6vy8T7hjUDvK48wTy5SYFpfwZ",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "OfferSequence": 432536,
@@ -5441,19 +5441,19 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rn694SpeUFw3VJwapyRKx6bpru3ZpDHzji",
+                "Account": "cn694SpeUFw3VJwapyRKx6bpru3ZpDHzji",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 396235,
                 "SigningPubKey": "03896496732D098F2D8EE22D65ED9A88C0FF116785AE448EA1F521534C7C5BC6E3",
                 "TakerGets": {
                     "currency": "ILS",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.700491"
                 },
                 "TakerPays": {
                     "currency": "NMC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.22"
                 },
                 "TransactionType": "OfferCreate",
@@ -5463,14 +5463,14 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
+                "Account": "cRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 676061,
                 "SigningPubKey": "030BB49C591C9CD65C945D4B78332F27633D7771E6CF4D4B942D26BA40748BB8B4",
                 "TakerGets": {
                     "currency": "BTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.09675"
                 },
                 "TakerPays": "10527647107",
@@ -5481,7 +5481,7 @@ An example of a successful response:
                 "ledger_index": 8696235
             },
             {
-                "Account": "rJJksugQDMVu12NrZyw3C55fEUmPtRYVRC",
+                "Account": "cJJksugQDMVu12NrZyw3C55fEUmPtRYVRC",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "OfferSequence": 119183,
@@ -5494,7 +5494,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rM7WN56kktEkE5qKwNkQ1af4BZ56bynVUf",
+                "Account": "cM7WN56kktEkE5qKwNkQ1af4BZ56bynVUf",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "OfferSequence": 434977,
@@ -5507,7 +5507,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rLPrL6KUtVZZbDfJMjDXzTKkwH39Udfw6e",
+                "Account": "cLPrL6KUtVZZbDfJMjDXzTKkwH39Udfw6e",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "OfferSequence": 428744,
@@ -5520,7 +5520,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
+                "Account": "cHsZHqa5oMQNL5hFm4kfLd47aEMYjPstpg",
                 "Fee": "64",
                 "Flags": 0,
                 "Sequence": 4216371,
@@ -5528,7 +5528,7 @@ An example of a successful response:
                 "TakerGets": "12566721624",
                 "TakerPays": {
                     "currency": "USD",
-                    "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+                    "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
                     "value": "74.999999999"
                 },
                 "TransactionType": "OfferCreate",
@@ -5538,7 +5538,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rJJksugQDMVu12NrZyw3C55fEUmPtRYVRC",
+                "Account": "cJJksugQDMVu12NrZyw3C55fEUmPtRYVRC",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "OfferSequence": 119182,
@@ -5551,7 +5551,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rGJrzrNBfv6ndJmzt1hTUJVx7z8o2bg3of",
+                "Account": "cGJrzrNBfv6ndJmzt1hTUJVx7z8o2bg3of",
                 "Fee": "15",
                 "Flags": 2147483648,
                 "LastLedgerSequence": 8696241,
@@ -5565,19 +5565,19 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rn694SpeUFw3VJwapyRKx6bpru3ZpDHzji",
+                "Account": "cn694SpeUFw3VJwapyRKx6bpru3ZpDHzji",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 396234,
                 "SigningPubKey": "03896496732D098F2D8EE22D65ED9A88C0FF116785AE448EA1F521534C7C5BC6E3",
                 "TakerGets": {
                     "currency": "ILS",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.3335471399999999"
                 },
                 "TakerPays": {
                     "currency": "NMC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.102"
                 },
                 "TransactionType": "OfferCreate",
@@ -5587,7 +5587,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rwpxNWdpKu2QVgrh5LQXEygYLshhgnRL1Y",
+                "Account": "cwpxNWdpKu2QVgrh5LQXEygYLshhgnRL1Y",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "OfferSequence": 1865490,
@@ -5600,19 +5600,19 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rPJnufUfjS22swpE7mWRkn2VRNGnHxUSYc",
+                "Account": "cPJnufUfjS22swpE7mWRkn2VRNGnHxUSYc",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 567545,
                 "SigningPubKey": "0317766BFFC0AAF5DB4AFDE23236624304AC4BC903AA8B172AE468F6B512616D6A",
                 "TakerGets": {
                     "currency": "BTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "0.66099"
                 },
                 "TakerPays": {
                     "currency": "ILS",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "1157.5521276"
                 },
                 "TransactionType": "OfferCreate",
@@ -5622,7 +5622,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rLLq27Wat93Gxkq5mV5GxtKkT146Su949V",
+                "Account": "cLLq27Wat93Gxkq5mV5GxtKkT146Su949V",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "Sequence": 722529,
@@ -5630,7 +5630,7 @@ An example of a successful response:
                 "TakerGets": "130272502088",
                 "TakerPays": {
                     "currency": "BTC",
-                    "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+                    "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
                     "value": "1.3177"
                 },
                 "TransactionType": "OfferCreate",
@@ -5640,7 +5640,7 @@ An example of a successful response:
                 "ledger_index": 8696234
             },
             {
-                "Account": "rMWUykAmNQDaM9poSes8VLDZDDKEbmo7MX",
+                "Account": "cMWUykAmNQDaM9poSes8VLDZDDKEbmo7MX",
                 "Fee": "10",
                 "Flags": 2147483648,
                 "OfferSequence": 1886173,
@@ -5712,7 +5712,7 @@ An example of the request format:
     "destination_amount": {
         "value": "0.001",
         "currency": "USD",
-        "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
     }
 }
 ```
@@ -5754,12 +5754,12 @@ An example of a successful response:
           [
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5767,12 +5767,12 @@ An example of a successful response:
           [
             {
               "currency": "USD",
-              "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5780,12 +5780,12 @@ An example of a successful response:
           [
             {
               "currency": "USD",
-              "issuer": "r9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X",
+              "issuer": "c9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "r9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X",
+              "account": "c9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5793,12 +5793,12 @@ An example of a successful response:
           [
             {
               "currency": "USD",
-              "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "account": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5810,54 +5810,54 @@ An example of a successful response:
         "paths_computed": [
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "account": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5873,18 +5873,18 @@ An example of a successful response:
         "paths_computed": [
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5900,36 +5900,36 @@ An example of a successful response:
         "paths_computed": [
           [
             {
-              "account": "razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
+              "account": "cazqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
+              "account": "cazqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -5945,54 +5945,54 @@ An example of a successful response:
         "paths_computed": [
           [
             {
-              "account": "rGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
+              "account": "cGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "account": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
+              "account": "cGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
+              "account": "cGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+              "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -6008,54 +6008,54 @@ An example of a successful response:
         "paths_computed": [
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "account": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
           ],
           [
             {
-              "account": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "account": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+              "account": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -6071,18 +6071,18 @@ An example of a successful response:
         "paths_computed": [
           [
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             },
             {
               "currency": "USD",
-              "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 48,
               "type_hex": "0000000000000030"
             },
             {
-              "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+              "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
               "type": 1,
               "type_hex": "0000000000000001"
             }
@@ -6098,7 +6098,7 @@ An example of a successful response:
     "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "destination_amount": {
       "currency": "USD",
-      "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+      "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
       "value": "0.001"
     },
     "id": 1,
@@ -6156,7 +6156,7 @@ Here is an example of an asychronous follow-up from a path_find create request:
     "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "destination_amount": {
         "currency": "USD",
-        "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+        "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
         "value": "0.001"
     },
     "source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
@@ -6289,7 +6289,7 @@ An example of the request format:
     "destination_amount": {
         "value": "0.001",
         "currency": "USD",
-        "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
     }
 }
 ```
@@ -6304,7 +6304,7 @@ An example of the request format:
             "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "destination_amount": {
                 "currency": "USD",
-                "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                 "value": "0.001"
             },
             "source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -6325,7 +6325,7 @@ An example of the request format:
 
 ```
 #Syntax casinocoin_path_find json ledger_index|ledger_hash
-casinocoind casinocoin_path_find '{"source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "source_currencies": [ { "currency": "CSC" }, { "currency": "USD" } ], "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "destination_amount": { "value": "0.001", "currency": "USD", "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B" } }'
+casinocoind casinocoin_path_find '{"source_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "source_currencies": [ { "currency": "CSC" }, { "currency": "USD" } ], "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "destination_amount": { "value": "0.001", "currency": "USD", "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B" } }'
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -6365,12 +6365,12 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6378,17 +6378,17 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
+                            "issuer": "crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
+                            "account": "crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6396,22 +6396,22 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
+                            "issuer": "crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
+                            "account": "crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rLpq4LgabRfm1xEX5dpWfJovYBH6g7z99q",
+                            "account": "cLpq4LgabRfm1xEX5dpWfJovYBH6g7z99q",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6419,22 +6419,22 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
+                            "issuer": "crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
+                            "account": "crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rPuBoajMjFoDjweJBrtZEBwUMkyruxpwwV",
+                            "account": "cPuBoajMjFoDjweJBrtZEBwUMkyruxpwwV",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6472,22 +6472,22 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2",
+                            "issuer": "cpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2",
+                            "account": "cpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rfDeu7TPUmyvUrffexjMjq3mMcSQHZSYyA",
+                            "account": "cfDeu7TPUmyvUrffexjMjq3mMcSQHZSYyA",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6495,12 +6495,12 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6508,22 +6508,22 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+                            "issuer": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
+                            "account": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "raspZSGNiTKi5jmvFxUYCuYXPv1V8WhL5g",
+                            "account": "caspZSGNiTKi5jmvFxUYCuYXPv1V8WhL5g",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6531,17 +6531,17 @@ An example of a successful response:
                     [
                         {
                             "currency": "USD",
-                            "issuer": "rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT",
+                            "issuer": "cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT",
                             "type": 48,
                             "type_hex": "0000000000000030"
                         },
                         {
-                            "account": "rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT",
+                            "account": "cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         },
                         {
-                            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                             "type": 1,
                             "type_hex": "0000000000000001"
                         }
@@ -6622,7 +6622,7 @@ An example of the request format:
   "tx_json" : {
       "TransactionType" : "Payment",
       "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-      "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+      "Destination" : "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "Amount" : {
          "currency" : "USD",
          "value" : "1",
@@ -6651,7 +6651,7 @@ An example of the request format:
                     "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1"
                 },
-                "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+                "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
                 "TransactionType": "Payment"
             },
             "fee_mult_max": 1000
@@ -6664,7 +6664,7 @@ An example of the request format:
 
 ```
 #Syntax: sign secret tx_json [offline]
-casinocoind sign s████████████████████████████ '{"TransactionType": "Payment", "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX", "Amount": { "currency": "USD", "value": "1", "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2" }, "Sequence": 360, "Fee": "10000"}' offline
+casinocoind sign s████████████████████████████ '{"TransactionType": "Payment", "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX", "Amount": { "currency": "USD", "value": "1", "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2" }, "Sequence": 360, "Fee": "10000"}' offline
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -6725,7 +6725,7 @@ An example of a successful response:
         "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "value": "1"
       },
-      "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+      "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "Fee": "10000",
       "Flags": 2147483648,
       "Sequence": 360,
@@ -6753,7 +6753,7 @@ An example of a successful response:
                 "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "value": "1"
             },
-            "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+            "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
             "Fee": "10000",
             "Flags": 2147483648,
             "Sequence": 360,
@@ -6782,7 +6782,7 @@ Connecting to 127.0.0.1:5005
             "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "value" : "1"
          },
-         "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+         "Destination" : "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
          "Fee" : "10000",
          "Flags" : 2147483648,
          "Sequence" : 360,
@@ -6837,16 +6837,16 @@ An example of the request format:
 {
     "id": "sign_for_example",
     "command": "sign_for",
-    "account": "rLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
+    "account": "cLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
     "seed": "s████████████████████████████",
     "key_type": "ed25519",
     "tx_json": {
         "TransactionType": "TrustSet",
-        "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+        "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
         "Flags": 262144,
         "LimitAmount": {
             "currency": "USD",
-            "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+            "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
             "value": "100"
         },
         "Sequence": 2,
@@ -6863,16 +6863,16 @@ POST http://localhost:5005/
 {
     "method": "sign_for",
     "params": [{
-        "account": "rLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
+        "account": "cLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
         "seed": "s████████████████████████████",
         "key_type": "ed25519",
         "tx_json": {
             "TransactionType": "TrustSet",
-            "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+            "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
             "Flags": 262144,
             "LimitAmount": {
                 "currency": "USD",
-                "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+                "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
                 "value": "100"
             },
             "Sequence": 2,
@@ -6887,13 +6887,13 @@ POST http://localhost:5005/
 
 ```
 #Syntax: casinocoind sign_for <signer_address> <signer_secret> [offline]
-casinocoind sign_for rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW s████████████████████████████ '{
+casinocoind sign_for csA2LpzuawewSBQXkiju3YQTMzW13pAAdW s████████████████████████████ '{
     "TransactionType": "TrustSet",
-    "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+    "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
     "Flags": 262144,
     "LimitAmount": {
         "currency": "USD",
-        "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
         "value": "100"
     },
     "Sequence": 2,
@@ -6934,19 +6934,19 @@ An example of a successful response:
   "result": {
     "tx_blob": "1200142200040000240000000263D5038D7EA4C680000000000000000000000000005553440000000000B5F762798A53D543A014CAF8B297CFF8F2F937E868400000000000753073008114A3780F5CB5A44D366520FC44055E8ED44D9A2270F3E0107321EDDF4ECB8F34A168143B928D48EFE625501FB8552403BBBD3FC038A5788951D7707440C3DCA3FEDE6D785398EEAB10A46B44047FF1B0863FC4313051FB292C991D1E3A9878FABB301128FE4F86F3D8BE4706D53FA97F5536DBD31AF14CD83A5ACDEB068114D96CB910955AB40A0E987EEE82BB3CEDD4441AAAE1F1",
     "tx_json": {
-      "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+      "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
       "Fee": "30000",
       "Flags": 262144,
       "LimitAmount": {
         "currency": "USD",
-        "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
         "value": "100"
       },
       "Sequence": 2,
       "Signers": [
         {
           "Signer": {
-            "Account": "rLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
+            "Account": "cLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
             "SigningPubKey": "EDDF4ECB8F34A168143B928D48EFE625501FB8552403BBBD3FC038A5788951D770",
             "TxnSignature": "C3DCA3FEDE6D785398EEAB10A46B44047FF1B0863FC4313051FB292C991D1E3A9878FABB301128FE4F86F3D8BE4706D53FA97F5536DBD31AF14CD83A5ACDEB06"
           }
@@ -6969,19 +6969,19 @@ An example of a successful response:
       "status" : "success",
       "tx_blob" : "1200142200040000240000000263D5038D7EA4C680000000000000000000000000005553440000000000B5F762798A53D543A014CAF8B297CFF8F2F937E868400000000000753073008114A3780F5CB5A44D366520FC44055E8ED44D9A2270F3E010732102B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF744730450221009C195DBBF7967E223D8626CA19CF02073667F2B22E206727BFE848FF42BEAC8A022048C323B0BED19A988BDBEFA974B6DE8AA9DCAE250AA82BBD1221787032A864E58114204288D2E47F8EF6C99BCC457966320D12409711E1F1",
       "tx_json" : {
-         "Account" : "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+         "Account" : "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
          "Fee" : "30000",
          "Flags" : 262144,
          "LimitAmount" : {
             "currency" : "USD",
-            "issuer" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+            "issuer" : "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
             "value" : "100"
          },
          "Sequence" : 2,
          "Signers" : [
             {
                "Signer" : {
-                  "Account" : "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                  "Account" : "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                   "SigningPubKey" : "02B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF",
                   "TxnSignature" : "30450221009C195DBBF7967E223D8626CA19CF02073667F2B22E206727BFE848FF42BEAC8A022048C323B0BED19A988BDBEFA974B6DE8AA9DCAE250AA82BBD1221787032A864E5"
                }
@@ -7005,19 +7005,19 @@ Connecting to 127.0.0.1:5005
       "status" : "success",
       "tx_blob" : "1200142200040000240000000263D5038D7EA4C680000000000000000000000000005553440000000000B5F762798A53D543A014CAF8B297CFF8F2F937E868400000000000753073008114A3780F5CB5A44D366520FC44055E8ED44D9A2270F3E010732102B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF744730450221009C195DBBF7967E223D8626CA19CF02073667F2B22E206727BFE848FF42BEAC8A022048C323B0BED19A988BDBEFA974B6DE8AA9DCAE250AA82BBD1221787032A864E58114204288D2E47F8EF6C99BCC457966320D12409711E1F1",
       "tx_json" : {
-         "Account" : "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+         "Account" : "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
          "Fee" : "30000",
          "Flags" : 262144,
          "LimitAmount" : {
             "currency" : "USD",
-            "issuer" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+            "issuer" : "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
             "value" : "100"
          },
          "Sequence" : 2,
          "Signers" : [
             {
                "Signer" : {
-                  "Account" : "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                  "Account" : "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                   "SigningPubKey" : "02B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF",
                   "TxnSignature" : "30450221009C195DBBF7967E223D8626CA19CF02073667F2B22E206727BFE848FF42BEAC8A022048C323B0BED19A988BDBEFA974B6DE8AA9DCAE250AA82BBD1221787032A864E5"
                }
@@ -7152,7 +7152,7 @@ An example of the request format:
   "tx_json" : {
       "TransactionType" : "Payment",
       "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-      "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+      "Destination" : "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "Amount" : {
          "currency" : "USD",
          "value" : "1",
@@ -7181,7 +7181,7 @@ An example of the request format:
                     "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                     "value": "1"
                 },
-                "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+                "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
                 "TransactionType": "Payment"
             },
             "fee_mult_max": 1000
@@ -7194,7 +7194,7 @@ An example of the request format:
 
 ```
 #Syntax: submit secret json [offline]
-casinocoind submit s████████████████████████████ '{"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "Amount": { "currency": "USD", "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "value": "1" }, "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX", "TransactionType": "Payment", "Fee": "10000"}'
+casinocoind submit s████████████████████████████ '{"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "Amount": { "currency": "USD", "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2", "value": "1" }, "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX", "TransactionType": "Payment", "Fee": "10000"}'
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -7226,7 +7226,7 @@ An example of a successful response:
         "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
         "value": "1"
       },
-      "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+      "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "Fee": "10000",
       "Flags": 2147483648,
       "Sequence": 360,
@@ -7256,7 +7256,7 @@ An example of a successful response:
                 "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                 "value": "1"
             },
-            "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+            "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
             "Fee": "10000",
             "Flags": 2147483648,
             "Sequence": 361,
@@ -7288,7 +7288,7 @@ Connecting to 127.0.0.1:5005
             "issuer" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "value" : "1"
          },
-         "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+         "Destination" : "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
          "Fee" : "10000",
          "Flags" : 2147483648,
          "Sequence" : 362,
@@ -7354,24 +7354,24 @@ An example of the request format:
     "id": "submit_multisigned_example"
     "command": "submit_multisigned",
     "tx_json": {
-        "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+        "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
         "Fee": "30000",
         "Flags": 262144,
         "LimitAmount": {
             "currency": "USD",
-            "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+            "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
             "value": "100"
         },
         "Sequence": 2,
         "Signers": [{
             "Signer": {
-                "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                 "SigningPubKey": "02B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF",
                 "TxnSignature": "30450221009C195DBBF7967E223D8626CA19CF02073667F2B22E206727BFE848FF42BEAC8A022048C323B0BED19A988BDBEFA974B6DE8AA9DCAE250AA82BBD1221787032A864E5"
             }
         }, {
             "Signer": {
-                "Account": "rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
+                "Account": "cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
                 "SigningPubKey": "028FFB276505F9AC3F57E8D5242B386A597EF6C40A7999F37F1948636FD484E25B",
                 "TxnSignature": "30440220680BBD745004E9CFB6B13A137F505FB92298AD309071D16C7B982825188FD1AE022004200B1F7E4A6A84BB0E4FC09E1E3BA2B66EBD32F0E6D121A34BA3B04AD99BC1"
             }
@@ -7391,26 +7391,26 @@ An example of the request format:
     "params": [
         {
             "tx_json": {
-                "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+                "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
                 "Fee": "30000",
                 "Flags": 262144,
                 "LimitAmount": {
                     "currency": "USD",
-                    "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+                    "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
                     "value": "0"
                 },
                 "Sequence": 4,
                 "Signers": [
                     {
                         "Signer": {
-                            "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                            "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                             "SigningPubKey": "02B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF",
                             "TxnSignature": "3045022100CC9C56DF51251CB04BB047E5F3B5EF01A0F4A8A549D7A20A7402BF54BA744064022061EF8EF1BCCBF144F480B32508B1D10FD4271831D5303F920DE41C64671CB5B7"
                         }
                     },
                     {
                         "Signer": {
-                            "Account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+                            "Account": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
                             "SigningPubKey": "03398A4EDAE8EE009A5879113EAA5BA15C7BB0F612A87F4103E793AC919BD1E3C1",
                             "TxnSignature": "3045022100FEE8D8FA2D06CE49E9124567DCA265A21A9F5465F4A9279F075E4CE27E4430DE022042D5305777DA1A7801446780308897699412E4EDF0E1AEFDF3C8A0532BDE4D08"
                         }
@@ -7430,26 +7430,26 @@ An example of the request format:
 ```
 #Syntax: submit_multisigned <tx_json>
 casinocoind submit_multisigned '{
-    "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+    "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
     "Fee": "30000",
     "Flags": 262144,
     "LimitAmount": {
         "currency": "USD",
-        "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
         "value": "0"
     },
     "Sequence": 4,
     "Signers": [
         {
             "Signer": {
-                "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                 "SigningPubKey": "02B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF",
                 "TxnSignature": "3045022100CC9C56DF51251CB04BB047E5F3B5EF01A0F4A8A549D7A20A7402BF54BA744064022061EF8EF1BCCBF144F480B32508B1D10FD4271831D5303F920DE41C64671CB5B7"
             }
         },
         {
             "Signer": {
-                "Account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+                "Account": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
                 "SigningPubKey": "03398A4EDAE8EE009A5879113EAA5BA15C7BB0F612A87F4103E793AC919BD1E3C1",
                 "TxnSignature": "3045022100FEE8D8FA2D06CE49E9124567DCA265A21A9F5465F4A9279F075E4CE27E4430DE022042D5305777DA1A7801446780308897699412E4EDF0E1AEFDF3C8A0532BDE4D08"
             }
@@ -7489,26 +7489,26 @@ An example of a successful response:
     "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
     "tx_blob": "1200142200040000240000000263D5038D7EA4C680000000000000000000000000005553440000000000B5F762798A53D543A014CAF8B297CFF8F2F937E868400000000000753073008114A3780F5CB5A44D366520FC44055E8ED44D9A2270F3E010732102B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF744730450221009C195DBBF7967E223D8626CA19CF02073667F2B22E206727BFE848FF42BEAC8A022048C323B0BED19A988BDBEFA974B6DE8AA9DCAE250AA82BBD1221787032A864E58114204288D2E47F8EF6C99BCC457966320D12409711E1E0107321028FFB276505F9AC3F57E8D5242B386A597EF6C40A7999F37F1948636FD484E25B744630440220680BBD745004E9CFB6B13A137F505FB92298AD309071D16C7B982825188FD1AE022004200B1F7E4A6A84BB0E4FC09E1E3BA2B66EBD32F0E6D121A34BA3B04AD99BC181147908A7F0EDD48EA896C3580A399F0EE78611C8E3E1F1",
     "tx_json": {
-      "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+      "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
       "Fee": "30000",
       "Flags": 262144,
       "LimitAmount": {
         "currency": "USD",
-        "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
         "value": "100"
       },
       "Sequence": 2,
       "Signers": [
         {
           "Signer": {
-            "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+            "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
             "SigningPubKey": "02B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF",
             "TxnSignature": "30450221009C195DBBF7967E223D8626CA19CF02073667F2B22E206727BFE848FF42BEAC8A022048C323B0BED19A988BDBEFA974B6DE8AA9DCAE250AA82BBD1221787032A864E5"
           }
         },
         {
           "Signer": {
-            "Account": "rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
+            "Account": "cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
             "SigningPubKey": "028FFB276505F9AC3F57E8D5242B386A597EF6C40A7999F37F1948636FD484E25B",
             "TxnSignature": "30440220680BBD745004E9CFB6B13A137F505FB92298AD309071D16C7B982825188FD1AE022004200B1F7E4A6A84BB0E4FC09E1E3BA2B66EBD32F0E6D121A34BA3B04AD99BC1"
           }
@@ -7534,26 +7534,26 @@ An example of a successful response:
         "status": "success",
         "tx_blob": "120014220004000024000000046380000000000000000000000000000000000000005553440000000000B5F762798A53D543A014CAF8B297CFF8F2F937E868400000000000753073008114A3780F5CB5A44D366520FC44055E8ED44D9A2270F3E010732102B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF74473045022100CC9C56DF51251CB04BB047E5F3B5EF01A0F4A8A549D7A20A7402BF54BA744064022061EF8EF1BCCBF144F480B32508B1D10FD4271831D5303F920DE41C64671CB5B78114204288D2E47F8EF6C99BCC457966320D12409711E1E010732103398A4EDAE8EE009A5879113EAA5BA15C7BB0F612A87F4103E793AC919BD1E3C174473045022100FEE8D8FA2D06CE49E9124567DCA265A21A9F5465F4A9279F075E4CE27E4430DE022042D5305777DA1A7801446780308897699412E4EDF0E1AEFDF3C8A0532BDE4D0881143A4C02EA95AD6AC3BED92FA036E0BBFB712C030CE1F1",
         "tx_json": {
-            "Account": "rEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
+            "Account": "cEuLyBCvcw4CFmzv8RepSiAoNgF8tTGJQC",
             "Fee": "30000",
             "Flags": 262144,
             "LimitAmount": {
                 "currency": "USD",
-                "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+                "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
                 "value": "0"
             },
             "Sequence": 4,
             "Signers": [
                 {
                     "Signer": {
-                        "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                        "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                         "SigningPubKey": "02B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF",
                         "TxnSignature": "3045022100CC9C56DF51251CB04BB047E5F3B5EF01A0F4A8A549D7A20A7402BF54BA744064022061EF8EF1BCCBF144F480B32508B1D10FD4271831D5303F920DE41C64671CB5B7"
                     }
                 },
                 {
                     "Signer": {
-                        "Account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+                        "Account": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
                         "SigningPubKey": "03398A4EDAE8EE009A5879113EAA5BA15C7BB0F612A87F4103E793AC919BD1E3C1",
                         "TxnSignature": "3045022100FEE8D8FA2D06CE49E9124567DCA265A21A9F5465F4A9279F075E4CE27E4430DE022042D5305777DA1A7801446780308897699412E4EDF0E1AEFDF3C8A0532BDE4D08"
                     }
@@ -7610,7 +7610,7 @@ An example of the request format:
   },
   "taker_pays": {
     "currency": "USD",
-    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
   "limit": 10
 }
@@ -7629,7 +7629,7 @@ An example of the request format:
             },
             "taker_pays": {
                 "currency": "USD",
-                "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
             },
             "limit": 10
         }
@@ -7641,7 +7641,7 @@ An example of the request format:
 
 ```
 #Syntax: book_offers taker_pays taker_gets [taker [ledger [limit] ] ]
-casinocoind book_offers 'USD/rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B' 'EUR/rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'
+casinocoind book_offers 'USD/cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B' 'EUR/cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -7676,7 +7676,7 @@ An example of a successful response:
     "ledger_current_index": 7035305,
     "offers": [
       {
-        "Account": "rM3X3QSr8icjTGpaF52dozhbT2BZSXJQYM",
+        "Account": "cM3X3QSr8icjTGpaF52dozhbT2BZSXJQYM",
         "BookDirectory": "7E5F614417C2D0A7CEFEB73C4AA773ED5B078DE2B5771F6D55055E4C405218EB",
         "BookNode": "0000000000000000",
         "Flags": 0,
@@ -7687,19 +7687,19 @@ An example of a successful response:
         "Sequence": 264542,
         "TakerGets": {
           "currency": "EUR",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "17.90363633316433"
         },
         "TakerPays": {
           "currency": "USD",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "27.05340557506234"
         },
         "index": "96A9104BF3137131FF8310B9174F3B37170E2144C813CA2A1695DF2C5677E811",
         "quality": "1.511056473200875"
       },
       {
-        "Account": "rhsxKNyN99q6vyYCTHNTC1TqWCeHr7PNgp",
+        "Account": "chsxKNyN99q6vyYCTHNTC1TqWCeHr7PNgp",
         "BookDirectory": "7E5F614417C2D0A7CEFEB73C4AA773ED5B078DE2B5771F6D5505DCAA8FE12000",
         "BookNode": "0000000000000000",
         "Flags": 131072,
@@ -7710,12 +7710,12 @@ An example of a successful response:
         "Sequence": 265,
         "TakerGets": {
           "currency": "EUR",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "2.542743233917848"
         },
         "TakerPays": {
           "currency": "USD",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "value": "4.19552633596446"
         },
         "index": "7001797678E886E22D6DE11AF90DF1E08F4ADC21D763FAFB36AF66894D695235",
@@ -8037,7 +8037,7 @@ An example of the request format:
 {
   "id": "Example watch Bitstamp's hot wallet",
   "command": "subscribe",
-  "accounts": ["rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1"]
+  "accounts": ["crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1"]
 }
 ```
 
@@ -8054,7 +8054,7 @@ An example of the request format:
             },
             "taker_gets": {
                 "currency": "USD",
-                "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq"
+                "issuer": "chub8VRN55s94qWKDv6jmDy1pUykJzF3wq"
             },
             "snapshot": true
         }
@@ -8274,7 +8274,7 @@ The `accounts_proposed` subscription works the same way, except it also includes
           "FinalFields": {
             "Flags": 0,
             "IndexPrevious": "0000000000000000",
-            "Owner": "rRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
+            "Owner": "cRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
             "RootIndex": "ABD8CE2D1205D0C062876E9E1F3CBDC902ED8EF4E8D3D071B962C7ED0E113E68"
           },
           "LedgerEntryType": "DirectoryNode",
@@ -8284,7 +8284,7 @@ The `accounts_proposed` subscription works the same way, except it also includes
       {
         "DeletedNode": {
           "FinalFields": {
-            "Account": "rRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
+            "Account": "cRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
             "BookDirectory": "892E892DC63D8F70DCF5C9ECF29394FF7DD3DC6F47DB8EB34A03920BFC5E99BE",
             "BookNode": "0000000000000000",
             "Flags": 0,
@@ -8295,7 +8295,7 @@ The `accounts_proposed` subscription works the same way, except it also includes
             "TakerGets": "4401967683",
             "TakerPays": {
               "currency": "BTC",
-              "issuer": "rNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
+              "issuer": "cNPRNzBB92BVpAhhZr4iXDTveCgV5Pofm9",
               "value": "0.04424"
             }
           },
@@ -8321,7 +8321,7 @@ The `accounts_proposed` subscription works the same way, except it also includes
       {
         "ModifiedNode": {
           "FinalFields": {
-            "Account": "rRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
+            "Account": "cRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
             "Balance": "11133297300",
             "Flags": 0,
             "OwnerCount": 9,
@@ -8343,7 +8343,7 @@ The `accounts_proposed` subscription works the same way, except it also includes
     "TransactionResult": "tesSUCCESS"
   },
   "transaction": {
-    "Account": "rRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
+    "Account": "cRh634Y6QtoqkwTTrGzX66UYoCAvgE6jL",
     "Fee": "10",
     "Flags": 2147483648,
     "OfferSequence": 540691,
@@ -8433,12 +8433,12 @@ Example order book stream message:
         "AffectedNodes": [{
             "ModifiedNode": {
                 "FinalFields": {
-                    "Account": "rfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
+                    "Account": "cfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
                     "AccountTxnID": "D295E2BE50E3B78AED24790D7B9096996DAF43F095BF17DB83EEACC283D14050",
                     "Balance": "3070332374272",
                     "Flags": 0,
                     "OwnerCount": 23,
-                    "RegularKey": "r9S56zu6QeJD5d8A7QMfLAeYavgB9dhaX4",
+                    "RegularKey": "c9S56zu6QeJD5d8A7QMfLAeYavgB9dhaX4",
                     "Sequence": 12142921
                 },
                 "LedgerEntryType": "AccountRoot",
@@ -8456,7 +8456,7 @@ Example order book stream message:
                 "FinalFields": {
                     "Flags": 0,
                     "IndexPrevious": "00000000000022D2",
-                    "Owner": "rfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
+                    "Owner": "cfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
                     "RootIndex": "F435FBBEC9654204D7151A01E686BAA8CB325A472D7B61C7916EA58B59355767"
                 },
                 "LedgerEntryType": "DirectoryNode",
@@ -8481,7 +8481,7 @@ Example order book stream message:
                 "LedgerEntryType": "Offer",
                 "LedgerIndex": "92E235EE80D2B28A89BEE2C905D4545C2A004FD5D4097679C8A3FB25507FD9EB",
                 "NewFields": {
-                    "Account": "rfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
+                    "Account": "cfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
                     "BookDirectory": "79C54A4EBD69AB2EADCE313042F36092BE432423CC6A4F784C1BA999A513EF78",
                     "Expiration": 508543674,
                     "OwnerNode": "00000000000022F4",
@@ -8489,7 +8489,7 @@ Example order book stream message:
                     "TakerGets": "6537121438",
                     "TakerPays": {
                         "currency": "USD",
-                        "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                        "issuer": "chub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
                         "value": "50.9"
                     }
                 }
@@ -8497,7 +8497,7 @@ Example order book stream message:
         }, {
             "DeletedNode": {
                 "FinalFields": {
-                    "Account": "rfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
+                    "Account": "cfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
                     "BookDirectory": "79C54A4EBD69AB2EADCE313042F36092BE432423CC6A4F784C1BA999A513EF78",
                     "BookNode": "0000000000000000",
                     "Expiration": 508543133,
@@ -8509,7 +8509,7 @@ Example order book stream message:
                     "TakerGets": "6537121438",
                     "TakerPays": {
                         "currency": "USD",
-                        "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                        "issuer": "chub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
                         "value": "50.9"
                     }
                 },
@@ -8522,7 +8522,7 @@ Example order book stream message:
     },
     "status": "closed",
     "transaction": {
-        "Account": "rfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
+        "Account": "cfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
         "Expiration": 508543674,
         "Fee": "11000",
         "Flags": 2147483648,
@@ -8533,7 +8533,7 @@ Example order book stream message:
         "TakerGets": "6537121438",
         "TakerPays": {
             "currency": "USD",
-            "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+            "issuer": "chub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
             "value": "50.9"
         },
         "TransactionType": "OfferCreate",
@@ -8571,8 +8571,8 @@ An example of the request format:
     "id": "Unsubscribe a lot of stuff",
     "command": "unsubscribe",
     "streams": ["ledger","server","transactions","transactions_proposed"],
-    "accounts": ["rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1"],
-    "accounts_proposed": ["rrpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1"],
+    "accounts": ["crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1"],
+    "accounts_proposed": ["crpNnNLKrartuEqfJGpqyDwPj1AFPg9vn1"],
     "books": [
         {
             "taker_pays": {
@@ -8580,7 +8580,7 @@ An example of the request format:
             },
             "taker_gets": {
                 "currency": "USD",
-                "issuer": "rUQTpMqAF5jhykj4FExVeXakrZpiKF6cQV"
+                "issuer": "cUQTpMqAF5jhykj4FExVeXakrZpiKF6cQV"
             },
             "both": true
         }

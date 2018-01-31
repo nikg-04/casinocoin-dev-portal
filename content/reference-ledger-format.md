@@ -253,7 +253,7 @@ Example Directories:
         "E83BBB58949A8303DF07172B16FB8EFBA66B9191F3836EC27A4568ED5997BAC5"
     ],
     "LedgerEntryType": "DirectoryNode",
-    "Owner": "rpR95n1iFkTqpoy1e878f4Z1pVHVtWKMNQ",
+    "Owner": "cpR95n1iFkTqpoy1e878f4Z1pVHVtWKMNQ",
     "RootIndex": "193C591BF62482468422313F9D3274B5927CA80B4DD3707E42015DD609E39C94",
     "index": "193C591BF62482468422313F9D3274B5927CA80B4DD3707E42015DD609E39C94"
 }
@@ -326,7 +326,7 @@ Example `Escrow` object:
     "Amount": "10000",
     "CancelAfter": 545440232,
     "Condition": "A0258020A82A88B2DF843A54F58772E4A3861866ECDB4157645DD9AE528C1D3AEEDABAB6810120",
-    "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+    "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
     "DestinationTag": 23480,
     "FinishAfter": 545354132,
     "Flags": 0,
@@ -492,7 +492,7 @@ Example `Offer` object:
 
 ```json
 {
-    "Account": "rBqb89MRQJnMPq8wTwEbtz4kvxrEDfcYvt",
+    "Account": "cBqb89MRQJnMPq8wTwEbtz4kvxrEDfcYvt",
     "BookDirectory": "ACC27DE91DBA86FC509069EAF4BC511D73128B780F2E54BF5E07A369E2446000",
     "BookNode": "0000000000000000",
     "Flags": 131072,
@@ -503,7 +503,7 @@ Example `Offer` object:
     "Sequence": 866,
     "TakerGets": {
         "currency": "XAG",
-        "issuer": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH",
+        "issuer": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH",
         "value": "37"
     },
     "TakerPays": "79550000000",
@@ -568,7 +568,7 @@ Example `PayChannel` object:
 
 ```json
 {
-    "Account": "rBqb89MRQJnMPq8wTwEbtz4kvxrEDfcYvt",
+    "Account": "cBqb89MRQJnMPq8wTwEbtz4kvxrEDfcYvt",
     "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "Amount": "4325800",
     "Balance": "2323423",
@@ -675,7 +675,7 @@ Example `CasinocoinState` object:
     "LedgerEntryType": "CasinocoinState",
     "LowLimit": {
         "currency": "USD",
-        "issuer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+        "issuer": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
         "value": "0"
     },
     "LowNode": "0000000000000000",
@@ -770,19 +770,19 @@ Example SignerList object:
     "SignerEntries": [
         {
             "SignerEntry": {
-                "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                 "SignerWeight": 2
             }
         },
         {
             "SignerEntry": {
-                "Account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+                "Account": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
                 "SignerWeight": 1
             }
         },
         {
             "SignerEntry": {
-                "Account": "rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
+                "Account": "cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
                 "SignerWeight": 1
             }
         }

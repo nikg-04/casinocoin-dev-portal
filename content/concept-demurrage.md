@@ -91,14 +91,14 @@ var demAmount = casinocoin.Amount.from_human('10 0158415500000000C1F76FF6ECB0BAC
                                   {reference_date:563069270});
 
 // set the issuer
-demAmount.set_issuer("rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh");
+demAmount.set_issuer("cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh");
 
 // get the JSON format for the ledger amount
 console.log(demAmount.to_json());
 
 // { "value": "10.93625123082769",
 //   "currency": "0158415500000000C1F76FF6ECB0BAC600000000",
-//   "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh" }
+//   "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh" }
 ```
 
 To convert from a ledger value to a display value:
@@ -107,7 +107,7 @@ To convert from a ledger value to a display value:
 // create an Amount object with the ledger value,
 ledgerAmount = casinocoin.Amount.from_json({
   "currency": "015841551A748AD2C1F76FF6ECB0CCCD00000000",
-  "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+  "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
   "value": "10.93625123082769"})
 
 // apply interest up to the current time to get the display amount
@@ -117,5 +117,5 @@ console.log(displayAmount.to_json());
 
 // { "value": "9.999998874657716",
 //   "currency": "0158415500000000C1F76FF6ECB0BAC600000000",
-//   "issuer": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh" }
+//   "issuer": "cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh" }
 ```

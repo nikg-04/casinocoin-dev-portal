@@ -14,7 +14,7 @@ Example AccountSet:
     "Sequence": 5,
     "Domain": "6578616D706C652E636F6D",
     "SetFlag": 5,
-    "MessageKey": "rQD4SqHJtDxn5DDL7xNnojNa3vxS1Jx5gv"
+    "MessageKey": "cQD4SqHJtDxn5DDL7xNnojNa3vxS1Jx5gv"
 }
 ```
 

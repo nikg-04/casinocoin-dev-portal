@@ -7,7 +7,7 @@ An OfferCancel transaction removes an Offer object from the CSC Ledger.
 ```
 {
     "TransactionType": "OfferCancel",
-    "Account": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+    "Account": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
     "Fee": "12",
     "Flags": 0,
     "LastLedgerSequence": 7108629,

@@ -76,7 +76,7 @@ The following diagram shows the relationship between keys and addresses:
 
 ![Passphrase → Secret Key → Public Key + Type Prefix → Account ID + Checksum → Address](img/key-address-rels.png)
 
-The formula for calculating an CSC Ledger address is as follows. For the complete example code, see [`encode_address.js`](https://github.com/ripple/ripple-dev-portal/blob/master/content/code_samples/address_encoding/encode_address.js).
+The formula for calculating an CSC Ledger address is as follows. For the complete example code, see [`encode_address.js`](https://github.com/casinocoin/casinocoin-dev-portal/blob/master/content/code_samples/address_encoding/encode_address.js).
 
 1. Import required algorithms: SHA-256, RIPEMD160, and base58. Set the dictionary for base58.
 
@@ -116,7 +116,7 @@ The formula for calculating an CSC Ledger address is as follows. For the complet
         const dataToEncode = Buffer.concat([payload, checksum]);
         const address = base58.encode(dataToEncode);
         console.log(address);
-        // rDTXLQ7ZKZVKz33zJbHjgVShjsBnqMBhmN
+        // cDTXLQ7ZKZVKz33zJbHjgVShjsBnqMBhmN
 
 <!--{# Reference link definitions #}-->
 

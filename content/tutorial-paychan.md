@@ -20,7 +20,7 @@ The example addresses used in this tutorial are:
 
 | | |
 |--|--|
-| **Payer's address** | rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH |
+| **Payer's address** | cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH |
 | **Public key used for channel (in base58)** | aB44YfzW24VDEJQ2UuLPV2PvqcPCSoLnL7y5M1EzhdW4LnK5xMS3
 | **Public key used for channel (in hex)** | 023693F15967AE357D0327974AD46FE3C127113B1110D6044FD41E723689F81CC6 |
 | **Payee's address** | cDarPNJEpCnpBZSfmcquydockkePkjPGA2 |
@@ -73,7 +73,7 @@ Request:
         "params": [{
             "secret": "s████████████████████████████",
             "tx_json": {
-                "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                 "TransactionType": "PaymentChannelCreate",
                 "Amount": "100000000",
                 "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -124,7 +124,7 @@ Response:
 
     {
         "result": {
-            "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "Amount": "100000000",
             "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             ...
@@ -141,7 +141,7 @@ Response:
                             "LedgerEntryType": "PayChannel",
                             "LedgerIndex": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
                             "NewFields": {
-                                "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                                "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                                 "Amount": "100000000",
                                 "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
                                 "DestinationTag": 20170428,
@@ -180,7 +180,7 @@ Request:
     {
         "method": "account_channels",
         "params": [{
-            "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger_index": "validated"
         }]
@@ -192,9 +192,9 @@ Response:
 
     {
         "result": {
-            "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "channels": [{
-                "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                 "amount": "100000000",
                 "balance": "0",
                 "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
@@ -307,7 +307,7 @@ Request:
     {
         "method": "account_channels",
         "params": [{
-            "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "destination_account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "ledger_index": "validated"
         }]
@@ -319,9 +319,9 @@ Response:
 
     {
         "result": {
-            "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "channels": [{
-                "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                 "amount": "100000000",
                 "balance": "0",
                 "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
@@ -447,7 +447,7 @@ Example of [submitting a transaction](reference-casinocoind.html#sign-and-submit
         "params": [{
             "secret": "s████████████████████████████",
             "tx_json": {
-                "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                 "TransactionType": "PaymentChannelClaim",
                 "Channel": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
                 "Flags": 2147614720
@@ -462,10 +462,10 @@ Example `account_channels` response:
 
     {
         "result": {
-            "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "channels": [
                 {
-                    "account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                    "account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                     "amount": "100000000",
                     "balance": "1000000",
                     "channel_id": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
@@ -500,7 +500,7 @@ Example of [submitting](reference-casinocoind.html#sign-and-submit-mode) a trans
         "params": [{
             "secret": "s████████████████████████████",
             "tx_json": {
-                "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                 "TransactionType": "PaymentChannelClaim",
                 "Channel": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
                 "Flags": 2147614720
@@ -515,7 +515,7 @@ Example response from using the [`tx` command](reference-casinocoind.html#tx) to
 
     {
         "result": {
-            "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+            "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
             "Channel": "5DB01B7FFED6B67E6B0414DED11E051D2EE2B7619CE0EAA6286D67A3A4D5BDB3",
             "Fee": "5606",
             "Flags": 2147614720,
@@ -540,7 +540,7 @@ Example response from using the [`tx` command](reference-casinocoind.html#tx) to
                     {
                         "DeletedNode": {
                             "FinalFields": {
-                                "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                                "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                                 "Amount": "100000000",
                                 "Balance": "1000000",
                                 "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -560,7 +560,7 @@ Example response from using the [`tx` command](reference-casinocoind.html#tx) to
                     {
                         "ModifiedNode": {
                             "FinalFields": {
-                                "Account": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                                "Account": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                                 "Balance": "1041862844",
                                 "Flags": 0,
                                 "OwnerCount": 2,
@@ -581,7 +581,7 @@ Example response from using the [`tx` command](reference-casinocoind.html#tx) to
                         "ModifiedNode": {
                             "FinalFields": {
                                 "Flags": 0,
-                                "Owner": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+                                "Owner": "cN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
                                 "RootIndex": "E590FC40B4F24D18341569BD3702A2D4E07E7BC04D11CE63608B67979E67030C"
                             },
                             "LedgerEntryType": "DirectoryNode",

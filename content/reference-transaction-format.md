@@ -44,7 +44,7 @@ Here is an example of an unsigned [Payment transaction][] in JSON:
 {
   "TransactionType" : "Payment",
   "Account" : "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-  "Destination" : "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+  "Destination" : "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
   "Amount" : {
      "currency" : "USD",
      "value" : "1",
@@ -91,7 +91,7 @@ Example response from the `tx` command:
       "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "value": "1"
     },
-    "Destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+    "Destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
     "Fee": "10",
     "Flags": 2147483648,
     "Sequence": 2,
@@ -140,7 +140,7 @@ Example response from the `tx` command:
               "HighNode": "0000000000000000",
               "LowLimit": {
                 "currency": "USD",
-                "issuer": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+                "issuer": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
                 "value": "100"
               },
               "LowNode": "0000000000000000"
@@ -307,8 +307,8 @@ Example of a transaction with a Memos field:
 ```
 {
     "TransactionType": "Payment",
-    "Account": "rMmTCjGFRWPz8S2zAUUoNVSQHxtRQD4eCx",
-    "Destination": "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
+    "Account": "cMmTCjGFRWPz8S2zAUUoNVSQHxtRQD4eCx",
+    "Destination": "c3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV",
     "Memos": [
         {
             "Memo": {

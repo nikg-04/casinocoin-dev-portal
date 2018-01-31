@@ -604,7 +604,7 @@ POST http://localhost:5005/
         {
             "secret": "sn3nxiW7v8KXzPzAqzyHXbSSKNuN9",
             "tx_json": {
-                "Account": "rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
+                "Account": "cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
                 "Fee": "15000",
                 "Flags": 0,
                 "SetFlag": 2,
@@ -623,7 +623,7 @@ If you are using the [Authorized Accounts](#authorized-accounts) feature, custom
 
 To authorize an accounting relationship, submit a TrustSet transaction from your issuing address, with the user to trust as the `issuer` of the `LimitAmount`. Leave the `value` (the amount to trust them for) as **0**, and enable the [tfSetfAuth](reference-transaction-format.html#trustset-flags) flag for the transaction.
 
-The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a TrustSet transaction authorizing the customer address cDarPNJEpCnpBZSfmcquydockkePkjPGA2 to hold issuances of USD from the issuing address rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW:
+The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a TrustSet transaction authorizing the customer address cDarPNJEpCnpBZSfmcquydockkePkjPGA2 to hold issuances of USD from the issuing address csA2LpzuawewSBQXkiju3YQTMzW13pAAdW:
 
 Request:
 
@@ -635,7 +635,7 @@ POST http://localhost:8088/
         {
             "secret": "sn3nxiW7v8KXzPzAqzyHXbSSKNuN9",
             "tx_json": {
-                "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                 "Fee": "15000",
                 "TransactionType": "TrustSet",
                 "LimitAmount": {
@@ -676,7 +676,7 @@ As an added precaution, we recommend comparing the balances of your issuing addr
 
 The *TransferRate* setting (`transferRate` in CasinocoinAPI) defines a fee to charge for transferring issuances from one CSC Ledger address to another. See [Transfer Fees](concept-transfer-fees.html) for more information.
 
-The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send an AccountSet transaction for the issuing address rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW, setting the TransferRate to charge a fee of 0.5%.
+The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send an AccountSet transaction for the issuing address csA2LpzuawewSBQXkiju3YQTMzW13pAAdW, setting the TransferRate to charge a fee of 0.5%.
 
 Request:
 
@@ -688,7 +688,7 @@ Request:
         {
             "secret": "sn3nxiW7v8KXzPzAqzyHXbSSKNuN9",
             "tx_json": {
-                "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                 "Fee": "10000",
                 "Flags": 0,
                 "TransferRate": 1005000000,
@@ -710,7 +710,7 @@ Response:
 		"status": "success",
 		"tx_blob": "1200032200000000240000000F2B3BE71540684000000000002710732102B3EC4E5DD96029A647CFA20DA07FE1F85296505552CCAC114087E66B46BD77DF74473045022100AAFC3360BE151299523A93F445D5F6EB58AF5A4F8586C8B7818D6C6069660B40022022F46BCDA8FEE256AEB0BA2E92947EF4571F92354AB703E3E6D77FEF7ECBF64E8114204288D2E47F8EF6C99BCC457966320D12409711",
 		"tx_json": {
-			"Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+			"Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
 			"Fee": "10000",
 			"Flags": 0,
 			"Sequence": 15,
@@ -742,7 +742,7 @@ When you build an automated system to send payments into the CSC Ledger for your
 
 One common pitfall is performing pathfinding before sending sending a payment to customers in the CSC Ledger. If you specify the issuers correctly, the [default paths](concept-paths.html#default-paths) can deliver the currency as intended.
 
-The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a payment from the operational address cDarPNJEpCnpBZSfmcquydockkePkjPGA2 to the customer address raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n, sending and delivering funds issued by the issuing address rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW.
+The following is an example of using a locally-hosted `casinocoind`'s [`submit` command](reference-casinocoind.html#submit) to send a payment from the operational address cDarPNJEpCnpBZSfmcquydockkePkjPGA2 to the customer address caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n, sending and delivering funds issued by the issuing address csA2LpzuawewSBQXkiju3YQTMzW13pAAdW.
 
 Request:
 
@@ -754,16 +754,16 @@ Request:
 		"tx_json": {
 			"TransactionType": "Payment",
 			"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-			"Destination": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+			"Destination": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
 			"Amount": {
 				"currency": "USD",
 				"value": "0.13",
-				"issuer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW"
+				"issuer": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW"
 			},
 			"SendMax": {
 				"currency": "USD",
 				"value": "0.13065",
-				"issuer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW"
+				"issuer": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW"
 			},
 			"Fee": "10000"
 		}
@@ -787,15 +787,15 @@ Response:
 			"Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
 			"Amount": {
 				"currency": "USD",
-				"issuer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+				"issuer": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
 				"value": "0.13"
 			},
-			"Destination": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+			"Destination": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
 			"Fee": "10000",
 			"Flags": 2147483648,
 			"SendMax": {
 				"currency": "USD",
-				"issuer": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+				"issuer": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
 				"value": "0.13065"
 			},
 			"Sequence": 357,

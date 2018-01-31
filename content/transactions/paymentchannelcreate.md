@@ -12,7 +12,7 @@ Example PaymentChannelCreate:
     "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "TransactionType": "PaymentChannelCreate",
     "Amount": "10000",
-    "Destination": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+    "Destination": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
     "SettleDelay": 86400,
     "PublicKey": "32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A",
     "CancelAfter": 533171558,

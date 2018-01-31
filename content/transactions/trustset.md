@@ -7,13 +7,13 @@ Create or modify a trust line linking two accounts.
 ```
 {
     "TransactionType": "TrustSet",
-    "Account": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+    "Account": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
     "Fee": "12",
     "Flags": 262144,
     "LastLedgerSequence": 8007750,
     "LimitAmount": {
       "currency": "USD",
-      "issuer": "rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc",
+      "issuer": "csP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc",
       "value": "100"
     },
     "Sequence": 12

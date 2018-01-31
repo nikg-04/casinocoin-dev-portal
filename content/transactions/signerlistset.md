@@ -15,19 +15,19 @@ Example SignerListSet:
     "SignerEntries": [
         {
             "SignerEntry": {
-                "Account": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+                "Account": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
                 "SignerWeight": 2
             }
         },
         {
             "SignerEntry": {
-                "Account": "rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
+                "Account": "cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
                 "SignerWeight": 1
             }
         },
         {
             "SignerEntry": {
-                "Account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+                "Account": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
                 "SignerWeight": 1
             }
         }

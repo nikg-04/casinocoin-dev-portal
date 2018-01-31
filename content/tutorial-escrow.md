@@ -508,7 +508,7 @@ _Websocket_
 
 <!-- MULTICODE_BLOCK_END -->
 
-In the above example, `r3wN3v2vTUkr5qd6daqDc2xE4LSysdVjkT` is the sender of the escrow, and the increase in `Balance` from 99999**8**9990 drops to 99999**9**9990 drops represents the return of the escrowed 10,000 drops of CSC (0.000001 CSC).
+In the above example, `c3wN3v2vTUkr5qd6daqDc2xE4LSysdVjkT` is the sender of the escrow, and the increase in `Balance` from 99999**8**9990 drops to 99999**9**9990 drops represents the return of the escrowed 10,000 drops of CSC (0.000001 CSC).
 
 **Tip:** If you don't know what `OfferSequence` to use in the [EscrowFinish transaction][] to execute an escrow, use the [`tx` method](reference-casinocoind.html) to look up the transaction that created the escrow, using the identifying hash of the transaction in the Escrow's `PreviousTxnID` field. Use the `Sequence` value of that transaction as the `OfferSequence` value when finishing the escrow.
 
@@ -522,7 +522,7 @@ You can look up escrow objects by the [sender's address](#look-up-escrows-by-sen
 
 You can use the [`account_objects`](reference-casinocoind.html#account-objects) method to look up escrow objects by sender address.
 
-Let's say that you want to look up all pending escrow objects with a sender address of `rfztBskAVszuS3s5Kq7zDS74QtHrw893fm`. You can do this using the following example request, where the sender address is the `account` value.
+Let's say that you want to look up all pending escrow objects with a sender address of `cfztBskAVszuS3s5Kq7zDS74QtHrw893fm`. You can do this using the following example request, where the sender address is the `account` value.
 
 Request:
 
@@ -537,9 +537,9 @@ _Websocket_
 <!-- MULTICODE_BLOCK_END -->
 
 
-The response resembles the following example. Note that the response includes all pending escrow objects with `rfztBskAVszuS3s5Kq7zDS74QtHrw893fm` as the sender or destination address, where the sender address is the `Account` value and the destination address is the `Destination` value.
+The response resembles the following example. Note that the response includes all pending escrow objects with `cfztBskAVszuS3s5Kq7zDS74QtHrw893fm` as the sender or destination address, where the sender address is the `Account` value and the destination address is the `Destination` value.
 
-In this example, the second and fourth escrow objects meet our lookup criteria because their `Account` (sender address) values are set to `rfztBskAVszuS3s5Kq7zDS74QtHrw893fm`.
+In this example, the second and fourth escrow objects meet our lookup criteria because their `Account` (sender address) values are set to `cfztBskAVszuS3s5Kq7zDS74QtHrw893fm`.
 
 Response:
 
@@ -559,7 +559,7 @@ You can use the [`account_objects`](reference-casinocoind.html#account-objects) 
 
 **Note:** You can only look up pending escrow objects by destination address if those escrows were created after the [fix1523 amendment](reference-amendments.html#fix1523) was enabled on 2017-11-14.
 
-Let's say that you want to look up all pending escrow objects with a destination address of `rfztBskAVszuS3s5Kq7zDS74QtHrw893fm`. You can do this using the following example request, where the destination address is the `account` value.
+Let's say that you want to look up all pending escrow objects with a destination address of `cfztBskAVszuS3s5Kq7zDS74QtHrw893fm`. You can do this using the following example request, where the destination address is the `account` value.
 
 Request:
 
@@ -574,9 +574,9 @@ _Websocket_
 <!-- MULTICODE_BLOCK_END -->
 
 
-The response resembles the following example. Note that the response includes all pending escrow objects with `rfztBskAVszuS3s5Kq7zDS74QtHrw893fm` as the destination or sender address, where the destination address is the `Destination` value and the sender address is the `Account` value.
+The response resembles the following example. Note that the response includes all pending escrow objects with `cfztBskAVszuS3s5Kq7zDS74QtHrw893fm` as the destination or sender address, where the destination address is the `Destination` value and the sender address is the `Account` value.
 
-In this example, the first and third escrow objects meet our lookup criteria because their `Destination` (destination address) values are set to `rfztBskAVszuS3s5Kq7zDS74QtHrw893fm`.
+In this example, the first and third escrow objects meet our lookup criteria because their `Destination` (destination address) values are set to `cfztBskAVszuS3s5Kq7zDS74QtHrw893fm`.
 
 Response:
 

@@ -7,7 +7,7 @@ An OfferCreate transaction is effectively a [limit order](http://en.wikipedia.or
 ```
 {
     "TransactionType": "OfferCreate",
-    "Account": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+    "Account": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
     "Fee": "12",
     "Flags": 0,
     "LastLedgerSequence": 7108682,
@@ -15,7 +15,7 @@ An OfferCreate transaction is effectively a [limit order](http://en.wikipedia.or
     "TakerGets": "6000000",
     "TakerPays": {
       "currency": "GKO",
-      "issuer": "ruazs5h1qEsqpke88pcqnaseXdm6od2xc",
+      "issuer": "cuazs5h1qEsqpke88pcqnaseXdm6od2xc",
       "value": "2"
     }
 }

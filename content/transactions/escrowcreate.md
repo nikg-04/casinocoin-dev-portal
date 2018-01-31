@@ -13,7 +13,7 @@ Example EscrowCreate:
     "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
     "TransactionType": "EscrowCreate",
     "Amount": "10000",
-    "Destination": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+    "Destination": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
     "CancelAfter": 533257958,
     "FinishAfter": 533171558,
     "Condition": "A0258020E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855810100",

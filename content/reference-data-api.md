@@ -387,13 +387,13 @@ Response (trimmed for size):
             "TakerPays": {
                 "value": "0.001567373",
                 "currency": "BTC",
-                "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+                "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
             },
             "TakerGets": "146348921",
             "Fee": "64",
             "SigningPubKey": "02279DDA900BC53575FC5DFA217113A5B21C1ACB2BB2AEFDD60EA478A074E9E264",
             "TxnSignature": "3045022100D81FFECC36A3DEF0922EB5D16F1AA5AA0804C30A18ED3B512093A75E87C81AD602206B221E22A4E3158785C109E7508624AD3DE5C0E06108D34FA709FCC9575C9441",
-            "Account": "r2d2iZiCcJmNL6vhUGFjs8U8BuUq6BnmT"
+            "Account": "c2d2iZiCcJmNL6vhUGFjs8U8BuUq6BnmT"
         },
         "meta": {
             "TransactionIndex": 0,
@@ -412,8 +412,8 @@ Response (trimmed for size):
                             "Sequence": 326323,
                             "OwnerCount": 27,
                             "Balance": "275862935331",
-                            "Account": "rfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
-                            "RegularKey": "rfYqosNivHQFJ6KpArouxoci3QE3huKNYe"
+                            "Account": "cfCFLzNJYvvnoGHWQYACmJpTgkLUaugLEw",
+                            "RegularKey": "cfYqosNivHQFJ6KpArouxoci3QE3huKNYe"
                         }
                     }
                 },
@@ -501,13 +501,13 @@ Response:
         "Amount": {
           "value": "96",
           "currency": "USD",
-          "issuer": "rJ6VE6L87yaVmdyxa9jZFXSAdEFSoTGPbE"
+          "issuer": "cJ6VE6L87yaVmdyxa9jZFXSAdEFSoTGPbE"
         },
         "Fee": "10",
         "SigningPubKey": "02082622E4DA1DC6EA6B38A48956D816881E000ACF0C5F5B52863B9F698799D474",
         "TxnSignature": "304402200A0746192EBC7BC3C1B9D657F42B6345A49D75FE23EF340CB6F0427254C139D00220446BF9169C94AEDC87F56D01DB011866E2A67E2AADDCC45C4D11422550D044CB",
-        "Account": "rB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
-        "Destination": "rJ6VE6L87yaVmdyxa9jZFXSAdEFSoTGPbE"
+        "Account": "cB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY",
+        "Destination": "cJ6VE6L87yaVmdyxa9jZFXSAdEFSoTGPbE"
       },
       "meta": {
         "TransactionIndex": 0,
@@ -527,7 +527,7 @@ Response:
                 "Sequence": 62,
                 "OwnerCount": 6,
                 "Balance": "8178999999999390",
-                "Account": "rB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY"
+                "Account": "cB5TihdPbKgMrkFqrqUC3yLdE8hhv4BdeY"
               }
             }
           }
@@ -547,13 +547,13 @@ Response:
         "Amount": {
           "value": "2",
           "currency": "EUR",
-          "issuer": "rfitr7nL7MX85LLKJce7E3ATQjSiyUPDfj"
+          "issuer": "cFitr7nL7MX85LLKJce7E3ATQjSiyUPDfj"
         },
         "Fee": "10",
         "SigningPubKey": "03FDDCD97668B686100E60653FD1E5210A8310616669AACB3A1FCC6D2C090CCB32",
         "TxnSignature": "304402204F9BB7E37C14A3A3762E2A7DADB9A28D1AFFB3797521229B6FB98BA666B5491B02204F69AAEAFAC8FA473E52042FF06035AB3618A54E0B76C9852766D55184E98598",
-        "Account": "rhdAw3LiEfWWmSrbnZG3udsN7PoWKT56Qo",
-        "Destination": "rfitr7nL7MX85LLKJce7E3ATQjSiyUPDfj"
+        "Account": "chdAw3LiEfWWmSrbnZG3udsN7PoWKT56Qo",
+        "Destination": "cfitr7nL7MX85LLKJce7E3ATQjSiyUPDfj"
       },
       "meta": {
         "TransactionIndex": 0,
@@ -573,7 +573,7 @@ Response:
                 "Sequence": 11,
                 "OwnerCount": 2,
                 "Balance": "10000999900",
-                "Account": "rhdAw3LiEfWWmSrbnZG3udsN7PoWKT56Qo"
+                "Account": "chdAw3LiEfWWmSrbnZG3udsN7PoWKT56Qo"
               }
             }
           }
@@ -663,7 +663,7 @@ If the request specifies a `currency` and an `interval`, the result includes obj
 Request:
 
 ```
-GET /v2/payments/BTC+rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q?limit=2
+GET /v2/payments/BTC+cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q?limit=2
 ```
 
 Response:
@@ -680,7 +680,7 @@ Response:
       "delivered_amount": "100.0",
       "destination_balance_changes": [
         {
-          "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "currency": "BTC",
           "value": "100"
         }
@@ -688,18 +688,18 @@ Response:
       "transaction_cost": "1.0E-5",
       "source_balance_changes": [
         {
-          "counterparty": "rwm98fCBS8tV1YB8CGho8zUPW5J7N41th2",
+          "counterparty": "cwm98fCBS8tV1YB8CGho8zUPW5J7N41th2",
           "currency": "BTC",
           "value": "-100"
         }
       ],
       "tx_index": 3,
       "currency": "BTC",
-      "destination": "rwm98fCBS8tV1YB8CGho8zUPW5J7N41th2",
+      "destination": "cwm98fCBS8tV1YB8CGho8zUPW5J7N41th2",
       "executed_time": "2013-09-27T04:03:00Z",
-      "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+      "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
       "ledger_index": 2424349,
-      "source": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+      "source": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
       "source_currency": "BTC",
       "tx_hash": "EDDE2601C38F886E1183B5E7E1BFD936105C76E3648E3FAD2A6C55E90BABDB47"
     },
@@ -708,7 +708,7 @@ Response:
       "delivered_amount": "0.2",
       "destination_balance_changes": [
         {
-          "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "currency": "BTC",
           "value": "0.2"
         }
@@ -717,18 +717,18 @@ Response:
       "max_amount": "0.202",
       "source_balance_changes": [
         {
-          "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "currency": "BTC",
           "value": "-0.2"
         }
       ],
       "tx_index": 1,
       "currency": "BTC",
-      "destination": "rHfcNvcg8pBqBxtSvD9Ma8gF17uxauB31o",
+      "destination": "cHfcNvcg8pBqBxtSvD9Ma8gF17uxauB31o",
       "executed_time": "2013-11-20T23:52:30Z",
-      "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+      "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
       "ledger_index": 3445885,
-      "source": "rwm98fCBS8tV1YB8CGho8zUPW5J7N41th2",
+      "source": "cwm98fCBS8tV1YB8CGho8zUPW5J7N41th2",
       "source_currency": "BTC",
       "tx_hash": "F30D6CED4B0C37660F6DD741C9CA49F0BCB2D2648CDB8FC8AD6CFD86A86384E2"
     }
@@ -795,7 +795,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/exchanges/USD+rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q/CSC?descending=true&limit=3&result=tesSUCCESS&type=OfferCreate
+GET /v2/exchanges/USD+cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q/CSC?descending=true&limit=3&result=tesSUCCESS&type=OfferCreate
 ```
 
 Response:
@@ -805,7 +805,7 @@ Response:
 {
     "result": "success",
     "count": 3,
-    "marker": "USD|rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q|CSC||20151021222220|000016612683|00017|00000",
+    "marker": "USD|cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q|CSC||20151021222220|000016612683|00017|00000",
     "exchanges": [
         {
             "base_amount": 4.98954834453577,
@@ -813,17 +813,17 @@ Response:
             "node_index": 9,
             "rate": 210.00021000021,
             "tx_index": 0,
-            "buyer": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+            "buyer": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
             "executed_time": "2015-10-21T23:09:50",
             "ledger_index": 16613308,
             "offer_sequence": 1010056,
-            "provider": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
-            "seller": "rK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
-            "taker": "rK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
+            "provider": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+            "seller": "cK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
+            "taker": "cK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
             "tx_hash": "25600A10E5395D45A9D514E1EC3D98C341C5451FD21C48FA9D104C310EC29D6B",
             "tx_type": "Payment",
             "base_currency": "USD",
-            "base_issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+            "base_issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
             "counter_currency": "CSC"
         },
         {
@@ -832,17 +832,17 @@ Response:
             "node_index": 3,
             "rate": 212.03711637126,
             "tx_index": 0,
-            "buyer": "rfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
+            "buyer": "cfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
             "executed_time": "2015-10-21T23:09:50",
             "ledger_index": 16613308,
             "offer_sequence": 158081,
-            "provider": "rfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
-            "seller": "rK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
-            "taker": "rK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
+            "provider": "cfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
+            "seller": "cK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
+            "taker": "cK2o63evRPdRoMT2ZaW72wsHsFzcjnRLLq",
             "tx_hash": "25600A10E5395D45A9D514E1EC3D98C341C5451FD21C48FA9D104C310EC29D6B",
             "tx_type": "Payment",
             "base_currency": "USD",
-            "base_issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+            "base_issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
             "counter_currency": "CSC"
         },
         {
@@ -852,18 +852,18 @@ Response:
             "rate": 212.1264535361624,
             "tx_index": 17,
             "autobridged_currency": "USD",
-            "autobridged_issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
-            "buyer": "rfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
+            "autobridged_issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+            "buyer": "cfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
             "executed_time": "2015-10-21T22:22:20",
             "ledger_index": 16612683,
             "offer_sequence": 158059,
-            "provider": "rfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
-            "seller": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
-            "taker": "rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+            "provider": "cfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
+            "seller": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
+            "taker": "cpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM",
             "tx_hash": "F05F670B06D641D7F6FE18E450DDB2C7A4DDF76D580C34C820939DC22AD9F582",
             "tx_type": "OfferCreate",
             "base_currency": "USD",
-            "base_issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+            "base_issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
             "counter_currency": "CSC"
         }
     ]
@@ -924,7 +924,7 @@ The rate is derived from the volume weighted average over the calendar day speci
 Request:
 
 ```
-GET /v2/exchange_rates/USD+rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q/CSC?date=2015-11-13T00:00:00Z
+GET /v2/exchange_rates/USD+cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q/CSC?date=2015-11-13T00:00:00Z
 ```
 
 Response:
@@ -989,7 +989,7 @@ All exchange rates are calculating by converting both currencies to CSC.
 Request:
 
 ```
-GET /v2/normalize?amount=100&currency=CSC&exchange_currency=USD&exchange_issuer=rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q
+GET /v2/normalize?amount=100&currency=CSC&exchange_currency=USD&exchange_issuer=cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q
 ```
 
 Response:
@@ -1071,10 +1071,10 @@ Response (trimmed for size):
     "result": "success",
     "date": "2015-08-19T00:00:00Z",
     "count": 2,
-    "marker": "20150819000000|r2nt4zXDP6Be5FNrLsiuuTEBETbGR9RFw",
+    "marker": "20150819000000|c2nt4zXDP6Be5FNrLsiuuTEBETbGR9RFw",
     "reports": [
         {
-            "account": "r2LXq2rZWSgQ1thhKiEytzi1smg6oEn8A",
+            "account": "c2LXq2rZWSgQ1thhKiEytzi1smg6oEn8A",
             "date": "2015-08-19T00:00:00Z",
             "high_value_received": "7000",
             "high_value_sent": "3400",
@@ -1101,28 +1101,28 @@ Response (trimmed for size):
             "payments_received": 155,
             "payments_sent": 49,
             "receiving_counterparties": [
-                "rDMFJrKg2jyoNG6WDWJknXDEKZ6ywNFGwD",
-                "r4XXHxraHLuCiLmLMw96FTPXXywZSnWSyR",
+                "cDMFJrKg2jyoNG6WDWJknXDEKZ6ywNFGwD",
+                "c4XXHxraHLuCiLmLMw96FTPXXywZSnWSyR",
 
                 ...(additional results trimmed)...
 
 
-                "rp1C4Ld6uGjurFpempUJ8q5hPSWhak5EQf"
+                "cp1C4Ld6uGjurFpempUJ8q5hPSWhak5EQf"
             ],
             "sending_counterparties": [
-                "rwxcJVWZSEgN2DmLZYYjyagHjMx5jQ7BAa",
+                "cwxcJVWZSEgN2DmLZYYjyagHjMx5jQ7BAa",
 
                 ...(additional results trimmed)...
 
 
-                "rBK1rLjbWsSU9EuST1cAz9RsiYdJPVGXXA"
+                "cBK1rLjbWsSU9EuST1cAz9RsiYdJPVGXXA"
             ],
             "total_value": "210940",
             "total_value_received": "100540",
             "total_value_sent": "110400"
         },
         {
-            "account": "r2adXWaWFJt9mHeoWN77iHJozDz2FDAPA",
+            "account": "c2adXWaWFJt9mHeoWN77iHJozDz2FDAPA",
             "date": "2015-08-19T00:00:00Z",
             "high_value_received": "7400",
             "high_value_sent": "15900",
@@ -1145,21 +1145,21 @@ Response (trimmed for size):
             "payments_received": 43,
             "payments_sent": 62,
             "receiving_counterparties": [
-                "rB4cyZxrBrTmJcWZSBc8YoW2t3bafiKRp",
+                "cB4cyZxrBrTmJcWZSBc8YoW2t3bafiKRp",
 
                 ...(additional results trimmed)...
 
 
-                "rKybkw3Pu74VfJfrWr7QJbVPJNarnKP2EJ"
+                "cKybkw3Pu74VfJfrWr7QJbVPJNarnKP2EJ"
             ],
             "sending_counterparties": [
-                "rNRCXw8PQRjvTwMDDLZVvuLHSKqqXUXQHv",
-                "r7CLMVEuNvK2yXTPLPnkWMqzkkXuopWeL",
+                "cNRCXw8PQRjvTwMDDLZVvuLHSKqqXUXQHv",
+                "c7CLMVEuNvK2yXTPLPnkWMqzkkXuopWeL",
 
                 ...(additional results trimmed)...
 
 
-                "ranyeoYRhvwiFABzDvxSVyqQKp1bMkFsaX"
+                "canyeoYRhvwiFABzDvxSVyqQKp1bMkFsaX"
             ],
             "total_value": "117600",
             "total_value_received": "54700",
@@ -1342,7 +1342,7 @@ Each **issuer capitalization object** has the following fields:
 Request:
 
 ```
-GET /v2/capitalization/USD+rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q?start=2015-01-01T00:00:00Z&end=2015-10-31&interval=month
+GET /v2/capitalization/USD+cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q?start=2015-01-01T00:00:00Z&end=2015-10-31&interval=month
 ```
 
 Response:
@@ -1352,7 +1352,7 @@ Response:
 {
   "result": "success",
   "currency": "USD",
-  "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+  "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
   "count": 10,
   "rows": [
     {
@@ -1469,7 +1469,7 @@ Each "Account Trading Object" describes the activity of a single account during 
 Request:
 
 ```
-GET /v2/active_accounts/CSC/USD+rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q
+GET /v2/active_accounts/CSC/USD+cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q
 ```
 
 Response:
@@ -1492,7 +1492,7 @@ Response:
                 "counter_volume": 54.499328645454604,
                 "count": 4
             },
-            "account": "rGBQhB8EH5DmqMmfKPLchpqr3MR19pv6zN",
+            "account": "cGBQhB8EH5DmqMmfKPLchpqr3MR19pv6zN",
             "base_volume": 13084.822874,
             "counter_volume": 54.499328645454604,
             "count": 4
@@ -1508,7 +1508,7 @@ Response:
                 "counter_volume": 0,
                 "count": 0
             },
-            "account": "rQE5Z3FgVnRMbVfS6xiVQFgB4J3X162FVD",
+            "account": "cQE5Z3FgVnRMbVfS6xiVQFgB4J3X162FVD",
             "base_volume": 12597.822874,
             "counter_volume": 52.4909286454546,
             "count": 1
@@ -1527,7 +1527,7 @@ Response:
                 "counter_volume": 0,
                 "count": 0
             },
-            "account": "rD8LigXE7165r3VWhSQ4FwzJy7PNrTMwUq",
+            "account": "cD8LigXE7165r3VWhSQ4FwzJy7PNrTMwUq",
             "base_volume": 1.996007,
             "counter_volume": 0.008782427920595,
             "count": 1
@@ -1543,7 +1543,7 @@ Response:
                 "counter_volume": 0.0004821658905462904,
                 "count": 1
             },
-            "account": "rfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
+            "account": "cfh3pFHkCXv3TgzsEJgyCzF1CduZHCLi9o",
             "base_volume": 0.1,
             "counter_volume": 0.0004821658905462904,
             "count": 1
@@ -1614,7 +1614,7 @@ Each object in the `components` array of the Volume Objects represent the volume
 Request:
 
 ```
-GET /v2/network/exchange_volume?exchange_currency=USD&exchange_issuer=rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B
+GET /v2/network/exchange_volume?exchange_currency=USD&exchange_issuer=cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B
 ```
 
 
@@ -1634,7 +1634,7 @@ Response:
                     "amount": 333.7038784107369,
                     "base": {
                         "currency": "BTC",
-                        "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+                        "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
                     },
                     "counter": {
                         "currency": "CSC"
@@ -1647,7 +1647,7 @@ Response:
                     "amount": 74567.72531650064,
                     "base": {
                         "currency": "USD",
-                        "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+                        "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
                     },
                     "counter": {
                         "currency": "CSC"
@@ -1663,11 +1663,11 @@ Response:
                     "amount": 85.40728674708998,
                     "base": {
                         "currency": "CNY",
-                        "issuer": "razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA"
+                        "issuer": "cazqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA"
                     },
                     "counter": {
                         "currency": "USD",
-                        "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+                        "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
                     },
                     "converted_amount": 12.72863756671683
                 },
@@ -1677,11 +1677,11 @@ Response:
                     "amount": 570.687912196755,
                     "base": {
                         "currency": "JPY",
-                        "issuer": "r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN"
+                        "issuer": "c94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN"
                     },
                     "counter": {
                         "currency": "BTC",
-                        "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+                        "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
                     },
                     "converted_amount": 4.4137945368632545
                 }
@@ -1690,7 +1690,7 @@ Response:
             "endTime": "2015-09-11T19:58:58+00:00",
             "exchange": {
                 "currency": "USD",
-                "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+                "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
             },
             "exchangeRate": 0.004410567085248279,
             "startTime": "2015-11-10T00:06:04+00:00",
@@ -1779,7 +1779,7 @@ Response:
             "components": [
                 {
                     "currency": "USD",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "amount": 87279.59029136538,
                     "count": 331,
                     "rate": 0.004412045860957953,
@@ -1787,7 +1787,7 @@ Response:
                 },
                 {
                     "currency": "USD",
-                    "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+                    "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
                     "amount": 0,
                     "count": 0,
                     "rate": 0.00451165816091143,
@@ -1795,7 +1795,7 @@ Response:
                 },
                 {
                     "currency": "BTC",
-                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
                     "amount": 279.03077460240354,
                     "count": 107,
                     "rate": 0.000013312520335244644,
@@ -1806,7 +1806,7 @@ Response:
 
                 {
                     "currency": "MXN",
-                    "issuer": "rG6FZ31hDHN1K5Dkbma3PSB5uVCuVVRzfn",
+                    "issuer": "cG6FZ31hDHN1K5Dkbma3PSB5uVCuVVRzfn",
                     "amount": 49263.13280138676,
                     "count": 19,
                     "rate": 0.07640584677247926,
@@ -1893,7 +1893,7 @@ Each Issued Value Object represents the total value issued at one point in time,
 Request:
 
 ```
-GET /v2/network/issued_value?start=2015-10-01T00:00:00&end=2015-10-01T00:00:00&exchange_currency=USD&exchange_issuer=rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q
+GET /v2/network/issued_value?start=2015-10-01T00:00:00&end=2015-10-01T00:00:00&exchange_currency=USD&exchange_issuer=cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q
 ```
 
 Response:
@@ -1908,14 +1908,14 @@ Response:
       "components": [
         {
           "currency": "USD",
-          "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+          "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
           "amount": "2177473.2843876695",
           "rate": "0.000028818194",
           "converted_amount": "2166521.1303508882"
         },
         {
           "currency": "USD",
-          "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "amount": "1651297.315492664",
           "rate": "0.000028888001",
           "converted_amount": "1639021.4313562333"
@@ -1925,7 +1925,7 @@ Response:
 
         {
           "currency": "MXN",
-          "issuer": "rG6FZ31hDHN1K5Dkbma3PSB5uVCuVVRzfn",
+          "issuer": "cG6FZ31hDHN1K5Dkbma3PSB5uVCuVVRzfn",
           "amount": "2288827.2376308907",
           "rate": "0.00050850375",
           "converted_amount": "129061.20018881827"
@@ -1933,7 +1933,7 @@ Response:
       ],
       "exchange": {
         "currency": "USD",
-        "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       },
       "total": "8338101.394233938",
       "exchange_rate": "0.0053547404",
@@ -2109,7 +2109,7 @@ Response:
       "avg_payment_volume": "3910190.139488101",
       "issued_value": "1.5276205395328993E8",
       "currency": "CNY",
-      "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y"
+      "issuer": "cKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y"
     },
     {
       "avg_exchange_count": "3003.2258064516127",
@@ -2118,7 +2118,7 @@ Response:
       "avg_payment_volume": "501442.0789529095",
       "issued_value": "2.6289124450524995E8",
       "currency": "USD",
-      "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+      "issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
     }
   ]
 }
@@ -2211,7 +2211,7 @@ Response:
       "avg_exchange_count": "1521.4603174603174",
       "avg_volume": "1.6657039295476614E7",
       "base_currency": "USD",
-      "base_issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+      "base_issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
       "counter_currency": "CSC"
     },
     {
@@ -2220,7 +2220,7 @@ Response:
       "avg_exchange_count": "1902.1587301587301",
       "avg_volume": "9117398.719214212",
       "base_currency": "CNY",
-      "base_issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+      "base_issuer": "cKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
       "counter_currency": "CSC"
     },
     ...
@@ -3303,7 +3303,7 @@ Response:
     "AUD": [
         {
             "name": "Bitstamp",
-            "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+            "account": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
             "featured": false,
             "assets": [
                 "logo.grayscale.svg",
@@ -3312,7 +3312,7 @@ Response:
         },
         {
             "name": "Coinex",
-            "account": "rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc",
+            "account": "csP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc",
             "featured": false,
             "assets": []
         }
@@ -3323,7 +3323,7 @@ Response:
     "0158415500000000C1F76FF6ECB0BAC600000000": [
         {
             "name": "GBI",
-            "account": "rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67",
+            "account": "crh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67",
             "featured": false,
             "label": "XAU (-0.5pa)",
             "assets": []
@@ -3332,13 +3332,13 @@ Response:
     "KRW": [
         {
             "name": "ECSC",
-            "account": "rPxU6acYni7FcXzPCMeaPSwKcuS2GTtNVN",
+            "account": "cPxU6acYni7FcXzPCMeaPSwKcuS2GTtNVN",
             "featured": true,
             "assets": []
         },
         {
             "name": "Pax Moneta",
-            "account": "rUkMKjQitpgAM5WTGk79xpjT38DEJY283d",
+            "account": "cUkMKjQitpgAM5WTGk79xpjT38DEJY283d",
             "featured": false,
             "assets": []
         }
@@ -3414,7 +3414,7 @@ Response:
     "start_date": "2015-02-15T00:00:00Z",
     "accounts": [
         {
-            "address": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+            "address": "chub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
             "currencies": {
                 "EUR": {
                     "featured": true
@@ -3426,7 +3426,7 @@ Response:
         }
     ],
     "hotwallets": [
-        "rhotcWYdfn6qxhVMbPKGDF3XCKqwXar5J4"
+        "chotcWYdfn6qxhVMbPKGDF3XCKqwXar5J4"
     ],
     "domain": "gatehub.net",
     "normalized": "gatehub",
@@ -3572,7 +3572,7 @@ Response:
   "accounts": [
     {
       "balance": "20.0",
-      "account": "raKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
+      "account": "caKEEVSGnKSD9Zyvxu4z6Pqpm4ABH8FS6n",
       "executed_time": "2015-02-09T23:31:40+00:00",
       "ledger_index": 11620700,
       "parent": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -3580,7 +3580,7 @@ Response:
     },
     {
       "balance": "30",
-      "account": "rUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
+      "account": "cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v",
       "executed_time": "2015-06-16T21:15:40+00:00",
       "ledger_index": 14090928,
       "parent": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -3588,7 +3588,7 @@ Response:
     },
     {
       "balance": "50",
-      "account": "rLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
+      "account": "cLFd1FzHMScFhLsXeaxStzv3UC97QHGAbM",
       "executed_time": "2015-09-23T23:05:20+00:00",
       "ledger_index": 16061430,
       "parent": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
@@ -3650,7 +3650,7 @@ Response:
     "result": "success",
     "account": {
         "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-        "parent": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+        "parent": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
         "initial_balance": "100.0",
         "inception": "2014-05-29T17:05:20+00:00",
         "ledger_index": 6902264,
@@ -3728,17 +3728,17 @@ Response:
   "balances": [
     {
       "currency": "USD",
-      "counterparty": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+      "counterparty": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "value": "-11.0301"
     },
     {
       "currency": "USD",
-      "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+      "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
       "value": "0.0001"
     },
     {
       "currency": "USD",
-      "counterparty": "rweYz56rfmQ98cAdRaeTxQS9wVMGnrdsFp",
+      "counterparty": "cweYz56rfmQ98cAdRaeTxQS9wVMGnrdsFp",
       "value": "0"
     }
   ]
@@ -3812,7 +3812,7 @@ Each order object has the following fields:
 Request:
 
 ```
-GET /v2/accounts/rK5j9n8baXfL4gzUoZsfxBvvsv97P5swaV/orders?limit=2&date=2015-11-11T00:00:00Z
+GET /v2/accounts/cK5j9n8baXfL4gzUoZsfxBvvsv97P5swaV/orders?limit=2&date=2015-11-11T00:00:00Z
 ```
 
 Response:
@@ -3831,16 +3831,16 @@ Response:
         "quantity": {
           "currency": "JPY",
           "value": "56798.00687665813",
-          "counterparty": "r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN"
+          "counterparty": "c94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN"
         },
         "totalPrice": {
           "currency": "USD",
           "value": "433.792841227449",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rK5j9n8baXfL4gzUoZsfxBvvsv97P5swaV",
+        "maker": "cK5j9n8baXfL4gzUoZsfxBvvsv97P5swaV",
         "sequence": 7418286,
         "makerExchangeRate": "130.9334813270407"
       }
@@ -3851,16 +3851,16 @@ Response:
         "quantity": {
           "currency": "JPY",
           "value": "11557.02705273459",
-          "counterparty": "r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN"
+          "counterparty": "c94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN"
         },
         "totalPrice": {
           "currency": "USD",
           "value": "87.570156003591",
-          "counterparty": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq"
+          "counterparty": "chub8VRN55s94qWKDv6jmDy1pUykJzF3wq"
         }
       },
       "properties": {
-        "maker": "rK5j9n8baXfL4gzUoZsfxBvvsv97P5swaV",
+        "maker": "cK5j9n8baXfL4gzUoZsfxBvvsv97P5swaV",
         "sequence": 7418322,
         "makerExchangeRate": "131.9744942815983"
       }
@@ -3957,7 +3957,7 @@ Response:
         "Fee": "12",
         "SigningPubKey": "032ECFCC409F02057D8556988B89E17D48ECFC8373965036C6BA294AA2B7972971",
         "TxnSignature": "30450221008D8E251DA5EA17A29CC9192717860F3B4047E74DF005127A65D9140CAE870C0902201C8E4548D2D3BA11B3E13CE8A167EBC076920E2B1C38547275CAA75FEC436EB9",
-        "Account": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+        "Account": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
         "Destination": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
       },
       "meta": {
@@ -3989,7 +3989,7 @@ Response:
                 "Sequence": 2,
                 "OwnerCount": 0,
                 "Balance": "899999988",
-                "Account": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX"
+                "Account": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX"
               }
             }
           }
@@ -4156,14 +4156,14 @@ Response:
       ],
       "source_balance_changes": [
         {
-          "counterparty": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+          "counterparty": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
           "currency": "USD",
           "value": "-1"
         }
       ],
       "tx_index": 1,
       "currency": "USD",
-      "destination": "ra5nK24KXen9AHvsdFTKHSANinZseWnPcX",
+      "destination": "ca5nK24KXen9AHvsdFTKHSANinZseWnPcX",
       "executed_time": "2014-06-02T22:47:50Z",
       "issuer": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
       "ledger_index": 6979192,
@@ -4242,7 +4242,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/rsyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw/exchanges/KRW+rUkMKjQitpgAM5WTGk79xpjT38DEJY283d/CSC?start=2015-08-08T00:00:00Z&end=2015-08-31T00:00:00Z&limit=2
+GET /v2/accounts/csyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw/exchanges/KRW+cUkMKjQitpgAM5WTGk79xpjT38DEJY283d/CSC?start=2015-08-08T00:00:00Z&end=2015-08-31T00:00:00Z&limit=2
 
 ```
 
@@ -4253,24 +4253,24 @@ Response:
 {
     "result": "success",
     "count": 2,
-    "marker": "rsyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw|20150810014200|000015162386|00013|00003",
+    "marker": "csyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw|20150810014200|000015162386|00013|00003",
     "exchanges": [
         {
             "base_amount": 209.3501241148,
             "counter_amount": 20.424402,
             "rate": 0.097560973925,
             "autobridged_currency": "USD",
-            "autobridged_issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+            "autobridged_issuer": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
             "base_currency": "KRW",
-            "base_issuer": "rUkMKjQitpgAM5WTGk79xpjT38DEJY283d",
-            "buyer": "rnAqwsu2BEbCjacoZmsXrpViqd3miZhHbT",
+            "base_issuer": "cUkMKjQitpgAM5WTGk79xpjT38DEJY283d",
+            "buyer": "cnAqwsu2BEbCjacoZmsXrpViqd3miZhHbT",
             "counter_currency": "CSC",
             "executed_time": "2015-08-08T02:57:40",
             "ledger_index": 15122851,
             "offer_sequence": "1738",
-            "provider": "rsyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
-            "seller": "rsyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
-            "taker": "rnAqwsu2BEbCjacoZmsXrpViqd3miZhHbT",
+            "provider": "csyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
+            "seller": "csyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
+            "taker": "cnAqwsu2BEbCjacoZmsXrpViqd3miZhHbT",
             "tx_hash": "506D109A609A5E0778276CCBB125A4AA7B78428059F069A2CB4F739B861C0C49",
             "tx_type": "OfferCreate"
         },
@@ -4279,16 +4279,16 @@ Response:
             "counter_amount": 8424.941452,
             "rate": 0.097560975618,
             "base_currency": "KRW",
-            "base_issuer": "rUkMKjQitpgAM5WTGk79xpjT38DEJY283d",
-            "buyer": "r9xQi5YT8jqVM3wZhbiV94ZKKvGHaVeSDj",
+            "base_issuer": "cUkMKjQitpgAM5WTGk79xpjT38DEJY283d",
+            "buyer": "c9xQi5YT8jqVM3wZhbiV94ZKKvGHaVeSDj",
             "client": "rt1.1-26-gbeb68ab",
             "counter_currency": "CSC",
             "executed_time": "2015-08-08T07:15:00",
             "ledger_index": 15126536,
             "offer_sequence": "1738",
-            "provider": "rsyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
-            "seller": "rsyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
-            "taker": "r9xQi5YT8jqVM3wZhbiV94ZKKvGHaVeSDj",
+            "provider": "csyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
+            "seller": "csyDrDi9Emy6vPU78qdxovmNpmj5Qh4NKw",
+            "taker": "c9xQi5YT8jqVM3wZhbiV94ZKKvGHaVeSDj",
             "tx_hash": "C897A595DED16ADF5AD52E6FD9CE5DE65C78A93CCAA62A85248DC3015A78F5C4",
             "tx_type": "Payment"
         }
@@ -4461,7 +4461,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 Request:
 
 ```
-GET /v2/accounts/rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q/reports?start=2015-08-28T00:00:00&end=2015-08-28T00:00:00&accounts=true&payments=true&descending=true
+GET /v2/accounts/cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q/reports?start=2015-08-28T00:00:00&end=2015-08-28T00:00:00&accounts=true&payments=true&descending=true
 ```
 
 Response:
@@ -4473,7 +4473,7 @@ Response:
   "count": 1,
   "reports": [
     {
-      "account": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+      "account": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
       "date": "2015-08-28T00:00:00+00:00",
       "high_value_received": 89500.74142547617,
       "high_value_sent": 0,
@@ -4482,21 +4482,21 @@ Response:
           "tx_hash": "F2323EE7494384E77ABB18F31981FEE8C31767BBD27515B55FC3BD6792C4E408",
           "amount": 2.7,
           "currency": "BTC",
-          "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "type": "received"
         },
         {
           "tx_hash": "FEAD462738EE430E154FF3122D3EE2DD27DDD8BEFBA080A60FE91B78E8865365",
           "amount": 3,
           "currency": "BTC",
-          "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "type": "received"
         },
         {
           "tx_hash": "383B1D1EABB646AB2EFBBF9E8967FE279BFE5EF86A3B6BCD5BDA287210053116",
           "amount": 0.14,
           "currency": "BTC",
-          "issuer": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+          "issuer": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
           "type": "received"
         }
       ],
@@ -4504,8 +4504,8 @@ Response:
       "payments_sent": 0,
       "receiving_counterparties": [],
       "sending_counterparties": [
-        "rhi4zZdCeFdfTokzek8D7p9bUWmtEFCZAe",
-        "rP1hkW1LCiVos6FpzU7itmm9Tk29yqvyk5"
+        "chi4zZdCeFdfTokzek8D7p9bUWmtEFCZAe",
+        "cP1hkW1LCiVos6FpzU7itmm9Tk29yqvyk5"
       ],
       "total_value": 174019.58324753598,
       "total_value_received": 174019.58324753598,
@@ -4576,7 +4576,7 @@ Each Transaction Stats Object has the following fields:
 Request:
 
 ```
-GET /v2/accounts/rGFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX/stats/transactions?start=2015-01-01&limit=2
+GET /v2/accounts/cGFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX/stats/transactions?start=2015-01-01&limit=2
 ```
 
 Response:
@@ -4586,7 +4586,7 @@ Response:
 {
   "result": "success",
   "count": 2,
-  "marker": "rGFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX|20150116000000",
+  "marker": "cGFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX|20150116000000",
   "rows": [
     {
       "date": "2015-01-14T00:00:00Z",
@@ -4674,7 +4674,7 @@ Each Value Stats Object has the following fields:
 Request:
 
 ```
-GET /v2/accounts/rGFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX/stats/value?limit=2&descending=true
+GET /v2/accounts/cGFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX/stats/value?limit=2&descending=true
 ```
 
 Response:
@@ -4684,7 +4684,7 @@ Response:
 {
   "result": "success",
   "count": 2,
-  "marker": "rGFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX|20160412000000",
+  "marker": "GFuMiw48HdbnrUbkRYuitXTmfrDBNTCnX|20160412000000",
   "rows": [
     {
       "date": "2016-04-14T00:00:00Z",

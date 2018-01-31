@@ -368,7 +368,7 @@ paths | string | *Optional* The paths of trustlines and orders to use in executi
     }
   },
   "destination": {
-    "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+    "address": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
     "amount": {
       "value": "0.01",
       "currency": "USD",
@@ -539,7 +539,7 @@ sourceTag | integer | *Optional* Source tag.
 
 ```json
 {
-  "destination": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+  "destination": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
   "amount": "0.01",
   "allowCancelAfter": "2014-09-24T21:21:50.000Z"
 }
@@ -612,7 +612,7 @@ sourceTag | integer | *Optional* Source tag.
 ```json
 {
   "amount": "1",
-  "destination": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+  "destination": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
   "settleDelay": 86400,
   "publicKey": "32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A"
 }
@@ -926,7 +926,7 @@ return api.getTransaction(id).then(transaction => {
         "value": "0.001"
       }
     },
-    "paths": "[[{\"currency\":\"USD\",\"issuer\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"type\":48,\"type_hex\":\"0000000000000030\"},{\"account\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\",\"issuer\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"type\":49,\"type_hex\":\"0000000000000031\"}]]"
+    "paths": "[[{\"currency\":\"USD\",\"issuer\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"type\":48,\"type_hex\":\"0000000000000030\"},{\"account\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\",\"issuer\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"type\":49,\"type_hex\":\"0000000000000031\"}]]"
   },
   "outcome": {
     "result": "tesSUCCESS",
@@ -938,21 +938,21 @@ return api.getTransaction(id).then(transaction => {
       "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
     },
     "balanceChanges": {
-      "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
+      "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
         {
           "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
           "currency": "USD",
           "value": "-0.001"
         },
         {
-          "counterparty": "r9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr",
+          "counterparty": "c9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr",
           "currency": "USD",
           "value": "0.001002"
         }
       ],
       "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ": [
         {
-          "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+          "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
           "currency": "USD",
           "value": "0.001"
         }
@@ -963,20 +963,20 @@ return api.getTransaction(id).then(transaction => {
           "value": "-1.101208"
         }
       ],
-      "r9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
+      "c9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
         {
           "currency": "CSC",
           "value": "1.101198"
         },
         {
-          "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+          "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
           "currency": "USD",
           "value": "-0.001002"
         }
       ]
     },
     "orderbookChanges": {
-      "r9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
+      "c9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
         {
           "direction": "buy",
           "quantity": {
@@ -985,7 +985,7 @@ return api.getTransaction(id).then(transaction => {
           },
           "totalPrice": {
             "currency": "USD",
-            "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+            "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
             "value": "0.001002"
           },
           "makerExchangeRate": "1099",
@@ -1066,7 +1066,7 @@ return api.getTransactions(address).then(transaction => {
           "value": "0.001"
         }
       },
-      "paths": "[[{\"issuer\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"},{\"account\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"issuer\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"}]]"
+      "paths": "[[{\"issuer\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"},{\"account\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"issuer\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"}]]"
     },
     "outcome": {
       "result": "tesSUCCESS",
@@ -1077,21 +1077,21 @@ return api.getTransactions(address).then(transaction => {
         "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
       },
       "balanceChanges": {
-        "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
+        "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
           {
             "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
             "currency": "USD",
             "value": "-0.001"
           },
           {
-            "counterparty": "r9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr",
+            "counterparty": "c9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr",
             "currency": "USD",
             "value": "0.001002"
           }
         ],
         "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ": [
           {
-            "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+            "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
             "currency": "USD",
             "value": "0.001"
           }
@@ -1102,13 +1102,13 @@ return api.getTransactions(address).then(transaction => {
             "value": "-1.101208"
           }
         ],
-        "r9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
+        "c9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
           {
             "currency": "CSC",
             "value": "1.101198"
           },
           {
-            "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+            "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
             "currency": "USD",
             "value": "-0.001002"
           }
@@ -1124,7 +1124,7 @@ return api.getTransactions(address).then(transaction => {
             },
             "totalPrice": {
               "currency": "USD",
-              "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+              "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
               "value": "0.001002"
             },
             "makerExchangeRate": "1099",
@@ -1163,7 +1163,7 @@ return api.getTransactions(address).then(transaction => {
           "value": "0.001"
         }
       },
-      "paths": "[[{\"issuer\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"},{\"account\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"issuer\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"}]]"
+      "paths": "[[{\"issuer\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"},{\"account\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"issuer\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"currency\":\"USD\"}]]"
     },
     "outcome": {
       "result": "tesSUCCESS",
@@ -1174,21 +1174,21 @@ return api.getTransactions(address).then(transaction => {
         "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ"
       },
       "balanceChanges": {
-        "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
+        "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo": [
           {
             "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
             "currency": "USD",
             "value": "-0.001"
           },
           {
-            "counterparty": "r9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr",
+            "counterparty": "c9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr",
             "currency": "USD",
             "value": "0.001002"
           }
         ],
         "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ": [
           {
-            "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+            "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
             "currency": "USD",
             "value": "0.001"
           }
@@ -1199,13 +1199,13 @@ return api.getTransactions(address).then(transaction => {
             "value": "-1.101208"
           }
         ],
-        "r9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
+        "c9tGqzZgKxVFvzKFdUqXAqTzazWBUia8Qr": [
           {
             "currency": "CSC",
             "value": "1.101198"
           },
           {
-            "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+            "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
             "currency": "USD",
             "value": "-0.001002"
           }
@@ -1221,7 +1221,7 @@ return api.getTransactions(address).then(transaction => {
             },
             "totalPrice": {
               "currency": "USD",
-              "counterparty": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+              "counterparty": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
               "value": "0.001002"
             },
             "makerExchangeRate": "1099",
@@ -1285,7 +1285,7 @@ return api.getTrustlines(address).then(trustlines =>
     "specification": {
       "limit": "5",
       "currency": "USD",
-      "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
+      "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
       "ripplingDisabled": true,
       "frozen": true
     },
@@ -1300,7 +1300,7 @@ return api.getTrustlines(address).then(trustlines =>
     "specification": {
       "limit": "5000",
       "currency": "USD",
-      "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+      "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
     },
     "counterparty": {
       "limit": "0"
@@ -1313,7 +1313,7 @@ return api.getTrustlines(address).then(trustlines =>
     "specification": {
       "limit": "1",
       "currency": "USD",
-      "counterparty": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun"
+      "counterparty": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun"
     },
     "counterparty": {
       "limit": "0"
@@ -1326,7 +1326,7 @@ return api.getTrustlines(address).then(trustlines =>
     "specification": {
       "limit": "1",
       "currency": "USD",
-      "counterparty": "r9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X",
+      "counterparty": "c9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X",
       "ripplingDisabled": true
     },
     "counterparty": {
@@ -1340,7 +1340,7 @@ return api.getTrustlines(address).then(trustlines =>
     "specification": {
       "limit": "500",
       "currency": "USD",
-      "counterparty": "rfF3PNkwkq1DygW2wum2HK3RGfgkJjdPVD",
+      "counterparty": "cfF3PNkwkq1DygW2wum2HK3RGfgkJjdPVD",
       "ripplingDisabled": true
     },
     "counterparty": {
@@ -1354,7 +1354,7 @@ return api.getTrustlines(address).then(trustlines =>
     "specification": {
       "limit": "0",
       "currency": "USD",
-      "counterparty": "rE6R3DWF9fBD7CyiQciePF9SqK58Ubp8o2"
+      "counterparty": "cE6R3DWF9fBD7CyiQciePF9SqK58Ubp8o2"
     },
     "counterparty": {
       "limit": "100",
@@ -1368,7 +1368,7 @@ return api.getTrustlines(address).then(trustlines =>
     "specification": {
       "limit": "0",
       "currency": "USD",
-      "counterparty": "rEhDDUUNxpXgEHVJtC2cjXAgyx5VCFxdMF",
+      "counterparty": "cEhDDUUNxpXgEHVJtC2cjXAgyx5VCFxdMF",
       "frozen": true
     },
     "counterparty": {
@@ -1427,122 +1427,122 @@ return api.getBalances(address).then(balances =>
   {
     "value": "0",
     "currency": "ASP",
-    "counterparty": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z"
+    "counterparty": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z"
   },
   {
     "value": "0",
     "currency": "XAU",
-    "counterparty": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z"
+    "counterparty": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z"
   },
   {
     "value": "2.497605752725159",
     "currency": "USD",
-    "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+    "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
   },
   {
     "value": "481.992867407479",
     "currency": "MXN",
-    "counterparty": "rHpXfibHgSb64n8kK9QWDpdbfqSpYbM9a4"
+    "counterparty": "cHpXfibHgSb64n8kK9QWDpdbfqSpYbM9a4"
   },
   {
     "value": "0.793598266778297",
     "currency": "EUR",
-    "counterparty": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun"
+    "counterparty": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun"
   },
   {
     "value": "0",
     "currency": "CNY",
-    "counterparty": "rnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK"
+    "counterparty": "cnuF96W4SZoCJmbHYBFoJZpR8eCaxNvekK"
   },
   {
     "value": "1.294889190631542",
     "currency": "DYM",
-    "counterparty": "rGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E"
+    "counterparty": "cGwUWgN5BEg3QGNY3RX2HfYowjUTZdid3E"
   },
   {
     "value": "0.3488146605801446",
     "currency": "CHF",
-    "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
   {
     "value": "2.114103174931847",
     "currency": "BTC",
-    "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
   {
     "value": "0",
     "currency": "USD",
-    "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
   {
     "value": "-0.00111",
     "currency": "BTC",
-    "counterparty": "rpgKWEmNqSDAGFhy5WDnsyPqfQxbWxKeVd"
+    "counterparty": "cpgKWEmNqSDAGFhy5WDnsyPqfQxbWxKeVd"
   },
   {
     "value": "-0.1010780000080207",
     "currency": "BTC",
-    "counterparty": "rBJ3YjwXi2MGbg7GVLuTXUWQ8DjL7tDXh4"
+    "counterparty": "cBJ3YjwXi2MGbg7GVLuTXUWQ8DjL7tDXh4"
   },
   {
     "value": "1",
     "currency": "USD",
-    "counterparty": "rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun"
+    "counterparty": "cLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun"
   },
   {
     "value": "8.07619790068559",
     "currency": "CNY",
-    "counterparty": "razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA"
+    "counterparty": "cazqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA"
   },
   {
     "value": "7.292695098901099",
     "currency": "JPY",
-    "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
   {
     "value": "0",
     "currency": "AUX",
-    "counterparty": "r3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z"
+    "counterparty": "c3vi7mWxru9rJCxETCyA1CHvzL96eZWx5z"
   },
   {
     "value": "0",
     "currency": "USD",
-    "counterparty": "r9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X"
+    "counterparty": "c9vbV3EHvXWjSkeQ6CAcYVPGeq7TuiXY2X"
   },
   {
     "value": "12.41688780720394",
     "currency": "EUR",
-    "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
   {
     "value": "35",
     "currency": "USD",
-    "counterparty": "rfF3PNkwkq1DygW2wum2HK3RGfgkJjdPVD"
+    "counterparty": "cfF3PNkwkq1DygW2wum2HK3RGfgkJjdPVD"
   },
   {
     "value": "-5",
     "currency": "JOE",
-    "counterparty": "rwUVoVMSURqNyvocPCcvLu3ygJzZyw8qwp"
+    "counterparty": "cwUVoVMSURqNyvocPCcvLu3ygJzZyw8qwp"
   },
   {
     "value": "0",
     "currency": "USD",
-    "counterparty": "rE6R3DWF9fBD7CyiQciePF9SqK58Ubp8o2"
+    "counterparty": "cE6R3DWF9fBD7CyiQciePF9SqK58Ubp8o2"
   },
   {
     "value": "0",
     "currency": "JOE",
-    "counterparty": "rE6R3DWF9fBD7CyiQciePF9SqK58Ubp8o2"
+    "counterparty": "cE6R3DWF9fBD7CyiQciePF9SqK58Ubp8o2"
   },
   {
     "value": "0",
     "currency": "015841551A748AD2C1F76FF6ECB0CCCD00000000",
-    "counterparty": "rs9M85karFkCRjvc6KMWn8Coigm9cbcgcx"
+    "counterparty": "cs9M85karFkCRjvc6KMWn8Coigm9cbcgcx"
   },
   {
     "value": "0",
     "currency": "USD",
-    "counterparty": "rEhDDUUNxpXgEHVJtC2cjXAgyx5VCFxdMF"
+    "counterparty": "cEhDDUUNxpXgEHVJtC2cjXAgyx5VCFxdMF"
   }
 ]
 ```
@@ -1589,34 +1589,34 @@ return api.getBalanceSheet(address).then(balanceSheet =>
 {
   "balances": [
     {
-    "counterparty": "rKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ",
+    "counterparty": "cKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ",
     "currency": "EUR",
     "value": "29826.1965999999"
   },
   {
-    "counterparty": "rKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ",
+    "counterparty": "cKm4uWpg9tfwbVSeATv4KxDe6mpE9yPkgJ",
     "currency": "USD",
     "value": "10.0"
   },
   {
-    "counterparty": "ra7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt",
+    "counterparty": "ca7JkEzrgeKHdzKgo4EUUVBnxggY4z37kt",
     "currency": "USD",
     "value": "13857.70416"
   }
   ],
   "assets": [
     {
-    "counterparty": "r9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH",
+    "counterparty": "c9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH",
     "currency": "BTC",
     "value": "5444166510000000e-26"
   },
   {
-    "counterparty": "r9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH",
+    "counterparty": "c9F6wk8HkXrgYWoJ7fsv4VrUBVoqDVtzkH",
     "currency": "USD",
     "value": "100.0"
   },
   {
-    "counterparty": "rwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6",
+    "counterparty": "cwmUaXsWtXU4Z843xSYwgt1is97bgY8yj6",
     "currency": "BTC",
     "value": "8700000000000000e-30"
   }
@@ -1692,7 +1692,7 @@ const pathfind = {
     "address": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
   },
   "destination": {
-    "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+    "address": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
     "amount": {
       "currency": "USD",
       "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
@@ -1716,14 +1716,14 @@ return api.getPaths(pathfind)
       }
     },
     "destination": {
-      "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+      "address": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
       "amount": {
         "currency": "USD",
         "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "value": "100"
       }
     },
-    "paths": "[[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"rHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
+    "paths": "[[{\"account\":\"cMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"cMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"cMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"cMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"cHHa9t2kLQyXRbdLkSzEgkzwf9unmFgZs9\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
   },
   {
     "source": {
@@ -1734,14 +1734,14 @@ return api.getPaths(pathfind)
       }
     },
     "destination": {
-      "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+      "address": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
       "amount": {
         "currency": "USD",
         "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "value": "100"
       }
     },
-    "paths": "[[{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
+    "paths": "[[{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"account\":\"cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q\"},{\"currency\":\"CSC\"},{\"currency\":\"USD\",\"issuer\":\"cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
   },
   {
     "source": {
@@ -1752,14 +1752,14 @@ return api.getPaths(pathfind)
       }
     },
     "destination": {
-      "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+      "address": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
       "amount": {
         "currency": "USD",
         "counterparty": "cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ",
         "value": "100"
       }
     },
-    "paths": "[[{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"rf9X8QoYnWLHMHuDfjkmRcD2UE5qX5aYV\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"rDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"rDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"rfQPFZ3eLcaSUKjUy7A3LAmDNM4F9Hz9j1\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"rpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
+    "paths": "[[{\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"csP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"csP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc\"},{\"account\":\"cf9X8QoYnWLHMHuDfjkmRcD2UE5qX5aYV\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"cDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"cDVdJ62foD1sn7ZpxtXyptdkBSyhsQGviT\"},{\"account\":\"cfQPFZ3eLcaSUKjUy7A3LAmDNM4F9Hz9j1\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}],[{\"currency\":\"USD\",\"issuer\":\"cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cpHgehzdpfWRXKvSv6duKvVuo1aZVimdaT\"},{\"account\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"}]]"
   }
 ]
 ```
@@ -1809,12 +1809,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "EUR",
         "value": "17.70155237781915",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "1122.990930900328",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -1829,12 +1829,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "EUR",
         "value": "750",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "19.11697137482289",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -1849,12 +1849,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "19.50899530491766",
-        "counterparty": "rpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2"
+        "counterparty": "cpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "18.46856867857617",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -1869,12 +1869,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "1445.796633544794",
-        "counterparty": "rpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2"
+        "counterparty": "cpDMez6pm6dBve2TJsmDpv7Yae6V5Pyvy2"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "14.40727807030772",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -1889,12 +1889,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "750",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       },
       "totalPrice": {
         "currency": "NZD",
         "value": "9.178557969538755",
-        "counterparty": "rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc"
+        "counterparty": "csP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc"
       }
     },
     "properties": {
@@ -1909,12 +1909,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "500",
-        "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "9.94768291869523",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -1929,12 +1929,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "10000",
-        "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "9.994805759894176",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -1949,12 +1949,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "MXN",
         "value": "15834.53653918684",
-        "counterparty": "rG6FZ31hDHN1K5Dkbma3PSB5uVCuVVRzfn"
+        "counterparty": "cG6FZ31hDHN1K5Dkbma3PSB5uVCuVVRzfn"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "11.67691646304319",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -1969,12 +1969,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "3968.240250979598",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       },
       "totalPrice": {
         "currency": "XAU",
         "value": "0.03206299605333101",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       }
     },
     "properties": {
@@ -1989,12 +1989,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "4139.022125516302",
-        "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
       },
       "totalPrice": {
         "currency": "XAU",
         "value": "0.03347459066593226",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       }
     },
     "properties": {
@@ -2013,7 +2013,7 @@ return api.getOrders(address).then(orders =>
       "totalPrice": {
         "currency": "NZD",
         "value": "6.840555705",
-        "counterparty": "rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc"
+        "counterparty": "csP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc"
       }
     },
     "properties": {
@@ -2028,12 +2028,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "902.4050961259154",
-        "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
       },
       "totalPrice": {
         "currency": "EUR",
         "value": "14.40843766044656",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       }
     },
     "properties": {
@@ -2048,12 +2048,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "181.4887131319798",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       },
       "totalPrice": {
         "currency": "XAG",
         "value": "1.128432823485989",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       }
     },
     "properties": {
@@ -2068,12 +2068,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "1814.887131319799",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       },
       "totalPrice": {
         "currency": "XAG",
         "value": "1.128432823485991",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       }
     },
     "properties": {
@@ -2088,12 +2088,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "USD",
         "value": "118.6872603846736",
-        "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
       },
       "totalPrice": {
         "currency": "XAG",
         "value": "0.7283371225235964",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       }
     },
     "properties": {
@@ -2108,7 +2108,7 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "XAU",
         "value": "1",
-        "counterparty": "r9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
+        "counterparty": "c9Dr5xwkeLegBeXq6ujinjSBLQzQ1zQGjH"
       },
       "totalPrice": {
         "currency": "CSC",
@@ -2127,12 +2127,12 @@ return api.getOrders(address).then(orders =>
       "quantity": {
         "currency": "EUR",
         "value": "750",
-        "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
+        "counterparty": "cMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q"
       },
       "totalPrice": {
         "currency": "USD",
         "value": "17.77537376072202",
-        "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+        "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
       }
     },
     "properties": {
@@ -2197,11 +2197,11 @@ const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const orderbook = {
   "base": {
     "currency": "USD",
-    "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
   "counter": {
     "currency": "BTC",
-    "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+    "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   }
 };
 return api.getOrderbook(address, orderbook)
@@ -2218,16 +2218,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "93.030522464522",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.2849323720855092",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rwBYyfufTzk77zUSKEu4MvixfarC35av1J",
+        "maker": "cwBYyfufTzk77zUSKEu4MvixfarC35av1J",
         "sequence": 386940,
         "makerExchangeRate": "326.5003614141928"
       }
@@ -2238,16 +2238,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "1",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.00302447007930511",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rwjsRktX1eguUr1pHTffyHnC4uyrvX58V1",
+        "maker": "cwjsRktX1eguUr1pHTffyHnC4uyrvX58V1",
         "sequence": 207855,
         "makerExchangeRate": "330.6364334177034"
       }
@@ -2258,17 +2258,17 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "99.34014894048333",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.3",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "expirationTime": "2014-12-25T01:14:43.000Z"
       },
       "properties": {
-        "maker": "raudnGKfTK23YKfnS7ixejHrqGERTYNFXk",
+        "maker": "caudnGKfTK23YKfnS7ixejHrqGERTYNFXk",
         "sequence": 110103,
         "makerExchangeRate": "331.1338298016111"
       }
@@ -2279,16 +2279,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "268.754",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.8095",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rPyYxUGK8L4dgEvjPs3aRc1B1jEiLr3Hx5",
+        "maker": "cPyYxUGK8L4dgEvjPs3aRc1B1jEiLr3Hx5",
         "sequence": 392,
         "makerExchangeRate": "332"
       },
@@ -2296,12 +2296,12 @@ return api.getOrderbook(address, orderbook)
         "fundedAmount": {
           "currency": "BTC",
           "value": "0.8078974385735969",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "priceOfFundedAmount": {
           "currency": "USD",
           "value": "268.2219496064341",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       }
     },
@@ -2311,17 +2311,17 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "152.0098333185607",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.4499999999999999",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "expirationTime": "2014-12-25T01:14:44.000Z"
       },
       "properties": {
-        "maker": "raudnGKfTK23YKfnS7ixejHrqGERTYNFXk",
+        "maker": "caudnGKfTK23YKfnS7ixejHrqGERTYNFXk",
         "sequence": 110105,
         "makerExchangeRate": "337.7996295968016"
       }
@@ -2332,16 +2332,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "1.308365894430151",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.003768001830745216",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rDbsCJr5m8gHDCNEHCZtFxcXHsD4S9jH83",
+        "maker": "cDbsCJr5m8gHDCNEHCZtFxcXHsD4S9jH83",
         "sequence": 110061,
         "makerExchangeRate": "347.2306949944844"
       }
@@ -2352,17 +2352,17 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "176.3546101589987",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.5",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "expirationTime": "2014-12-25T00:41:38.000Z"
       },
       "properties": {
-        "maker": "rDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
+        "maker": "cDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
         "sequence": 35788,
         "makerExchangeRate": "352.7092203179974"
       }
@@ -2373,16 +2373,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "179.48",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.5",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rN6jbxx4H6NxcnmkzBxQnbCWLECNKrgSSf",
+        "maker": "cN6jbxx4H6NxcnmkzBxQnbCWLECNKrgSSf",
         "sequence": 491,
         "makerExchangeRate": "358.96"
       },
@@ -2390,12 +2390,12 @@ return api.getOrderbook(address, orderbook)
         "fundedAmount": {
           "currency": "BTC",
           "value": "0.499001996007984",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "priceOfFundedAmount": {
           "currency": "USD",
           "value": "179.1217564870259",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       }
     },
@@ -2405,17 +2405,17 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "288.7710263794967",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.8",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "expirationTime": "2014-12-25T00:41:39.000Z"
       },
       "properties": {
-        "maker": "rDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
+        "maker": "cDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
         "sequence": 35789,
         "makerExchangeRate": "360.9637829743709"
       }
@@ -2426,16 +2426,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "182.9814890090516",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.5",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rUeCeioKJkbYhv4mRGuAbZpPcqkMCoYq6N",
+        "maker": "cUeCeioKJkbYhv4mRGuAbZpPcqkMCoYq6N",
         "sequence": 5255,
         "makerExchangeRate": "365.9629780181032"
       },
@@ -2443,12 +2443,12 @@ return api.getOrderbook(address, orderbook)
         "fundedAmount": {
           "currency": "BTC",
           "value": "0.2254411038203033",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "priceOfFundedAmount": {
           "currency": "USD",
           "value": "82.50309772176658",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       }
     }
@@ -2460,16 +2460,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "3205.1",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "10",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "r49y2xKuKVG2dPkNHgWQAV61cjxk8gryjQ",
+        "maker": "c49y2xKuKVG2dPkNHgWQAV61cjxk8gryjQ",
         "sequence": 434,
         "makerExchangeRate": "0.003120027456241615"
       }
@@ -2480,16 +2480,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "1599.063669386278",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "4.99707396683212",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rDYCRhpahKEhCFV25xScg67Bwf4W9sTYAm",
+        "maker": "cDYCRhpahKEhCFV25xScg67Bwf4W9sTYAm",
         "sequence": 233,
         "makerExchangeRate": "0.003125"
       }
@@ -2500,17 +2500,17 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "143.1050962074379",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.4499999999999999",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "expirationTime": "2014-12-25T01:14:44.000Z"
       },
       "properties": {
-        "maker": "raudnGKfTK23YKfnS7ixejHrqGERTYNFXk",
+        "maker": "caudnGKfTK23YKfnS7ixejHrqGERTYNFXk",
         "sequence": 110104,
         "makerExchangeRate": "0.003144542101755081"
       },
@@ -2518,12 +2518,12 @@ return api.getOrderbook(address, orderbook)
         "fundedAmount": {
           "currency": "USD",
           "value": "0",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "priceOfFundedAmount": {
           "currency": "BTC",
           "value": "0",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       }
     },
@@ -2533,17 +2533,17 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "254.329207354604",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.8",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "expirationTime": "2014-12-24T21:44:11.000Z"
       },
       "properties": {
-        "maker": "rDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
+        "maker": "cDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
         "sequence": 35625,
         "makerExchangeRate": "0.003145529403882357"
       },
@@ -2551,12 +2551,12 @@ return api.getOrderbook(address, orderbook)
         "fundedAmount": {
           "currency": "USD",
           "value": "0",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "priceOfFundedAmount": {
           "currency": "BTC",
           "value": "0",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       }
     },
@@ -2566,16 +2566,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "390.4979",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "1.23231134568807",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rwBYyfufTzk77zUSKEu4MvixfarC35av1J",
+        "maker": "cwBYyfufTzk77zUSKEu4MvixfarC35av1J",
         "sequence": 387756,
         "makerExchangeRate": "0.003155743848271834"
       }
@@ -2586,16 +2586,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "1",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.003160328237957649",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rwjsRktX1eguUr1pHTffyHnC4uyrvX58V1",
+        "maker": "cwjsRktX1eguUr1pHTffyHnC4uyrvX58V1",
         "sequence": 208927,
         "makerExchangeRate": "0.003160328237957649"
       }
@@ -2606,16 +2606,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "4725",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "15",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "r49y2xKuKVG2dPkNHgWQAV61cjxk8gryjQ",
+        "maker": "c49y2xKuKVG2dPkNHgWQAV61cjxk8gryjQ",
         "sequence": 429,
         "makerExchangeRate": "0.003174603174603175"
       }
@@ -2626,16 +2626,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "1.24252537879871",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "0.003967400879423823",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "rDbsCJr5m8gHDCNEHCZtFxcXHsD4S9jH83",
+        "maker": "cDbsCJr5m8gHDCNEHCZtFxcXHsD4S9jH83",
         "sequence": 110099,
         "makerExchangeRate": "0.003193013959408667"
       }
@@ -2646,17 +2646,17 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "496.5429474010489",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "1.6",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "expirationTime": "2014-12-24T21:44:12.000Z"
       },
       "properties": {
-        "maker": "rDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
+        "maker": "cDVBvAQScXrGRGnzrxRrcJPeNLeLeUTAqE",
         "sequence": 35627,
         "makerExchangeRate": "0.003222279177208227"
       },
@@ -2664,12 +2664,12 @@ return api.getOrderbook(address, orderbook)
         "fundedAmount": {
           "currency": "USD",
           "value": "0",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "priceOfFundedAmount": {
           "currency": "BTC",
           "value": "0",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       }
     },
@@ -2679,16 +2679,16 @@ return api.getOrderbook(address, orderbook)
         "quantity": {
           "currency": "USD",
           "value": "3103",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         },
         "totalPrice": {
           "currency": "BTC",
           "value": "10",
-          "counterparty": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
+          "counterparty": "cvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
         }
       },
       "properties": {
-        "maker": "r49y2xKuKVG2dPkNHgWQAV61cjxk8gryjQ",
+        "maker": "c49y2xKuKVG2dPkNHgWQAV61cjxk8gryjQ",
         "sequence": 431,
         "makerExchangeRate": "0.003222687721559781"
       }
@@ -2850,10 +2850,10 @@ return api.getPaymentChannel(channelId).then(channel =>
 
 ```json
 {
-  "account": "r6ZtfQFWbCkp4XqaUygzHaXsQXBT67xLj",
+  "account": "c6ZtfQFWbCkp4XqaUygzHaXsQXBT67xLj",
   "amount": "10",
   "balance": "0",
-  "destination": "rQf9vCwQtzQQwtnGvr6zc1fqzqg7QBuj7G",
+  "destination": "cQf9vCwQtzQQwtnGvr6zc1fqzqg7QBuj7G",
   "publicKey": "02A05282CB6197E34490BACCD9405E81D9DFBE123B0969F9F40EC3F9987AD9A97D",
   "settleDelay": 10000,
   "previousAffectingTransactionID": "F939A0BEF139465403C56CCDC49F59A77C868C78C5AEC184E29D15E9CD1FF675",
@@ -2968,7 +2968,7 @@ const payment = {
     }
   },
   "destination": {
-    "address": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+    "address": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
     "amount": {
       "value": "0.01",
       "currency": "USD",
@@ -2983,7 +2983,7 @@ return api.preparePayment(address, payment).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"Payment\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},\"SendMax\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"Payment\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},\"SendMax\":{\"value\":\"0.01\",\"currency\":\"USD\",\"issuer\":\"cJzUdHEh7MF7xwzxF7Tww7H6uWvfKRX5wJ\"},\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3275,7 +3275,7 @@ instructions | object | The instructions for how to execute the transaction afte
 ```javascript
 const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const escrowCreation = {
-  "destination": "rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+  "destination": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
   "amount": "0.01",
   "allowCancelAfter": "2014-09-24T21:21:50.000Z"
 };
@@ -3286,7 +3286,7 @@ return api.prepareEscrowCreation(address, escrowCreation).then(prepared =>
 
 ```json
 {
-  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowCreate\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"rpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":\"10000\",\"CancelAfter\":464908910,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON": "{\"Flags\":2147483648,\"TransactionType\":\"EscrowCreate\",\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"Destination\":\"cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo\",\"Amount\":\"10000\",\"CancelAfter\":464908910,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3444,7 +3444,7 @@ instructions | object | The instructions for how to execute the transaction afte
 const address = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 const paymentChannelCreate = {
   "amount": "1",
-  "destination": "rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
+  "destination": "csA2LpzuawewSBQXkiju3YQTMzW13pAAdW",
   "settleDelay": 86400,
   "publicKey": "32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A"
 };
@@ -3455,7 +3455,7 @@ return api.preparePaymentChannelCreate(address, paymentChannelCreate).then(prepa
 
 ```json
 {
-  "txJSON":"{\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TransactionType\":\"PaymentChannelCreate\",\"Amount\":\"1000000\",\"Destination\":\"rsA2LpzuawewSBQXkiju3YQTMzW13pAAdW\",\"SettleDelay\":86400,\"PublicKey\":\"32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
+  "txJSON":"{\"Account\":\"cDarPNJEpCnpBZSfmcquydockkePkjPGA2\",\"TransactionType\":\"PaymentChannelCreate\",\"Amount\":\"1000000\",\"Destination\":\"csA2LpzuawewSBQXkiju3YQTMzW13pAAdW\",\"SettleDelay\":86400,\"PublicKey\":\"32D2471DB72B27E3310F355BB33E339BF26F8392D5A93D3BC0FC3B566612DA0F0A\",\"Flags\":2147483648,\"LastLedgerSequence\":8820051,\"Fee\":\"12\",\"Sequence\":23}",
   "instructions": {
     "fee": "0.000012",
     "sequence": 23,
@@ -3723,7 +3723,7 @@ return api.generateAddress();
 
 ```json
 {
-  "address": "rGCkuB7PBr5tNy68tPEABEtcdno4hE6Y7f",
+  "address": "cGCkuB7PBr5tNy68tPEABEtcdno4hE6Y7f",
   "secret": "sp6JS7f14BuwFY8Mw6bTtLKWauoUs"
 }
 ```

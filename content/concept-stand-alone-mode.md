@@ -22,7 +22,7 @@ casinocoind -a --start --conf=/path/to/casinocoind.cfg
 
 In a genesis ledger, the [genesis address](concept-accounts.html#special-addresses) holds all 100 billion CSC. The keys of the genesis address are [hardcoded](https://github.com/casinocoin/casinocoind/blob/4.0.1/src/casinocoin/app/ledger/Ledger.cpp#L184) as follows:
 
-**Address:** `rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh`
+**Address:** `cHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh`
 
 **Secret:** `snoPBrXtMeMyMHUVTgbuqAfg1SUTb` ("masterpassphrase")
 
