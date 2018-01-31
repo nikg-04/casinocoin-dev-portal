@@ -4,11 +4,8 @@ The CasinoCoin Data API v2 provides access to information about changes in the C
 
 CasinoCoin provides a live instance of the Data API with as complete a transaction record as possible at the following address:
 
-[**https://data.ripple.com**](https://data.ripple.com)
-
-
 ## More Information
-The CasinoCoin Data API v2 replaces the Historical Database v1 and the [Charts API](https://github.com/ripple/casinocoin-data-api/).
+The CasinoCoin Data API v2 replaces the Historical Database v1 and the [Charts API](https://github.com/casinocoin/casinocoin-data-api/).
 
 * [API Methods](#api-method-reference)
 * [API Conventions](#api-conventions)
@@ -67,7 +64,7 @@ Account Methods:
 
 External Information Methods:
 
-* [Get casinocoind Versions - `GET /v2/network/rippled_versions`](#get-casinocoind-versions)
+* [Get casinocoind Versions - `GET /v2/network/casinocoind_versions`](#get-casinocoind-versions)
 * [Get All Gateways - `GET /v2/gateways`](#get-all-gateways)
 * [Get Gateway - `GET /v2/gateways/{:gateway}`](#get-gateway)
 * [Get Currency Image - `GET /v2/currencies/{:currencyimage}`](#get-currency-image)
@@ -2391,7 +2388,7 @@ Response:
   "nodes": [
     {
       "node_public_key": "n94fDXS3ta92gRSi7DKngh47S7Rg4z1FuNsahvbiakFEg51dLeVa",
-      "version": "rippled-0.31.0-rc1",
+      "version": "casinocoind-0.31.0-rc1",
       "uptime": 266431,
       "inbound_count": 24,
       "last_updated": "2016-06-03T21:50:57Z"
@@ -2400,7 +2397,7 @@ Response:
       "node_public_key": "n94h5KNspwUGLaGcdHGxruYNmExWHjPkLcMvwsNrivR9czRp6Lor",
       "ip": "104.247.221.178",
       "port": 51235,
-      "version": "rippled-0.31.0",
+      "version": "casinocoind-0.31.0",
       "uptime": 608382,
       "inbound_count": 10,
       "outbound_count": 11,
@@ -2493,7 +2490,7 @@ Response:
   "nodes": [
     {
       "node_public_key": "n94BuARkPiYLrMuAVZqMQFhTAGpo12dqUPiH3yrzEnhaEcXfLAnV",
-      "version": "rippled-0.30.1",
+      "version": "casinocoind-0.30.1",
       "uptime": 122424,
       "inbound_count": 10,
       "last_updated": "2016-06-06T14:36:52Z"
@@ -2502,7 +2499,7 @@ Response:
       "node_public_key": "n94h5KNspwUGLaGcdHGxruYNmExWHjPkLcMvwsNrivR9czRp6Lor",
       "ip": "104.247.221.178",
       "port": 51235,
-      "version": "rippled-0.31.2",
+      "version": "casinocoind-0.31.2",
       "uptime": 38649,
       "inbound_count": 10,
       "outbound_count": 11,
@@ -2578,7 +2575,7 @@ Response:
   "node_public_key": "n94h5KNspwUGLaGcdHGxruYNmExWHjPkLcMvwsNrivR9czRp6Lor",
   "ip": "104.247.221.178",
   "port": 51235,
-  "version": "rippled-0.31.2",
+  "version": "casinocoind-0.31.2",
   "uptime": 43342,
   "inbound_count": 10,
   "outbound_count": 11,
@@ -2719,7 +2716,7 @@ Response:
 ```
 200 OK
 {
-  "domain": "ripple.com",
+  "domain": "casinocoin.org",
   "domain_state": "verified",
   "last_datetime": "2016-06-07T01:22:59.929Z",
   "validation_public_key": "n949f75evCHwgyP4fPVgaHqNHxUVN15PsJEZ3B3HnXPcPjcZAoy7",
@@ -3145,19 +3142,6 @@ Response:
   "count": 27,
   "reports": [
     {
-      "validation_public_key": "n9KvSsyJiheyFnivzFqChZ58pQgjwWWuc7Tp28WPzXbkdwqL6P5y",
-      "date": "2016-06-07T00:00:00Z",
-      "total_ledgers": 1289,
-      "main_net_agreement": "1.00000",
-      "main_net_ledgers": 1289,
-      "alt_net_agreement": "0.00000",
-      "alt_net_ledgers": 0,
-      "other_ledgers": 0,
-      "domain": "rippled.media.mit.edu",
-      "domain_state": "verified",
-      "last_datetime": "2016-06-07T01:20:20.753Z"
-    },
-    {
       "validation_public_key": "n949f75evCHwgyP4fPVgaHqNHxUVN15PsJEZ3B3HnXPcPjcZAoy7",
       "date": "2016-06-07T00:00:00Z",
       "total_ledgers": 1289,
@@ -3166,7 +3150,7 @@ Response:
       "alt_net_agreement": "0.00000",
       "alt_net_ledgers": 0,
       "other_ledgers": 0,
-      "domain": "ripple.com",
+      "domain": "casinocoin.org",
       "domain_state": "verified",
       "last_datetime": "2016-06-07T01:20:20.717Z"
     },
@@ -3189,7 +3173,7 @@ Reports the latest versions of `casinocoind` available from the official CasinoC
 *REST*
 
 ```
-GET /v2/network/rippled_versions
+GET /v2/network/casinocoind_versions
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -3220,7 +3204,7 @@ Each Version Object contains the following fields:
 Request:
 
 ```
-GET /v2/network/rippled_versions
+GET /v2/network/casinocoind_versions
 ```
 
 Response:
@@ -3386,7 +3370,7 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 | `start_date` | String - [Timestamp][] | The approximate date of the first time exchanges for this gateway's currencies appeared in the ledger. |
 | `accounts` | Array | A list of [issuing addresses](concept-issuing-and-operational-addresses.html) used by this gateway. (Gateways may use different issuing accounts for different currencies.) |
 | `hotwallets` | Array of [Address][]es | This gateway's [operational addresses](concept-issuing-and-operational-addresses.html). |
-| `domain` | String | The domain name where this gateway does business. Typically the gateway hosts a [`casinocoin.txt`](https://wiki.ripple.com/Casinocoin.txt) there. |
+| `domain` | String | The domain name where this gateway does business. Typically the gateway hosts a `casinocoin.txt` there. |
 | `normalized` | String | A normalized version of the `name` field suitable for including in URLs. |
 | `assets` | Array of Strings | Graphics filenames available for this gateway, if any. (Mostly, these are logos used by CSC Charts.) |
 

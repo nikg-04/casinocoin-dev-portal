@@ -144,7 +144,7 @@ It can take several minutes for `casinocoind` to sync with the rest of the netwo
 
 ## Updating casinocoind
 
-You can subscribe to the [rippled Google Group](https://groups.google.com/forum/#!forum/casinocoin-server) to receive notifications of new `casinocoind` releases.
+
 
 ### Automatic Update on CentOS/Red Hat
 

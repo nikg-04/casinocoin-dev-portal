@@ -48,9 +48,6 @@ Introduces three new transaction types: CheckCreate, CheckCancel, and CheckCash,
 
 This amendment also changes the OfferCreate transaction to return `tecEXPIRED` when trying to create an Offer whose expiration time is in the past. Without this amendment, an OfferCreate whose expiration time is in the past returns `tesSUCCESS` but does not create or execute an Offer.
 
-**Caution:** This amendment is [in development](https://github.com/ripple/rippled/pull/2245) and is expected for `casinocoind` v0.90.0.
-
-
 
 ## CryptoConditions
 [CryptoConditions]: #cryptoconditions

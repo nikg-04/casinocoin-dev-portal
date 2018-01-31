@@ -1,6 +1,6 @@
 # casinocoind
 
-The core peer-to-peer server that manages the CSC Ledger is called `casinocoind`. Each `casinocoind` server connects to a network of peers, relays cryptographically signed transactions, and maintains a local copy of the complete shared global ledger. The source code for `casinocoind` is written in C++, and is [available on GitHub under an open-source license](https://github.com/casinocoin/rippled).
+The core peer-to-peer server that manages the CSC Ledger is called `casinocoind`. Each `casinocoind` server connects to a network of peers, relays cryptographically signed transactions, and maintains a local copy of the complete shared global ledger. The source code for `casinocoind` is written in C++, and is [available on GitHub under an open-source license](https://github.com/casinocoin/casinocoind).
 
 * [`casinocoind` Setup](tutorial-casinocoind-setup.html)
 * [API Reference](#api-methods)
