@@ -70,7 +70,7 @@ For more information on each of these objects, see the [Ledger Format Reference]
 
 [[Source]<br>](https://github.com/casinocoin/casinocoind/blob/4.0.1/src/casinocoin/protocol/impl/AccountID.cpp#L109-L140 "Source")
 
-CSC Ledger addresses are encoded using [base58](https://en.wikipedia.org/wiki/Base58) with the CasinoCoin _dictionary_: `rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz`. Since the CSC Ledger encodes several types of keys with base58, it prefixes the encoded data with a one-byte "type prefix" (also called a "version prefix") to distinguish them. The type prefix causes addresses to usually start with different letters in base58 format.
+CSC Ledger addresses are encoded using [base58](https://en.wikipedia.org/wiki/Base58) with the CasinoCoin _dictionary_: `cpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz`. Since the CSC Ledger encodes several types of keys with base58, it prefixes the encoded data with a one-byte "type prefix" (also called a "version prefix") to distinguish them. The type prefix causes addresses to usually start with different letters in base58 format.
 
 The following diagram shows the relationship between keys and addresses:
 
@@ -83,7 +83,7 @@ The formula for calculating an CSC Ledger address is as follows. For the complet
         'use strict';
         const assert = require('assert');
         const crypto = require('crypto');
-        const R_B58_DICT = 'rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz';
+        const R_B58_DICT = 'cpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz';
         const base58 = require('base-x')(R_B58_DICT);
 
         assert(crypto.getHashes().includes('sha256'));
