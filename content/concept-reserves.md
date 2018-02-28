@@ -4,14 +4,14 @@ The CSC Ledger applies _reserve requirements_, in CSC, to protect the shared glo
 
 To submit transactions, an address must hold a minimum amount of CSC in the shared global ledger. You cannot send this CSC to other addresses. To fund a new address, you must send enough CSC to meet the reserve requirement.
 
-The current minimum reserve requirement is **20 CSC**. (This is the cost of an address that owns no other objects in the ledger.)
+The current minimum reserve requirement is **10 CSC**. (This is the cost of an address that owns no other objects in the ledger.)
 
 
 ## Base Reserve and Owner Reserve
 
 The reserve requirement is divided into two parts:
 
-* The **Base Reserve** is a minimum amount of CSC that is required for every address in the ledger. Currently, this is 20 CSC (`2000000000` drops).
+* The **Base Reserve** is a minimum amount of CSC that is required for every address in the ledger. Currently, this is 10 CSC (`1000000000` drops).
 * The **Owner Reserve** is an increase to the reserve requirement for each object that the address owns in the ledger. Currently, this is 5 CSC (`500000000` drops) per item.
 
 
