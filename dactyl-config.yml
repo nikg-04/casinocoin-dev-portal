@@ -159,13 +159,13 @@ pages:
             - local
             - casinocoin.org
 
-    -   name: CasinoCoin Data API v2
-        category: References
-        html: reference-data-api.html
-        md: reference-data-api.md
-        targets:
-            - local
-            - casinocoin.org
+    # -   name: CasinoCoin Data API v2
+    #     category: References
+    #     html: reference-data-api.html
+    #     md: reference-data-api.md
+    #     targets:
+    #         - local
+    #         - casinocoin.org
 
     -   md: reference-currency.md
         category: References
@@ -248,12 +248,12 @@ pages:
             - local
             - casinocoin.org
 
-    -   md: tutorial-escrow.md
-        html: tutorial-escrow.html
-        category: Tutorials
-        targets:
-            - local
-            - casinocoin.org
+    # -   md: tutorial-escrow.md
+    #     html: tutorial-escrow.html
+    #     category: Tutorials
+    #     targets:
+    #         - local
+    #         - casinocoin.org
 
 #Features describe how the CSC Ledger works in a mostly conceptual manner
     -   name: Accounts
@@ -288,11 +288,11 @@ pages:
             - local
             - casinocoin.org
 
-    -   md: concept-escrow.md
-        category: Features
-        targets:
-            - local
-            - casinocoin.org
+    # -   md: concept-escrow.md
+    #     category: Features
+    #     targets:
+    #         - local
+    #         - casinocoin.org
 
     -   name: Fee Voting
         category: Features
@@ -387,21 +387,21 @@ pages:
             - local
             - casinocoin.org
 
-    -   name: "GB-2015-06: Corrections to Autobridging"
-        category: Gateway Bulletins
-        html: gb-2015-06.html
-        md: gb-2015-06.md
-        targets:
-            - local
-            - casinocoin.org
+    # -   name: "GB-2015-06: Corrections to Autobridging"
+    #     category: Gateway Bulletins
+    #     html: gb-2015-06.html
+    #     md: gb-2015-06.md
+    #     targets:
+    #         - local
+    #         - casinocoin.org
 
-    -   name: "GB-2015-05: Historical Ledger Query Migration"
-        category: Gateway Bulletins
-        html: gb-2015-05.html
-        md: gb-2015-05.md
-        targets:
-            - local
-            - casinocoin.org
+    # -   name: "GB-2015-05: Historical Ledger Query Migration"
+    #     category: Gateway Bulletins
+    #     html: gb-2015-05.html
+    #     md: gb-2015-05.md
+    #     targets:
+    #         - local
+    #         - casinocoin.org
 
 # API tools are interactive software for interfacing with real APIs
     -   name: WebSocket API Tool
@@ -413,17 +413,17 @@ pages:
             - casinocoin.org
         template: template-casinocoin-api-tool.html
 
-    -   name: Data API v2 Tool
-        category: API Tools
-        html: data-api-v2-tool.html
-        methods_js: js/apitool-methods-data_v2.js
-        rest_host: https://data.casinocoin.org
-        doc_page: reference-data-api.html
-        sidebar: custom
-        targets:
-            - local
-            - casinocoin.org
-        template: template-rest-api-tool.html
+    # -   name: Data API v2 Tool
+    #     category: API Tools
+    #     html: data-api-v2-tool.html
+    #     methods_js: js/apitool-methods-data_v2.js
+    #     rest_host: https://data.casinocoin.org
+    #     doc_page: reference-data-api.html
+    #     sidebar: custom
+    #     targets:
+    #         - local
+    #         - casinocoin.org
+    #     template: template-rest-api-tool.html
 
     -   name: casinocoind JSON-RPC Tool
         # This tool requires a local server w/ reverse proxy
