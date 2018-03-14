@@ -1096,6 +1096,13 @@ An example of a successful response:
 
 <!-- MULTICODE_BLOCK_END -->
 
+#### Notice
+- Balance is in satoshi
+- PreviousTxnID is the last TX from the account
+- PreviousTxnLgrSeq is the ledger in which the last TX was included
+- Sequence is the amount of transactions from the account (so only outgoing!)
+
+
 The response follows the [standard format](#response-formatting), with the result containing the requested account, its data, and a ledger to which it applies, as the following fields:
 
 | `Field`                | Type    | Description                               |
