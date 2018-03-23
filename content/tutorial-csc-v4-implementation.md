@@ -1,4 +1,4 @@
-# CasinoCoin v4 Implementation
+# CasinoCoin Implementation Cheat Sheet
 
 ## Overview
 CasinoCoin commands can be executed via the commandline daemon, json-rpc or a websocket connection.
