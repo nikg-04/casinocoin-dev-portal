@@ -7,7 +7,7 @@ Operators of [`casinocoind` validators](tutorial-casinocoind-setup.html#running-
 | Parameter | Description | Recommended Value |
 |-----------|-------------|-------------------|
 | `reference_fee` | Amount of CSC, in _drops_, that must be destroyed to send the reference transaction, the cheapest possible transaction. (1 CSC = 100 million drops.) The actual transaction cost is a multiple of this value, scaled dynamically based on the load of individual servers. | `10` (0.0000001 CSC) |
-| `account_reserve` | Minimum amount of CSC, in _drops_, that an account must have on reserve. This is the smallest amount that can be sent to fund a new account in the ledger. | `2000000000` (20 CSC) |
+| `account_reserve` | Minimum amount of CSC, in _drops_, that an account must have on reserve. This is the smallest amount that can be sent to fund a new account in the ledger. | `1000000000` (10 CSC) |
 | `owner_reserve` | How much more CSC, in _drops_, that an address must hold for _each_ object it owns in the ledger. | `500000000` (5 CSC) |
 
 ## Voting Process
