@@ -55,7 +55,7 @@ targets:
             "concept-issuing-and-operational-addresses.html": https://casinocoin.org/build/issuing-operational-addresses/
             "tutorial-reliable-transaction-submission.html": https://casinocoin.org/build/reliable-transaction-submission/
             "tutorial-casinocoinapi-beginners-guide.html": https://casinocoin.org/build/casinocoinapi-beginners-guide/
-            "tutorial-casinocoind-setup.html": https://casinocoin.org/build/casinocoind-setup/
+            # "tutorial-casinocoind-setup.html": https://casinocoin.org/build/casinocoind-setup/
             "tutorial-gateway-guide.html": https://casinocoin.org/build/gateway-guide/
             "tutorial-paychan.html": https://casinocoin.org/build/payment-channels-tutorial/
             "tutorial-escrow.html": https://casinocoin.org/build/escrow-tutorials/
@@ -223,14 +223,14 @@ pages:
             - local
             - casinocoin.org
 
-    -   name: casinocoind Setup
-        category: Tutorials
-        html: tutorial-casinocoind-setup.html
-        md: tutorial-casinocoind-setup.md
-        targets:
-            - local
-            - casinocoin.org
-            - casinocoind-setup
+    # -   name: casinocoind Setup
+        # category: Tutorials
+        # html: tutorial-casinocoind-setup.html
+        # md: tutorial-casinocoind-setup.md
+        # targets:
+            # - local
+            # - casinocoin.org
+            # - casinocoind-setup
 
         # The Gateway Guide is also a poor fit for the "tutorials" category
     -   name: Gateway Guide
