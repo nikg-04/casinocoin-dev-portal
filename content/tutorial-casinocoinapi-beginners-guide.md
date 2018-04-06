@@ -52,7 +52,7 @@ Use the following template, which includes:
 
 * CasinocoinAPI itself (`casinocoin-libjs`)
 * Babel (`babel-cli`)
-* The ECMAScript 6 presets for Babel (`babel-preset-es2015`)
+* The ECMAScript 6 presets for Babel (`babel-preset-env`)
 * (Optional) [ESLint](http://eslint.org/) (`eslint`) for checking code quality.
 
 ```
