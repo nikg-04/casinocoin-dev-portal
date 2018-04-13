@@ -55,6 +55,7 @@ targets:
             "concept-issuing-and-operational-addresses.html": https://casinocoin.org/build/issuing-operational-addresses/
             "tutorial-reliable-transaction-submission.html": https://casinocoin.org/build/reliable-transaction-submission/
             "tutorial-casinocoinapi-beginners-guide.html": https://casinocoin.org/build/casinocoinapi-beginners-guide/
+            "tutorial-csc-install-casinocoind.html": https://casinocoin.org/build/tutorial-csc-install-casinocoind/
             # "tutorial-casinocoind-setup.html": https://casinocoin.org/build/casinocoind-setup/
             "tutorial-gateway-guide.html": https://casinocoin.org/build/gateway-guide/
             "tutorial-paychan.html": https://casinocoin.org/build/payment-channels-tutorial/
@@ -222,6 +223,16 @@ pages:
         targets:
             - local
             - casinocoin.org
+
+    -   name: Install and configure casinocoind
+
+        category: Tutorials
+        html: tutorial-csc-install-casinocoind.html
+        md: tutorial-csc-install-casinocoind.md
+        targets:
+            - local
+            - casinocoin.org
+            - casinocoind-setup
 
     # -   name: casinocoind Setup
         # category: Tutorials
