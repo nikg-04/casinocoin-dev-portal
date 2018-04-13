@@ -60,7 +60,7 @@ targets:
             "tutorial-paychan.html": https://casinocoin.org/build/payment-channels-tutorial/
             "tutorial-escrow.html": https://casinocoin.org/build/escrow-tutorials/
             "tutorial-listing-xrp.html": https://casinocoin.org/build/listing-xrp-exchange/
-            "tutorial-csc-v4-implementation.html": https://casinocoin.org/build/csc-v4-implementation/
+            "tutorial-tutorial-csc-implementation-cheat-sheet.html": https://casinocoin.org/build/csc-implementation-cheat-sheet/
             "concept-accounts.html": https://casinocoin.org/build/accounts/
             "concept-amendments.html": https://casinocoin.org/build/amendments/
             "concept-consensus.html": https://casinocoin.org/build/xrp-ledger-consensus-process/
@@ -251,8 +251,8 @@ pages:
 
 # Most used commands for an exchange
     - category: Tutorials
-      html: tutorial-csc-v4-implementation.html
-      md: tutorial-csc-v4-implementation.md
+      html: tutorial-csc-implementation-cheat-sheet.html
+      md: tutorial-csc-implementation-cheat-sheet.md
       targets:
           - local
           - casinocoin.org
