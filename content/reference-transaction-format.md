@@ -347,7 +347,7 @@ The only flag that applies globally to all transactions is as follows:
 
 | Flag Name           | Hex Value  | Decimal Value | Description               |
 |:--------------------|:-----------|:--------------|:--------------------------|
-| tfFullyCanonicalSig | 0x80000000 | 2147483648    | Require a fully-canonical signature, to protect a transaction from [transaction malleability](https://wiki.ripple.com/Transaction_Malleability) exploits. |
+| tfFullyCanonicalSig | 0x80000000 | 2147483648    | Require a fully-canonical signature, to protect a transaction from [transaction malleability] exploits. |
 
 
 
@@ -605,7 +605,7 @@ These codes indicate that the transaction was malformed, and cannot succeed acco
 | `temMALFORMED`                 | Unspecified problem with the format of the transaction. |
 | `temREDUNDANT`                 | The transaction would do nothing; for example, it is sending a payment directly to the sending account, or creating an offer to buy and sell the same currency from the same issuer. |
 | `temREDUNDANT_SEND_MAX`      | |
-| `temRIPPLE_EMPTY`             | The [Payment](#payment) transaction includes an empty `Paths` field, but paths are necessary to complete this payment. |
+| `temCASINOCOIN_EMPTY`             | The [Payment](#payment) transaction includes an empty `Paths` field, but paths are necessary to complete this payment. |
 | `temBAD_WEIGHT`                | The [SignerListSet transaction][] includes a `SignerWeight` that is invalid, for example a zero or negative value. |
 | `temBAD_SIGNER`                | The [SignerListSet transaction][] includes a signer who is invalid. For example, there may be duplicate entries, or the owner of the SignerList may also be a member. |
 | `temBAD_QUORUM`                | The [SignerListSet transaction][] has an invalid `SignerQuorum` value. Either the value is not greater than zero, or it is more than the sum of all signers in the list. |
