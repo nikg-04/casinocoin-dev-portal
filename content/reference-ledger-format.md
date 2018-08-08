@@ -662,7 +662,7 @@ Example `CasinocoinState` object:
 {
     "Balance": {
         "currency": "USD",
-        "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+        "issuer": "cccccccccccccccccccBZbvji",
         "value": "-10"
     },
     "Flags": 393216,
