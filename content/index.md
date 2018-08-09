@@ -480,7 +480,7 @@ See [Transaction Types](#transaction-types) for a description.
 
 Name | Type | Description
 ---- | ---- | -----------
-defaultCasinocoin | boolean | *Optional* Enable [rippling](https://ripple.com/knowledge_center/understanding-the-nocasinocoin-flag/) on this account’s trust lines by default.
+defaultCasinocoin | boolean | *Optional* Enable [rippling]() on this account’s trust lines by default.
 disableMasterKey | boolean | *Optional* Disallows use of the master key to sign transactions for this account.
 disallowIncomingCSC | boolean | *Optional* Indicates that client applications should not send CSC to this account. Not enforced by casinocoind.
 domain | string | *Optional*  The domain that owns this account, as a hexadecimal string representing the ASCII for the domain in lowercase.
@@ -2718,7 +2718,7 @@ This method returns a promise that resolves with an array of objects with the fo
 
 Name | Type | Description
 ---- | ---- | -----------
-defaultCasinocoin | boolean | *Optional* Enable [rippling](https://ripple.com/knowledge_center/understanding-the-nocasinocoin-flag/) on this account’s trust lines by default.
+defaultCasinocoin | boolean | *Optional* Enable [rippling]() on this account’s trust lines by default.
 disableMasterKey | boolean | *Optional* Disallows use of the master key to sign transactions for this account.
 disallowIncomingCSC | boolean | *Optional* Indicates that client applications should not send CSC to this account. Not enforced by casinocoind.
 domain | string | *Optional*  The domain that owns this account, as a hexadecimal string representing the ASCII for the domain in lowercase.
