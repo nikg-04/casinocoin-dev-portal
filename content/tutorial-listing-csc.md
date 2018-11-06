@@ -1,5 +1,4 @@
 # Listing CSC on an Exchange
-
 ## Install and configure casinocoind
 
 Ubuntu 16.04 is recommended and can be downloaded from: [https://www.ubuntu.com/download/server](https://www.ubuntu.com/download/server)
@@ -237,7 +236,6 @@ casinocoind --conf=/etc/casinocoind/casinocoind.cfg sign s███████�
 [Try it! >](casinocoin-api-tool.html#sign)
 
 The following needs to be executed before the current command:
-
 ```bash
 casinocoind --conf=/etc/casinocoind/casinocoind.cfg account_info c4jZZYa6JY2mzvPn7fpHDBmXNUYmgB6GV8 validated
 ```
