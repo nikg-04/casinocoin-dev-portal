@@ -54,8 +54,8 @@ Currently CasinoCoin (the company) maintains a set of public WebSocket servers a
 
 | `Domain`        | Port | Notes                                 |
 |:----------------|:-----|:--------------------------------------|
-| `ws01.casinocoin.org` | 443  | `wss://` only; general purpose server |
-| `ws01.casinocoin.org` | 443  | `wss://` only; full-history server    |
+| `ws01.casinocoin.org` | 4443  | `wss://` only; general purpose server |
+| `ws01.casinocoin.org` | 4443  | `wss://` only; full-history server    |
 
 These public servers are not for sustained or business use, and they may become unavailable at any time. For regular use, you should run your own `casinocoind` server or contract someone you trust to do so.
 
