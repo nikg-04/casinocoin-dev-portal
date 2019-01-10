@@ -125,7 +125,7 @@ targets:
 
 pages:
 # References are exhaustive lists of commands and options
-    -   name: CasinoCoinAPI
+    -   name: CasinocoinAPI
         category: References
         html: reference-casinocoinapi.html
         # Currently this is the only page that's fetched remotely.
@@ -216,7 +216,7 @@ pages:
             - local
             - casinocoin.org
 
-    -   name: CasinoCoinAPI Beginners Guide
+    -   name: CasinocoinAPI Beginners Guide
         category: Tutorials
         html: tutorial-casinocoinapi-beginners-guide.html
         md: tutorial-casinocoinapi-beginners-guide.md

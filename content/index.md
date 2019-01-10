@@ -199,7 +199,7 @@ Methods that depend on the state of the CSC Ledger are unavailable in offline mo
 "cDarPNJEpCnpBZSfmcquydockkePkjPGA2"
 ```
 
-Every CSC Ledger account has an *address*, which is a base58-encoding of a hash of the account's public key. CSC Ledger addresses always start with the lowercase letter `r`.
+Every CSC Ledger account has an *address*, which is a base58-encoding of a hash of the account's public key. CSC Ledger addresses always start with the lowercase letter `c`.
 
 ## Account Sequence Number
 
@@ -309,7 +309,7 @@ We recommended that you specify a `maxLedgerVersion` so that you can quickly det
 ## Transaction ID
 
 ```json
-"F4AB442A6D4CBB935D66E1DA7309A5FC71C7143ED4049053EC14E3875B0CF9BF"
+"7FA2EDBB668F12B3EEF8A4E03220ACB5DB69492BC8153BDE4E5E9F2782E76808"
 ```
 
 A transaction ID is a 64-bit hexadecimal string that uniquely identifies the transaction. The transaction ID is derived from the transaction instruction and specifications, using a strong hash function.
@@ -345,7 +345,6 @@ destination | object | The destination of the funds to be sent.
 *destination.* address | [address](#address) | The address to receive at.
 *destination.* amount | [laxAmount](#amount) | An exact amount to deliver to the recipient. If the counterparty is not specified, amounts with any counterparty may be used. (This field is exclusive with destination.minAmount).
 *destination.* tag | integer | *Optional* An arbitrary unsigned 32-bit integer that identifies a reason for payment or a non-CasinoCoin account.
-*destination.* address | [address](#address) | The address to send to.
 *destination.* minAmount | [laxAmount](#amount) | The minimum amount to be delivered. (This field is exclusive with destination.amount)
 allowPartialPayment | boolean | *Optional* A boolean that, if set to true, indicates that this payment should go through even if the whole amount cannot be delivered because of a lack of liquidity or funds in the source account account
 invoiceID | string | *Optional* A 256-bit hash that can be used to identify a particular payment.
@@ -368,7 +367,7 @@ paths | string | *Optional* The paths of trustlines and orders to use in executi
     }
   },
   "destination": {
-    "address": "cpZc4mVfWUif9CRoHRKKcmhu1nx2xktxBo",
+    "address": "csxfY7qiD9aNBpwwTAxgNQkcV1DLfL8rWn",
     "amount": {
       "value": "0.01",
       "currency": "USD",
@@ -393,7 +392,7 @@ frozen | boolean | *Optional* If true, the trustline is frozen, which means that
 memos | [memos](#transaction-memos) | *Optional* Array of memos to attach to the transaction.
 qualityIn | number | *Optional* Incoming balances on this trustline are valued at this ratio.
 qualityOut | number | *Optional* Outgoing balances on this trustline are valued at this ratio.
-ripplingDisabled | boolean | *Optional* If true, payments cannot casinocoin through this trustline.
+ripplingDisabled | boolean | *Optional* If true, payments cannot ripple through this trustline.
 
 ### Example
 
@@ -480,7 +479,7 @@ See [Transaction Types](#transaction-types) for a description.
 
 Name | Type | Description
 ---- | ---- | -----------
-defaultCasinocoin | boolean | *Optional* Enable [rippling](https://ripple.com/knowledge_center/understanding-the-nocasinocoin-flag/) on this account’s trust lines by default.
+defaultCasinocoin | boolean | *Optional* Enable [rippling](https://casinocoin.org/build/concept-nocasinocoin.html) on this account’s trust lines by default.
 disableMasterKey | boolean | *Optional* Disallows use of the master key to sign transactions for this account.
 disallowIncomingCSC | boolean | *Optional* Indicates that client applications should not send CSC to this account. Not enforced by casinocoind.
 domain | string | *Optional*  The domain that owns this account, as a hexadecimal string representing the ASCII for the domain in lowercase.
@@ -2718,7 +2717,7 @@ This method returns a promise that resolves with an array of objects with the fo
 
 Name | Type | Description
 ---- | ---- | -----------
-defaultCasinocoin | boolean | *Optional* Enable [rippling](https://ripple.com/knowledge_center/understanding-the-nocasinocoin-flag/) on this account’s trust lines by default.
+defaultCasinocoin | boolean | *Optional* Enable [rippling](https://casinocoin.org/build/concept-nocasinocoin.html) on this account’s trust lines by default.
 disableMasterKey | boolean | *Optional* Disallows use of the master key to sign transactions for this account.
 disallowIncomingCSC | boolean | *Optional* Indicates that client applications should not send CSC to this account. Not enforced by casinocoind.
 domain | string | *Optional*  The domain that owns this account, as a hexadecimal string representing the ASCII for the domain in lowercase.
@@ -3789,7 +3788,7 @@ This method returns `true` if the claim signature is valid.
 
 Name | Type | Description
 ---- | ---- | -----------
- | boolean | 
+ | boolean |
 
 ### Example
 
@@ -3966,4 +3965,3 @@ api.on('disconnected', (code) => {
   }
 });
 ```
-
