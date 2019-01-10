@@ -22,7 +22,7 @@ In general, we recommend using WebSocket, because WebSocket's push paradigm has 
 
 ## Changes to the APIs
 
-The WebSocket and JSON-RPC APIs are still in development, and are subject to change. 
+The WebSocket and JSON-RPC APIs are still in development, and are subject to change.
 
 ## Connecting to casinocoind
 
@@ -30,7 +30,7 @@ Before you can run any commands against a `casinocoind` server, you must know wh
 
 Alternatively, you can [run your own local copy of `casinocoind`](tutorial-casinocoind-setup.html). This is required if you want to access any of the [Admin Commands](#list-of-admin-commands). In this case, you should use whatever IP and port you configured the server to bind. (For example, `127.0.0.1:54321`) Additionally, to access admin functionality, you must connect from a port/IP address marked as admin in the config file.
 
-The [example config file](https://github.com/casinocoin/casinocoind/blob/master/doc/casinocoind-example.cfg#L907-L930) listens for connections on the local loopback network (127.0.0.1), with JSON-RPC (HTTP) on port 5005 and WebSocket (WS) on port 6006, and treats all connected clients as admin.
+The [example config file](https://github.com/casinocoin/casinocoind/blob/master/doc/casinocoind-example.cfg#L990-L1022) listens for connections on the local loopback network (127.0.0.1), with JSON-RPC (HTTP) on port 5005 and WebSocket (WS) on port 6006, and treats all connected clients as admin.
 
 
 
@@ -50,7 +50,7 @@ The response comes as a JSON object.
 
 #### Public Servers
 
-Currently CasinoCoin (the company) maintains a set of public WebSocket servers at:
+Currently the CasinoCoin Foundation maintains a set of public WebSocket servers at:
 
 | `Domain`        | Port | Notes                                 |
 |:----------------|:-----|:--------------------------------------|
@@ -81,7 +81,7 @@ The response is also a JSON object.
 
 #### Public Servers
 
-Currently, CasinoCoin (the company) maintains a set of public JSON-RPC servers at:
+Currently, the CasinoCoin Foundation maintains a set of public JSON-RPC servers at:
 
 | `Domain`        | Port  | Notes                  |
 |:----------------|:------|:-----------------------|
@@ -114,7 +114,7 @@ The commandline puts the command after any normal (dash-prefaced) commandline op
 
 ```
 {
-  "id": 2,
+  "id": 1,
   "command": "account_info",
   "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
   "strict": true,
@@ -156,22 +156,24 @@ casinocoind account_info cDarPNJEpCnpBZSfmcquydockkePkjPGA2 validated true
 
 ```
 {
-  "id": 2,
+  "id": 1,
   "status": "success",
   "type": "response",
   "result": {
     "account_data": {
       "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-      "Balance": "27389517749",
+      "Balance": "390337132176246857",
       "Flags": 0,
       "LedgerEntryType": "AccountRoot",
-      "OwnerCount": 18,
-      "PreviousTxnID": "B6B410172C0B65575D89E464AF5B99937CC568822929ABF87DA75CBD11911932",
-      "PreviousTxnLgrSeq": 6592159,
-      "Sequence": 1400,
-      "index": "4F83A2CF7E70F77F79A307E6A472BFC2585B806A70833CCD1C26105BAE0D6E05"
+      "OwnerCount": 0,
+      "PreviousTxnID": "6EBE2B44BAE805D7540449411163E0800CC5A64F67F0E3F7B90424A08A52F108",
+      "PreviousTxnLgrSeq": 45259,
+      "Sequence": 1017,
+      "index": "9332795083CCB7331976BA667719B6CF6411FFAB1B7D790FCBA39AB7A6318AF0"
     },
-    "ledger_index": 6760970
+    "ledger_hash": "FEE0BDA615A767EEABE49AEEF7E4A8B196B6BEDE971EA2C546CD0485978C057A",
+    "ledger_index": 45610,
+    "validated": true
   }
 }
 ```
@@ -183,17 +185,17 @@ HTTP Status: 200 OK
 {
     "result": {
         "account_data": {
-            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-            "Balance": "27389517749",
-            "Flags": 0,
-            "LedgerEntryType": "AccountRoot",
-            "OwnerCount": 18,
-            "PreviousTxnID": "B6B410172C0B65575D89E464AF5B99937CC568822929ABF87DA75CBD11911932",
-            "PreviousTxnLgrSeq": 6592159,
-            "Sequence": 1400,
-            "index": "4F83A2CF7E70F77F79A307E6A472BFC2585B806A70833CCD1C26105BAE0D6E05"
+          "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
+          "Balance": "390337132176246857",
+          "Flags": 0,
+          "LedgerEntryType": "AccountRoot",
+          "OwnerCount": 0,
+          "PreviousTxnID": "6EBE2B44BAE805D7540449411163E0800CC5A64F67F0E3F7B90424A08A52F108",
+          "PreviousTxnLgrSeq": 45259,
+          "Sequence": 1017,
+          "index": "9332795083CCB7331976BA667719B6CF6411FFAB1B7D790FCBA39AB7A6318AF0"
         },
-        "ledger_index": 6761012,
+        "ledger_index": 45610,
         "status": "success"
     }
 }
@@ -204,17 +206,17 @@ HTTP Status: 200 OK
 {
     "result": {
         "account_data": {
-            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
-            "Balance": "27389517749",
-            "Flags": 0,
-            "LedgerEntryType": "AccountRoot",
-            "OwnerCount": 18,
-            "PreviousTxnID": "B6B410172C0B65575D89E464AF5B99937CC568822929ABF87DA75CBD11911932",
-            "PreviousTxnLgrSeq": 6592159,
-            "Sequence": 1400,
-            "index": "4F83A2CF7E70F77F79A307E6A472BFC2585B806A70833CCD1C26105BAE0D6E05"
+          "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
+          "Balance": "390337132176246857",
+          "Flags": 0,
+          "LedgerEntryType": "AccountRoot",
+          "OwnerCount": 0,
+          "PreviousTxnID": "6EBE2B44BAE805D7540449411163E0800CC5A64F67F0E3F7B90424A08A52F108",
+          "PreviousTxnLgrSeq": 45259,
+          "Sequence": 1017,
+          "index": "9332795083CCB7331976BA667719B6CF6411FFAB1B7D790FCBA39AB7A6318AF0"
         },
-        "ledger_index": 6761012,
+        "ledger_index": 45610,
         "status": "success"
     }
 }
@@ -228,9 +230,9 @@ The fields of a successful response include:
 |:----------------|:---------|:------------------------------------------------|
 | `id`            | (Varies) | (WebSocket only) ID provided in the request that prompted this response |
 | `status`        | String   | (WebSocket only) The value `success` indicates the request was successfully received and understood by the server. |
-| `result.status` | String   | (JSON-RPC and Commandline) The value `success` indicates the request was successfully received and understood by the server. |
 | `type`          | String   | (WebSocket only) The value `response` indicates a successful response to a command. [Asynchronous notifications](#subscriptions) use a different value such as `ledgerClosed` or `transaction`. |
 | `result`        | Object   | The result of the query; contents vary depending on the command. |
+| `result.status` | String   | (JSON-RPC and Commandline) The value `success` indicates the request was successfully received and understood by the server. |
 
 #### Commandline
 The response format for commandline methods is the same as JSON-RPC responses, because they use the same interface.
@@ -325,7 +327,7 @@ For other errors that returned with HTTP status code 200 OK, the responses are f
 
 ### Caution on Errors
 
-When your request results in an error, the entire request is copied back as part of the response, so that you can try to debug the error. However, this also includes any secrets that were passed as part of the request. When sharing error messages, be very careful not to accidentally expose important account secrets to others.
+When your request results in an error, the entire request is copied back as part of the response, so that you can try to debug the error. However, **this also includes any secrets that were passed as part of the request**. When sharing error messages, be very careful not to accidentally expose important account secrets to others.
 
 ### Universal Errors
 
@@ -352,7 +354,7 @@ All field names are case-sensitive. In responses, fields that are taken directly
 
 Different types of objects are uniquely identified in different ways:
 
-[Accounts](concept-accounts.html) are identified by their [Address][], for example `"cDarPNJEpCnpBZSfmcquydockkePkjPGA2"`. Addresses always start with "r". Many `casinocoind` methods also accept a hexadecimal representation.
+[Accounts](concept-accounts.html) are identified by their [Address][], for example `"cDarPNJEpCnpBZSfmcquydockkePkjPGA2"`. Addresses always start with "c". Many `casinocoind` methods also accept a hexadecimal representation.
 
 [Transactions](reference-transaction-format.html) are identified by a [Hash][] of the transaction's binary format. You can also identify a transaction by its sending account and [Sequence Number][].
 
@@ -426,7 +428,7 @@ Some API methods require you to specify an amount of currency. Depending on whet
 Amounts of CSC are represented as strings. (CSC has precision equivalent to a 64-bit integer, but JSON integers are limited to 32 bits, so CSC can overflow if represented in a JSON integer.) CSC is formally specified in "drops", which are equivalent to 0.00000001 of an CSC each. Thus, to represent 1.0 CSC in a JSON document, you would write:
 
 ```
-"1000000"
+"100000000"
 ```
 
 **Do not specify CSC as an object.**
@@ -440,7 +442,7 @@ If you are specifying non-CSC currency (including fiat dollars, precious metals,
 | `Field`    | Type                       | Description                        |
 |:-----------|:---------------------------|:-----------------------------------|
 | `currency` | String - [Currency Code][] | Arbitrary code for currency to issue. Cannot be `CSC`. |
-| `value`    | String                     | Quoted decimal representation of the amount of currency. This can include scientific notation, such as `1.23e11` meaning 12,300,000,000,000. Both `e` and `E` may be used. |
+| `value`    | String                     | Quoted decimal representation of the amount of currency. This can include scientific notation, such as `1.23e11` meaning 123,000,000,000. Both `e` and `E` may be used. |
 | `issuer`   | String                     | Unique account address of the entity issuing the currency. In other words, the person or business where the currency can be redeemed. |
 
 **Caution:** These field names are case-sensitive.
@@ -774,7 +776,7 @@ An example of an account_info request:
     "method": "account_info",
     "params": [
         {
-            "account": "cG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
+            "account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
             "strict": true,
             "ledger_index": "current",
             "queue": true
@@ -822,17 +824,17 @@ An example of a successful response:
     "type": "response",
     "result": {
         "account_data": {
-            "Account": "cG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
-            "Balance": "999999999960",
-            "Flags": 8388608,
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
+            "Balance": "390337132176246857",
+            "Flags": 0,
             "LedgerEntryType": "AccountRoot",
             "OwnerCount": 0,
-            "PreviousTxnID": "4294BEBE5B569A18C0A2702387C9B1E7146DC3A5850C1E87204951C6FDAA4C42",
-            "PreviousTxnLgrSeq": 3,
-            "Sequence": 6,
-            "index": "92FA6A9FC8EA6018D5D16532D7795C91BFB0831355BDFDA177E86C8BF997985F"
+            "PreviousTxnID": "6EBE2B44BAE805D7540449411163E0800CC5A64F67F0E3F7B90424A08A52F108",
+            "PreviousTxnLgrSeq": 45259,
+            "Sequence": 1017,
+            "index": "9332795083CCB7331976BA667719B6CF6411FFAB1B7D790FCBA39AB7A6318AF0"
         },
-        "ledger_current_index": 4,
+        "ledger_current_index": 45674,
         "queue_data": {
             "auth_change_queued": true,
             "highest_sequence": 10,
@@ -869,17 +871,17 @@ An example of a successful response:
 {
     "result": {
         "account_data": {
-            "Account": "cG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn",
-            "Balance": "999999999960",
-            "Flags": 8388608,
+            "Account": "cDarPNJEpCnpBZSfmcquydockkePkjPGA2",
+            "Balance": "390337132176246857",
+            "Flags": 0,
             "LedgerEntryType": "AccountRoot",
             "OwnerCount": 0,
-            "PreviousTxnID": "4294BEBE5B569A18C0A2702387C9B1E7146DC3A5850C1E87204951C6FDAA4C42",
-            "PreviousTxnLgrSeq": 3,
-            "Sequence": 6,
-            "index": "92FA6A9FC8EA6018D5D16532D7795C91BFB0831355BDFDA177E86C8BF997985F"
+            "PreviousTxnID": "6EBE2B44BAE805D7540449411163E0800CC5A64F67F0E3F7B90424A08A52F108",
+            "PreviousTxnLgrSeq": 45259,
+            "Sequence": 1017,
+            "index": "9332795083CCB7331976BA667719B6CF6411FFAB1B7D790FCBA39AB7A6318AF0"
         },
-        "ledger_current_index": 4,
+        "ledger_current_index": 45674,
         "queue_data": {
             "auth_change_queued": true,
             "highest_sequence": 10,
@@ -914,7 +916,7 @@ An example of a successful response:
 <!-- MULTICODE_BLOCK_END -->
 
 #### Notice
-- Balance is in satoshi
+- Balance is in drops
 - PreviousTxnID is the last TX from the account
 - PreviousTxnLgrSeq is the ledger in which the last TX was included
 - Sequence is the amount of transactions from the account (so only outgoing!)
@@ -2176,7 +2178,7 @@ Each transaction object includes the following fields, depending on whether it w
 ## nocasinocoin_check
 [[Source]<br>](https://github.com/casinocoin/casinocoind/blob/4.0.1/src/casinocoin/rpc/handlers/NoCasinocoinCheck.cpp "Source")
 
-The `nocasinocoin_check` command provides a quick way to check the status of [the DefaultCasinoCoin field for an account and the NoCasinocoin flag of its trust lines](concept-nocasinocoin.html), compared with the recommended settings.
+The `nocasinocoin_check` command provides a quick way to check the status of [the defaultCasinocoin field for an account and the NoCasinocoin flag of its trust lines](concept-nocasinocoin.html), compared with the recommended settings.
 
 #### Request Format
 An example of the request format:

@@ -2,12 +2,11 @@
 const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI;
 
 const api = new CasinocoinAPI({
-  server: 'wss://ws01.casinocoin.org', // Public casinocoind server
-  port: 4443
+  server: 'wss://ws01.casinocoin.org:4443' // Public casniocoind server
 });
 api.connect().then(() => {
   /* begin custom code ------------------------------------ */
-  const myAddress = 'caddErVDoBGw1oWMxMHyGhSs9gfTn5pWet';
+  const myAddress = 'cDarPNJEpCnpBZSfmcquydockkePkjPGA2';
 
   console.log('getting account info for', myAddress);
   return api.getAccountInfo(myAddress);

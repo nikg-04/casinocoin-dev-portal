@@ -4,30 +4,36 @@ const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI;
 const assert = require('assert');
 
 /* Credentials of the account placing the order */
-const myAddr = 'caddErVDoBGw1oWMxMHyGhSs9gfTn5pWet';
-const mySecret = 's████████████████████████████';
+const source_address = 'cBfj2uhFVoP2pPi1nbtQAvsKyzcH792LAd';
+const destination_address = 'cpxrUWbYQZFUqUnk6NBkWaJTE3iGZWNk9b';
+
+const secret = 's████████████████████████████';
 
 /* Define the order to place here */
-const myOrder = {
-  'direction': 'buy',
-  'quantity': {
-    'currency': 'FOO',
-    'counterparty': 'cUpy3eEg8rqjqfUoLeBnZkscbKbFsKXC3v',
-    'value': '100'
+const payment = {
+  source: {
+    address: source_address,
+    maxAmount: {
+      value: '10.0',
+      currency: 'CSC'
+    }
   },
-  'totalPrice': {
-    'currency': 'CSC',
-    'value': '1000'
+  destination: {
+    address: destination_address,
+    amount: {
+      value: '10.0',
+      currency: 'CSC'
+    }
   }
 };
 
 /* Milliseconds to wait between checks for a new ledger. */
 const INTERVAL = 1000;
-/* Instantiate CasinocoinAPI. Uses s2 (full history server) */
-const api = new CasinocoinAPI({server: 'wss://ws01.casinocoin.org', port: 4443});
+/* Instantiate CasinocoinAPI. */
+const api = new CasinocoinAPI({ server: 'wss://ws01.casinocoin.org:4443' });
 /* Number of ledgers to check for valid transaction before failing */
 const ledgerOffset = 5;
-const myInstructions = {maxLedgerVersionOffset: ledgerOffset};
+const instructions = { maxLedgerVersionOffset: ledgerOffset };
 
 
 /* Verify a transaction is in a validated CSC Ledger version */
@@ -51,7 +57,6 @@ function verifyTransaction(hash, options) {
   });
 }
 
-
 /* Function to prepare, sign, and submit a transaction to the CSC Ledger. */
 function submitTransaction(lastClosedLedgerVersion, prepared, secret) {
   const signedData = api.sign(prepared.txJSON, secret);
@@ -74,15 +79,14 @@ function submitTransaction(lastClosedLedgerVersion, prepared, secret) {
   });
 }
 
-
 api.connect().then(() => {
   console.log('Connected');
-  return api.prepareOrder(myAddr, myOrder, myInstructions);
+  return api.preparePayment(source_address, payment, instructions);
 }).then(prepared => {
-  console.log('Order Prepared');
+  console.log('Payment Prepared');
   return api.getLedger().then(ledger => {
     console.log('Current Ledger', ledger.ledgerVersion);
-    return submitTransaction(ledger.ledgerVersion, prepared, mySecret);
+    return submitTransaction(ledger.ledgerVersion, prepared, secret);
   });
 }).then(() => {
   api.disconnect().then(() => {

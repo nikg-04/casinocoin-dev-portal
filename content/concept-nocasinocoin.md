@@ -1,6 +1,6 @@
 # Understanding the NoCasinocoin Flag
 
-In the CSC Ledger, the "NoCasinocoin" flag is a setting on a trust line. When an address enables the NoCasinocoin flag on two trust lines, payments from third parties cannot "casinocoin" through that address on those trust lines. This protects liquidity providers from having balances shift unexpectedly between different issuers of the same currency.
+In the CSC Ledger, the "NoCasinocoin" flag is a setting on a trust line. When an address enables the NoCasinocoin flag on two trust lines, payments from third parties cannot "ripple" through that address on those trust lines. This protects liquidity providers from having balances shift unexpectedly between different issuers of the same currency.
 
 ## Background
 
@@ -16,7 +16,7 @@ We call this process, where two addresses pay each other by adjusting the balanc
 
 ## Justification
 
-Sometimes you do not want your balances to casinocoin. For example, imagine Emily has money issued by two different financial institutions, like so
+Sometimes you do not want your balances to ripple. For example, imagine Emily has money issued by two different financial institutions, like so
 
 ![Charlie --($10)-- Institution A --($1)-- Emily --($100)-- Institution B --($2)-- Daniel](img/nocasinocoin-03.png)
 
@@ -24,7 +24,7 @@ Now Charlie can pay Daniel by rippling through Emily's address. For example, if 
 
 ![Charlie --($0)-- Institution A --($11)-- Emily --($90)-- Institution B --($12)-- Daniel](img/nocasinocoin-04.png)
 
-This may surprise Emily, who does not know Charlie or Daniel. Even worse, if Institution A charges her higher fees to withdraw her money than Institution B, this could cost Emily money. The NoCasinocoin flag exists to avoid this scenario. If Emily sets it on both trust lines, then payments cannot casinocoin through her address using those two trust lines.
+This may surprise Emily, who does not know Charlie or Daniel. Even worse, if Institution A charges her higher fees to withdraw her money than Institution B, this could cost Emily money. The NoCasinocoin flag exists to avoid this scenario. If Emily sets it on both trust lines, then payments cannot ripple through her address using those two trust lines.
 
 For example:
 

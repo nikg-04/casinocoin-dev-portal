@@ -10,7 +10,7 @@ The first step to using CasinocoinAPI is setting up your development environment
 
 ## Install Node.js and npm
 
-CasinocoinAPI is built as an application for the Node.js runtime environment, so the first step is getting Node.js installed. CasinocoinAPI requires Node.js version 0.12, version 4.x, or higher.
+CasinocoinAPI is built as an application for the Node.js runtime environment, so the first step is getting Node.js installed. CasinocoinAPI requires Node.js version 8.9.3+, or higher.  We recommend using the current Node LTS Version.
 
 This step depends on your operating system. We recommend [the official instructions for installing Node.js using a package manager](https://nodejs.org/en/download/package-manager/) for your operating system. If the packages for Node.js and `npm` (Node Package Manager) are separate, install both. (This applies to Arch Linux, CentOS, Fedora, and RHEL.)
 
@@ -28,7 +28,7 @@ nodejs --version
 
 ## Use NPM to install CasinocoinAPI and dependencies
 
-CasinocoinAPI uses the newest version of JavaScript, ECMAScript 6 (also known as ES2015). To use the new features of ECMAScript 6, CasinocoinAPI depends on [Babel-Node](https://babeljs.io) and its ES2015 presets. You can use `npm` to install CasinocoinAPI and these dependencies together.
+CasinocoinAPI uses the newest version of JavaScript, ECMAScript 6 (also known as ES2015) supported by Node 8+.
 
 #### 1. Create a new directory for your project
 
@@ -51,8 +51,6 @@ Alternatively, you can [create a repo on GitHub](https://help.github.com/article
 Use the following template, which includes:
 
 * CasinocoinAPI itself (`casinocoin-libjs`)
-* Babel (`babel-cli`)
-* The ECMAScript 6 presets for Babel (`babel-preset-es2015`)
 * (Optional) [ESLint](http://eslint.org/) (`eslint`) for checking code quality.
 
 ```
@@ -86,22 +84,21 @@ This script, `get-account-info.js`, fetches information about a hard-coded accou
 
 ## Running the script
 
-CasinocoinAPI and the script both use the ECMAScript 6 version of JavaScript. That's why we installed Babel earlier. The easiest way to run ECMAScript 6 is to use the `babel-node` binary, which NPM installs in the `node_modules/.bin/` directory of your project. Thus, running the script looks like this:
+We will invoke node to run our CasinocoinAPI scripts.
 
 ```
-./node_modules/.bin/babel-node get-account-info.js
+node get-account-info.js
 ```
 
 Output:
 
 ```
 getting account info for cDarPNJEpCnpBZSfmcquydockkePkjPGA2
-{ sequence: 359,
-  cscBalance: '75.181663',
-  ownerCount: 4,
-  previousInitiatedTransactionID: 'E5C6DD25B2DCF534056D98A2EFE3B7CFAE4EBC624854DE3FA436F733A56D8BD9',
-  previousAffectingTransactionID: 'E5C6DD25B2DCF534056D98A2EFE3B7CFAE4EBC624854DE3FA436F733A56D8BD9',
-  previousAffectingTransactionLedgerVersion: 18489336 }
+{ sequence: 1017,
+  cscBalance: '3903371321.76246857',
+  ownerCount: 0,
+  previousAffectingTransactionID: '6EBE2B44BAE805D7540449411163E0800CC5A64F67F0E3F7B90424A08A52F108',
+  previousAffectingTransactionLedgerVersion: 45259 }
 getAccountInfo done
 done and disconnected.
 ```
@@ -119,14 +116,13 @@ const CasinocoinAPI = require('casinocoin-libjs').CasinocoinAPI;
 
 The opening line enables [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode). This is purely optional, but it helps you avoid some common pitfalls of JavaScript. See also: [Restrictions on Code in Strict Mode](https://msdn.microsoft.com/library/br230269%28v=vs.94%29.aspx#Anchor_1).
 
-The second line imports CasinocoinAPI into the current scope using Node.js's require function. CasinocoinAPI is one of [the modules `casinocoin-libjs` exports](https://github.com/casinocoin/casinocoin-libjs/blob/develop/src/index.ts).
+The second line imports CasinocoinAPI into the current scope using Node.js's require function. CasinocoinAPI is one of [the modules `casinocoin-libjs` exports](https://github.com/casinocoin/casinocoin-libjs/blob/master/src/index.js).
 
 ### Instantiating the API
 
 ```
 const api = new CasinocoinAPI({
-  server: 'wss://ws01.casinocoin.org', // Public casinocoind server
-  port: 4443
+  server: 'wss://ws01.casinocoin.org:4443' // Public casinocoind server
 });
 ```
 
@@ -262,20 +258,18 @@ Output:
 > casinocoin-libjs@0.16.5 build /home/username/casinocoin-libjs
 > gulp
 
-[15:22:30] Using gulpfile /home/username/casinocoin-libjs/Gulpfile.js
-[15:22:30] Starting 'build'...
-[15:22:30] Starting 'build-debug'...
-[15:22:42] Finished 'build' after 12 s
-[15:22:42] Starting 'build-min'...
-[15:22:42] Finished 'build-debug' after 12 s
-[15:22:51] Finished 'build-min' after 9.83 s
-[15:22:51] Starting 'default'...
-[15:22:51] Finished 'default' after 4.58 μs
+[16:30:18] Using gulpfile ~/Code/casinocoin-libjs/gulpfile.js
+[16:30:18] Starting 'build'...
+[16:30:18] Starting 'build-debug'...
+[16:30:26] Finished 'build-debug' after 7.79 s
+[16:30:26] Finished 'build' after 7.85 s
+[16:30:26] Starting 'default'...
+[16:30:26] Finished 'default' after 36 μss
 ```
 
 This may take a while. At the end, the build process creates a new `build/` folder, which contains the files you want.
 
-The file `build/casinocoin-<VERSION NUMBER>.js` is a straight export of CasinocoinAPI (whatever version you built) ready to be used in browsers. The file ending in `-min.js` is the same thing, but with the content [minified](https://en.wikipedia.org/wiki/Minification_%28programming%29) for faster loading.
+The file `build/casinocoin-<VERSION NUMBER>.js` is a straight export of CasinocoinAPI (whatever version you built) ready to be used in browsers. 
 
 ## Example Browser Usage
 
